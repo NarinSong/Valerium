@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
@@ -280,76 +280,56 @@
         <categoryLink targetId="8f61-5861-c77c-bca9" id="3a47-5264-7466-919d" primary="false" name="Minekin"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Mining Mech with CR Drill" hidden="false" id="b4b6-e39d-4d3b-611e" defaultAmount="1">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="cc81-cd25-d3b0-947f" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="e340-b8a6-b351-4364"/>
-          </constraints>
-          <profiles>
-            <profile name="CR Twin-drills" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="b15a-bab1-b2e7-fd71">
-              <characteristics>
-                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">8</characteristic>
-                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">4</characteristic>
-                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="decrement" value="1" field="cc81-cd25-d3b0-947f">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="c50b-cd48-272d-a44c" childId="6093-4d76-dbd0-26db" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="decrement" value="1" field="e340-b8a6-b351-4364">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="c50b-cd48-272d-a44c" childId="6093-4d76-dbd0-26db" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mining Mech with Rockblaster" hidden="false" id="6093-4d76-dbd0-26db">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="833e-dd62-d106-adf6" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="e335-79c1-23ee-b0e9"/>
-          </constraints>
-          <costs>
-            <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
-          </costs>
-          <profiles>
-            <profile name="Rockblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="12fe-bfdd-c186-76a1">
-              <characteristics>
-                <characteristic name="Range" typeId="865a-2a77-c897-85fd">5</characteristic>
-                <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">1</characteristic>
-                <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">7</characteristic>
-                <characteristic name="Damage" typeId="7e81-d394-055d-8486">D3+2</characteristic>
-                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
-              </characteristics>
-            </profile>
-            <profile name="Power Fist" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="31b2-d769-3071-493c">
-              <characteristics>
-                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">3</characteristic>
-                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
-                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">3</characteristic>
-                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="decrement" value="1" field="833e-dd62-d106-adf6">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="c50b-cd48-272d-a44c" childId="b4b6-e39d-4d3b-611e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="decrement" value="1" field="e335-79c1-23ee-b0e9">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="c50b-cd48-272d-a44c" childId="b4b6-e39d-4d3b-611e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <selectionEntry type="upgrade" import="true" name="Mining Mech with CR Drill" hidden="false" id="b4b6-e39d-4d3b-611e" defaultAmount="">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Weapon Attachment" hidden="false" id="64d0-aed5-32ad-3897">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Rockblaster" hidden="false" id="ce56-14a7-e44c-8785">
+                  <costs>
+                    <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Vorkite Rockblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="77ed-f36a-200f-31ad">
+                      <characteristics>
+                        <characteristic name="Range" typeId="865a-2a77-c897-85fd">4</characteristic>
+                        <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                        <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                        <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">7</characteristic>
+                        <characteristic name="Damage" typeId="7e81-d394-055d-8486">D3+2</characteristic>
+                        <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+                      </characteristics>
+                    </profile>
+                    <profile name="Power Fist" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="9132-7352-3cc8-986c">
+                      <characteristics>
+                        <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                        <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                        <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">3</characteristic>
+                        <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="CR Twin-drill" hidden="false" id="d35f-c374-bc88-315f" defaultAmount="1">
+                  <profiles>
+                    <profile name="CR Twin-drill" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="ab7b-7ab4-9895-8ca9">
+                      <characteristics>
+                        <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">8</characteristic>
+                        <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                        <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">4</characteristic>
+                        <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="991a-d234-250f-e930"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36ab-1c9d-8838-6c3d"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <constraints>
