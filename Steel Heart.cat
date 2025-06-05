@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
@@ -65,8 +65,25 @@
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="363f-7bcc-de80-1462" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7259-1819-9afd-1741" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="363f-7bcc-de80-1462">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="9626-f5f4-eb3d-1c0e" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="48fe-97ab-76a3-2293" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="7259-1819-9afd-1741">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="9626-f5f4-eb3d-1c0e" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="48fe-97ab-76a3-2293" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="5" field="selections" scope="force" shared="true" id="58c7-5f90-5a82-55ad" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Steel Assault" hidden="false" id="4463-96b5-7231-fa9a">
       <costs>
@@ -186,9 +203,10 @@
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="55"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="9d75-3e1c-4fee-6132" id="4b0f-b2e5-3ef7-bb59" primary="true" name="Infantry"/>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="4b0f-b2e5-3ef7-bb59" primary="false" name="Infantry"/>
         <categoryLink targetId="b6a7-11da-522a-6836" id="31fb-db52-e873-0bd3" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="8f61-5861-c77c-bca9" id="877d-3f18-80f3-2aa9" primary="false" name="Minekin"/>
+        <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="ae40-d901-79f8-3fc6" primary="true" name="Vehicle"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="D-TRC Mining Vehicle" hidden="false" id="9a29-abbf-8d55-a845">
