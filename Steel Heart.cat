@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
@@ -281,14 +281,10 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Mining Mech with CR Drill" hidden="false" id="b4b6-e39d-4d3b-611e">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="e520-1ef9-caf8-d755" includeChildSelections="true"/>
-            <constraint type="min" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="6aec-557f-2690-9e53" includeChildSelections="true"/>
-          </constraints>
           <profiles>
             <profile name="CR Twin-drills" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="b15a-bab1-b2e7-fd71">
               <characteristics>
-                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">6</characteristic>
+                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">8</characteristic>
                 <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                 <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">4</characteristic>
                 <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
@@ -298,10 +294,6 @@
           </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mining Mech with Rockblaster" hidden="false" id="6093-4d76-dbd0-26db">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="fa8a-2138-bcea-5345" includeChildSelections="true"/>
-            <constraint type="min" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="8d32-52d3-46e3-e7d8" includeChildSelections="true"/>
-          </constraints>
           <costs>
             <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
           </costs>
@@ -330,6 +322,8 @@
       </selectionEntries>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f9f3-c2b7-039c-38c7" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95a7-059b-f79b-8bc8"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25ac-c705-18b3-2951"/>
       </constraints>
       <profiles>
         <profile name="DCM Mining Mech" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="3fd1-b00e-f290-1147">
@@ -349,6 +343,11 @@
             <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">3</characteristic>
             <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
             <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Rapid Fire 2]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sabotage" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="55e1-1a1c-6490-4771">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This unit may use their action to destroy a terrain feature. completes at the end of opponent&apos;s next turn</characteristic>
           </characteristics>
         </profile>
       </profiles>
