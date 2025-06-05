@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
@@ -282,7 +282,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Mining Mech with CR Drill" hidden="false" id="b4b6-e39d-4d3b-611e" defaultAmount="">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon Attachment" id="4f8f-f122-1161-1b7b" hidden="false">
+            <selectionEntryGroup name="Weapon Attachment" id="4f8f-f122-1161-1b7b" hidden="false" defaultSelectionEntryId="130d-3579-df32-7614">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="CR Twin-drill" hidden="false" id="130d-3579-df32-7614">
                   <profiles>
@@ -319,6 +319,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
