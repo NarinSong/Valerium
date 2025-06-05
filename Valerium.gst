@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
@@ -46,20 +46,20 @@
     </profileType>
     <profileType name="Ranged Weapons" id="dd9c-6a24-9cae-aef3" hidden="false">
       <characteristicTypes>
-        <characteristicType name="Range" id="865a-2a77-c897-85fd"/>
-        <characteristicType name="Attacks" id="f431-6fc1-7fb3-f314"/>
-        <characteristicType name="Hit Score" id="b584-5d4f-6ac8-2d1a"/>
-        <characteristicType name="Armor Piercing" id="c45e-165d-8dbe-ca74"/>
-        <characteristicType name="Damage" id="7e81-d394-055d-8486"/>
+        <characteristicType name="R" id="865a-2a77-c897-85fd"/>
+        <characteristicType name="A" id="f431-6fc1-7fb3-f314"/>
+        <characteristicType name="HS" id="b584-5d4f-6ac8-2d1a"/>
+        <characteristicType name="AP" id="c45e-165d-8dbe-ca74"/>
+        <characteristicType name="D" id="7e81-d394-055d-8486"/>
         <characteristicType name="Keywords" id="b8ff-b26c-bcb9-a650"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Melee Weapons" id="7aa1-9f77-8d80-eb55" hidden="false">
       <characteristicTypes>
-        <characteristicType name="Attacks" id="4063-bcf9-f604-85d2"/>
-        <characteristicType name="Hit Score" id="627a-f612-d0b5-ae5e"/>
-        <characteristicType name="Armor Piercing" id="4984-c247-cad3-da1d"/>
-        <characteristicType name="Damage" id="defe-bb4d-98fd-c9a1"/>
+        <characteristicType name="A" id="4063-bcf9-f604-85d2"/>
+        <characteristicType name="HS" id="627a-f612-d0b5-ae5e"/>
+        <characteristicType name="AP" id="4984-c247-cad3-da1d"/>
+        <characteristicType name="D" id="defe-bb4d-98fd-c9a1"/>
         <characteristicType name="Keywords" id="96b5-f9ad-73d0-3ce6"/>
       </characteristicTypes>
     </profileType>
@@ -70,11 +70,11 @@
     </profileType>
     <profileType name="Unit" id="ffb9-78b8-157e-4da5" hidden="false">
       <characteristicTypes>
-        <characteristicType name="Movement" id="c31f-6a6c-001e-0b26"/>
-        <characteristicType name="Armor" id="0983-b6e2-8552-397d"/>
-        <characteristicType name="Hit Points" id="3bd8-164f-92b5-6b50"/>
-        <characteristicType name="Control" id="cead-e6cb-357f-f63d"/>
-        <characteristicType name="Organization" id="dc65-6857-527b-f20d"/>
+        <characteristicType name="M" id="c31f-6a6c-001e-0b26"/>
+        <characteristicType name="Ar" id="0983-b6e2-8552-397d"/>
+        <characteristicType name="HP" id="3bd8-164f-92b5-6b50"/>
+        <characteristicType name="C" id="cead-e6cb-357f-f63d"/>
+        <characteristicType name="O" id="dc65-6857-527b-f20d"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Special Actions" id="0d5e-6fb2-1b60-5227" hidden="false">

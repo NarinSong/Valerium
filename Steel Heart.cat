@@ -21,11 +21,11 @@
           <profiles>
             <profile name="Steel Officer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="6aac-0f69-3365-1b73">
               <characteristics>
-                <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">3</characteristic>
-                <characteristic name="Armor" typeId="0983-b6e2-8552-397d">4</characteristic>
-                <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">2</characteristic>
-                <characteristic name="Control" typeId="cead-e6cb-357f-f63d">2</characteristic>
-                <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">4</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
               </characteristics>
             </profile>
             <profile name="Direct Orders" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="4084-3744-0c82-5971">
@@ -54,11 +54,11 @@
           <profiles>
             <profile name="Steel Blitzer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="c6c4-0b6e-53f3-6422">
               <characteristics>
-                <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">3</characteristic>
-                <characteristic name="Armor" typeId="0983-b6e2-8552-397d">4</characteristic>
-                <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">2</characteristic>
-                <characteristic name="Control" typeId="cead-e6cb-357f-f63d">1</characteristic>
-                <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">4</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
               </characteristics>
             </profile>
             <profile name="Rallying Charge" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="a01a-d29d-3fdb-e57a">
@@ -77,11 +77,11 @@
           <profiles>
             <profile name="Steel Warrior" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="7ba5-a4c0-c8f8-182d">
               <characteristics>
-                <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">3</characteristic>
-                <characteristic name="Armor" typeId="0983-b6e2-8552-397d">4</characteristic>
-                <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">1</characteristic>
-                <characteristic name="Control" typeId="cead-e6cb-357f-f63d">1</characteristic>
-                <characteristic name="Organization" typeId="dc65-6857-527b-f20d">2</characteristic>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">4</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">1</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -162,28 +162,28 @@
           <profiles>
             <profile name="Bloodsteel Beserkers" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="8328-043d-8bce-fb4b">
               <characteristics>
-                <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">4</characteristic>
-                <characteristic name="Armor" typeId="0983-b6e2-8552-397d">3</characteristic>
-                <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">3</characteristic>
-                <characteristic name="Control" typeId="cead-e6cb-357f-f63d">2</characteristic>
-                <characteristic name="Organization" typeId="dc65-6857-527b-f20d">2</characteristic>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
               </characteristics>
             </profile>
             <profile name="Bloodsteel Battleaxe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="2b9f-b025-3740-15b7">
               <characteristics>
-                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">5</characteristic>
-                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">6</characteristic>
-                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">5</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
                 <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
               </characteristics>
             </profile>
             <profile name="Bloodsteel Battleaxe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="a75a-e972-c7cb-edef">
               <characteristics>
-                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">5</characteristic>
-                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">6</characteristic>
-                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">5</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
                 <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
               </characteristics>
             </profile>
@@ -223,11 +223,11 @@
       <profiles>
         <profile name="Blastbarrel Artillery Rig" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="032b-848e-a211-10c5">
           <characteristics>
-            <characteristic name="Range" typeId="865a-2a77-c897-85fd">20</characteristic>
-            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">4</characteristic>
-            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">4</characteristic>
-            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">20</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">4</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">4</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
             <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Blast] [Indirect Fire]</characteristic>
           </characteristics>
         </profile>
@@ -247,11 +247,11 @@
           <profiles>
             <profile name="Artillery Operator" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="7c81-38dc-3435-44d1">
               <characteristics>
-                <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">3</characteristic>
-                <characteristic name="Armor" typeId="0983-b6e2-8552-397d">5</characteristic>
-                <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">2</characteristic>
-                <characteristic name="Control" typeId="cead-e6cb-357f-f63d">1</characteristic>
-                <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -299,11 +299,11 @@
           <profiles>
             <profile name="Heavy Weapons Operator" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="24c0-babe-7a5d-89ab">
               <characteristics>
-                <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">3</characteristic>
-                <characteristic name="Armor" typeId="0983-b6e2-8552-397d">5</characteristic>
-                <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">2</characteristic>
-                <characteristic name="Control" typeId="cead-e6cb-357f-f63d">1</characteristic>
-                <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -316,11 +316,11 @@
       <profiles>
         <profile name="Boltfire Heavy Machine Gun" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="fbb3-cffb-5fdc-30b6">
           <characteristics>
-            <characteristic name="Range" typeId="865a-2a77-c897-85fd">8</characteristic>
-            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">12</characteristic>
-            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
-            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">4</characteristic>
-            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">12</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">4</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
             <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Extra Attacks 1]</characteristic>
           </characteristics>
         </profile>
@@ -385,20 +385,20 @@
       <profiles>
         <profile name="DCM Mining Mech" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="3fd1-b00e-f290-1147">
           <characteristics>
-            <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">4</characteristic>
-            <characteristic name="Armor" typeId="0983-b6e2-8552-397d">7</characteristic>
-            <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">5</characteristic>
-            <characteristic name="Control" typeId="cead-e6cb-357f-f63d">3</characteristic>
-            <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">7</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">5</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
           </characteristics>
         </profile>
         <profile name="Mining Laser" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="272a-bacd-b8ad-5b12">
           <characteristics>
-            <characteristic name="Range" typeId="865a-2a77-c897-85fd">4</characteristic>
-            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">4</characteristic>
-            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
-            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">3</characteristic>
-            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">4</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">4</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">3</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
             <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Rapid Fire 2]</characteristic>
           </characteristics>
         </profile>
@@ -420,10 +420,10 @@
               <profiles>
                 <profile name="CR Twin-Drill" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="fc65-3d51-011c-72ce">
                   <characteristics>
-                    <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">8</characteristic>
-                    <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                    <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">4</characteristic>
-                    <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                    <characteristic name="A" typeId="4063-bcf9-f604-85d2">8</characteristic>
+                    <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                    <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
+                    <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
                     <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
                   </characteristics>
                 </profile>
@@ -436,20 +436,20 @@
               <profiles>
                 <profile name="Vorkite Rockblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="fcf9-6b98-8de6-2f95">
                   <characteristics>
-                    <characteristic name="Range" typeId="865a-2a77-c897-85fd">6</characteristic>
-                    <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">1</characteristic>
-                    <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-                    <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">7</characteristic>
-                    <characteristic name="Damage" typeId="7e81-d394-055d-8486">D3+2</characteristic>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">6</characteristic>
+                    <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                    <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">7</characteristic>
+                    <characteristic name="D" typeId="7e81-d394-055d-8486">D3+2</characteristic>
                     <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
                   </characteristics>
                 </profile>
                 <profile name="Power Fist" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="f90d-2234-c4f5-7940">
                   <characteristics>
-                    <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
-                    <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                    <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">4</characteristic>
-                    <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                    <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                    <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                    <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
+                    <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
                     <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
                   </characteristics>
                 </profile>
@@ -476,11 +476,11 @@
       <profiles>
         <profile name="D-AT" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="9246-2658-8d83-b361">
           <characteristics>
-            <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">6</characteristic>
-            <characteristic name="Armor" typeId="0983-b6e2-8552-397d">6</characteristic>
-            <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">8</characteristic>
-            <characteristic name="Control" typeId="cead-e6cb-357f-f63d">2</characteristic>
-            <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">6</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">6</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">8</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
           </characteristics>
         </profile>
         <profile name="D-AT Transport Vehicle" typeId="b066-f9a8-93ac-c13a" typeName="Transport" hidden="false" id="4acf-a7f3-22d9-80ad">
@@ -490,10 +490,10 @@
         </profile>
         <profile name="D-AT Plating" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="2ddc-7db0-766c-0046">
           <characteristics>
-            <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">4</characteristic>
-            <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
-            <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">4</characteristic>
-            <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
           </characteristics>
         </profile>
@@ -527,19 +527,19 @@
       <profiles>
         <profile name="D-TRC" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="cef5-b5e7-6034-5710">
           <characteristics>
-            <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">4</characteristic>
-            <characteristic name="Armor" typeId="0983-b6e2-8552-397d">8</characteristic>
-            <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">10</characteristic>
-            <characteristic name="Control" typeId="cead-e6cb-357f-f63d">3</characteristic>
-            <characteristic name="Organization" typeId="dc65-6857-527b-f20d"/>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">8</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">10</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
           </characteristics>
         </profile>
         <profile name="D-TRC Heavy Drill" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="6001-e876-b202-d866">
           <characteristics>
-            <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">8</characteristic>
-            <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-            <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">8</characteristic>
-            <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">8</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">8</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Extra Attacks 1]</characteristic>
           </characteristics>
         </profile>
@@ -593,11 +593,11 @@
       <profiles>
         <profile name="Autoblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="cf77-2166-a618-6bc2">
           <characteristics>
-            <characteristic name="Range" typeId="865a-2a77-c897-85fd">5</characteristic>
-            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">3</characteristic>
-            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">3</characteristic>
-            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">5</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">3</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">3</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
             <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
           </characteristics>
         </profile>
@@ -607,10 +607,10 @@
       <profiles>
         <profile name="Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="4586-83d5-cf61-04ea">
           <characteristics>
-            <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
-            <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-            <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">3</characteristic>
-            <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">3</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
           </characteristics>
         </profile>
@@ -620,11 +620,11 @@
       <profiles>
         <profile name="Blaster Pistol" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="20ab-5c79-c2d7-a06c">
           <characteristics>
-            <characteristic name="Range" typeId="865a-2a77-c897-85fd">4</characteristic>
-            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">1</characteristic>
-            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">3</characteristic>
-            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">4</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">3</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
             <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Pistol]</characteristic>
           </characteristics>
         </profile>
@@ -634,11 +634,11 @@
       <profiles>
         <profile name="Deepcore Vehicle Gun" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="579e-f229-dbcd-d45d">
           <characteristics>
-            <characteristic name="Range" typeId="865a-2a77-c897-85fd">6</characteristic>
-            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">4</characteristic>
-            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">4</characteristic>
-            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">6</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">4</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">4</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
             <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
           </characteristics>
         </profile>
