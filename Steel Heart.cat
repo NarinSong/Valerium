@@ -322,8 +322,8 @@
       </selectionEntries>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f9f3-c2b7-039c-38c7" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95a7-059b-f79b-8bc8"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25ac-c705-18b3-2951"/>
+        <constraint type="max" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="25ac-c705-18b3-2951" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="7e45-0d68-7818-a377" includeChildSelections="true"/>
       </constraints>
       <profiles>
         <profile name="DCM Mining Mech" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="3fd1-b00e-f290-1147">
