@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <categoryEntries>
+    <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
+    <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
+    <categoryEntry name="Vehicle" id="2b48-9f4d-3fc4-acb0" hidden="false"/>
+    <categoryEntry name="Beast" id="1c5c-47db-ab07-ba35" hidden="false"/>
+    <categoryEntry name="Champion" id="0e9f-f19d-fdfa-621a" hidden="false"/>
+    <categoryEntry name="Faction: Steel Heart" id="b6a7-11da-522a-6836" hidden="false"/>
+    <categoryEntry name="Faction: Infernal Legion" id="92d7-3555-3aad-3720" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry name="Battle Force" hidden="false" id="7887-592a-fbaf-3b5d">
+      <categoryLinks>
+        <categoryLink name="Champion" hidden="false" id="1cb6-d122-0bb8-bc16" targetId="0e9f-f19d-fdfa-621a" type="categoryEntry"/>
+        <categoryLink name="Infantry" hidden="false" id="bca2-cf37-d4af-36db" targetId="9d75-3e1c-4fee-6132" type="categoryEntry"/>
+        <categoryLink name="Vehicle" hidden="false" id="10c0-8e67-cd2b-837e" targetId="2b48-9f4d-3fc4-acb0" type="categoryEntry"/>
+        <categoryLink name="Cavalry" hidden="false" id="f2f2-d035-1bdc-0cd5" targetId="fd19-c051-4156-06c0" type="categoryEntry"/>
+        <categoryLink name="Beast" hidden="false" id="82c1-5c91-5a69-b42b" targetId="1c5c-47db-ab07-ba35" type="categoryEntry"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="3e5c-5cab-0f3e-359e">
+      <entryLinks>
+        <entryLink import="true" name="Battle Size" hidden="false" id="ac29-63cc-e52a-6476" type="selectionEntry" targetId="61fa-30e2-a2ad-f016">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c547-4ed4-b84b-62c9-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c547-4ed4-b84b-62c9-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <costTypes>
+    <costType name="Cost" id="3c11-724f-f23d-e3d4" defaultCostLimit="-1"/>
+  </costTypes>
+  <publications>
+    <publication name="Github" id="c9db-001e-ae9e-48f4" hidden="false" publisherUrl="https://github.com/NarinSong/Valerium" shortName="NarinSong/Valerium"/>
+  </publications>
+  <profileTypes>
+    <profileType name="Abilities" id="741c-f3c5-ef1b-428b" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Description" id="94fb-5af3-adea-b298"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Ranged Weapons" id="dd9c-6a24-9cae-aef3" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Range" id="865a-2a77-c897-85fd"/>
+        <characteristicType name="Attacks" id="f431-6fc1-7fb3-f314"/>
+        <characteristicType name="Hit Score" id="b584-5d4f-6ac8-2d1a"/>
+        <characteristicType name="Armor Piercing" id="c45e-165d-8dbe-ca74"/>
+        <characteristicType name="Damage" id="7e81-d394-055d-8486"/>
+        <characteristicType name="Keywords" id="b8ff-b26c-bcb9-a650"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Melee Weapons" id="7aa1-9f77-8d80-eb55" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Attacks" id="4063-bcf9-f604-85d2"/>
+        <characteristicType name="Hit Score" id="627a-f612-d0b5-ae5e"/>
+        <characteristicType name="Armor Piercing" id="4984-c247-cad3-da1d"/>
+        <characteristicType name="Damage" id="defe-bb4d-98fd-c9a1"/>
+        <characteristicType name="Keywords" id="96b5-f9ad-73d0-3ce6"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Transport" id="b066-f9a8-93ac-c13a" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Capacity" id="460f-a7a0-fbc9-d717"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Unit" id="ffb9-78b8-157e-4da5" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Movement" id="c31f-6a6c-001e-0b26"/>
+        <characteristicType name="Armor" id="0983-b6e2-8552-397d"/>
+        <characteristicType name="Hit Points" id="3bd8-164f-92b5-6b50"/>
+        <characteristicType name="Control" id="cead-e6cb-357f-f63d"/>
+        <characteristicType name="Organization" id="dc65-6857-527b-f20d"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="61fa-30e2-a2ad-f016"/>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Assault" id="a415-abc8-4a0b-ee46" hidden="false">
+      <description>Weapons with [Assault] are able to shoot even after a unit has made an advance move</description>
+    </rule>
+    <rule name="Set Up" id="9d05-b245-eea8-f00c" hidden="false">
+      <description>Weapons with [Set Up] have +1 to hit if the unit the user is in has not moved this turn</description>
+    </rule>
+    <rule name="Precision" id="2a76-239c-bbe3-e25e" hidden="false">
+      <description>Weapons with [Precision] allow the user choose how to allocate damage of attacks if they succeed</description>
+    </rule>
+  </sharedRules>
+</gameSystem>
