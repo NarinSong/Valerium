@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
@@ -12,11 +12,11 @@
   <forceEntries>
     <forceEntry name="Battle Force" hidden="false" id="7887-592a-fbaf-3b5d">
       <categoryLinks>
-        <categoryLink name="Champion" hidden="false" id="1cb6-d122-0bb8-bc16" targetId="0e9f-f19d-fdfa-621a" type="categoryEntry"/>
-        <categoryLink name="Infantry" hidden="false" id="bca2-cf37-d4af-36db" targetId="9d75-3e1c-4fee-6132" type="categoryEntry"/>
-        <categoryLink name="Vehicle" hidden="false" id="10c0-8e67-cd2b-837e" targetId="2b48-9f4d-3fc4-acb0" type="categoryEntry"/>
-        <categoryLink name="Cavalry" hidden="false" id="f2f2-d035-1bdc-0cd5" targetId="fd19-c051-4156-06c0" type="categoryEntry"/>
-        <categoryLink name="Beast" hidden="false" id="82c1-5c91-5a69-b42b" targetId="1c5c-47db-ab07-ba35" type="categoryEntry"/>
+        <categoryLink name="Champion" hidden="false" id="1cb6-d122-0bb8-bc16" targetId="0e9f-f19d-fdfa-621a"/>
+        <categoryLink name="Infantry" hidden="false" id="bca2-cf37-d4af-36db" targetId="9d75-3e1c-4fee-6132"/>
+        <categoryLink name="Vehicle" hidden="false" id="10c0-8e67-cd2b-837e" targetId="2b48-9f4d-3fc4-acb0"/>
+        <categoryLink name="Cavalry" hidden="false" id="f2f2-d035-1bdc-0cd5" targetId="fd19-c051-4156-06c0"/>
+        <categoryLink name="Beast" hidden="false" id="82c1-5c91-5a69-b42b" targetId="1c5c-47db-ab07-ba35"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -75,6 +75,11 @@
         <characteristicType name="Hit Points" id="3bd8-164f-92b5-6b50"/>
         <characteristicType name="Control" id="cead-e6cb-357f-f63d"/>
         <characteristicType name="Organization" id="dc65-6857-527b-f20d"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Special Actions" id="0d5e-6fb2-1b60-5227" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Discription" id="4fd5-f0f2-cf32-b68a"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
