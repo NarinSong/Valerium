@@ -14,8 +14,8 @@
       <categoryLinks>
         <categoryLink name="Champion" hidden="false" id="1cb6-d122-0bb8-bc16" targetId="0e9f-f19d-fdfa-621a"/>
         <categoryLink name="Infantry" hidden="false" id="bca2-cf37-d4af-36db" targetId="9d75-3e1c-4fee-6132"/>
-        <categoryLink name="Vehicle" hidden="false" id="10c0-8e67-cd2b-837e" targetId="2b48-9f4d-3fc4-acb0"/>
         <categoryLink name="Cavalry" hidden="false" id="f2f2-d035-1bdc-0cd5" targetId="fd19-c051-4156-06c0"/>
+        <categoryLink name="Vehicle" hidden="false" id="10c0-8e67-cd2b-837e" targetId="2b48-9f4d-3fc4-acb0"/>
         <categoryLink name="Beast" hidden="false" id="82c1-5c91-5a69-b42b" targetId="1c5c-47db-ab07-ba35"/>
       </categoryLinks>
     </forceEntry>
@@ -39,12 +39,12 @@
     <publication name="Github" id="c9db-001e-ae9e-48f4" hidden="false" publisherUrl="https://github.com/NarinSong/Valerium" shortName="NarinSong/Valerium"/>
   </publications>
   <profileTypes>
-    <profileType name="Abilities" id="741c-f3c5-ef1b-428b" hidden="false">
+    <profileType name="Abilities" id="741c-f3c5-ef1b-428b" hidden="false" sortIndex="4">
       <characteristicTypes>
         <characteristicType name="Description" id="94fb-5af3-adea-b298"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Ranged Weapons" id="dd9c-6a24-9cae-aef3" hidden="false">
+    <profileType name="Ranged Weapons" id="dd9c-6a24-9cae-aef3" hidden="false" sortIndex="2">
       <characteristicTypes>
         <characteristicType name="R" id="865a-2a77-c897-85fd"/>
         <characteristicType name="A" id="f431-6fc1-7fb3-f314"/>
@@ -54,7 +54,7 @@
         <characteristicType name="Keywords" id="b8ff-b26c-bcb9-a650"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Melee Weapons" id="7aa1-9f77-8d80-eb55" hidden="false">
+    <profileType name="Melee Weapons" id="7aa1-9f77-8d80-eb55" hidden="false" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="A" id="4063-bcf9-f604-85d2"/>
         <characteristicType name="HS" id="627a-f612-d0b5-ae5e"/>
@@ -63,12 +63,12 @@
         <characteristicType name="Keywords" id="96b5-f9ad-73d0-3ce6"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Transport" id="b066-f9a8-93ac-c13a" hidden="false">
+    <profileType name="Transport" id="b066-f9a8-93ac-c13a" hidden="false" sortIndex="6">
       <characteristicTypes>
         <characteristicType name="Capacity" id="460f-a7a0-fbc9-d717"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Unit" id="ffb9-78b8-157e-4da5" hidden="false">
+    <profileType name="Unit" id="ffb9-78b8-157e-4da5" hidden="false" sortIndex="1">
       <characteristicTypes>
         <characteristicType name="M" id="c31f-6a6c-001e-0b26"/>
         <characteristicType name="Ar" id="0983-b6e2-8552-397d"/>
@@ -77,7 +77,7 @@
         <characteristicType name="O" id="dc65-6857-527b-f20d"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Special Actions" id="0d5e-6fb2-1b60-5227" hidden="false">
+    <profileType name="Special Actions" id="0d5e-6fb2-1b60-5227" hidden="false" sortIndex="5">
       <characteristicTypes>
         <characteristicType name="Discription" id="4fd5-f0f2-cf32-b68a"/>
       </characteristicTypes>
