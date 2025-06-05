@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
@@ -35,7 +35,7 @@
                 <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
                 <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">2</characteristic>
                 <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
-                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="dbcb-1fd0-4e13-b786">
@@ -44,7 +44,7 @@
                 <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                 <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">1</characteristic>
                 <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Direct Orders" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="4084-3744-0c82-5971">
@@ -83,21 +83,30 @@
                 <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
                 <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">2</characteristic>
                 <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
-                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
               </characteristics>
             </profile>
-            <profile name="2x Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="6a18-fd5e-32f3-69e3">
+            <profile name="Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="6a18-fd5e-32f3-69e3">
               <characteristics>
-                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">4</characteristic>
+                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
                 <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                 <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">1</characteristic>
                 <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Rallying Charge" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="a01a-d29d-3fdb-e57a">
               <characteristics>
                 <characteristic name="Description" typeId="94fb-5af3-adea-b298">If this unit has made a charge this turn the melee attacks made by this unit have +1 to hit</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="80aa-98d1-6e71-9577">
+              <characteristics>
+                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">1</characteristic>
+                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -120,7 +129,7 @@
                 <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
                 <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">2</characteristic>
                 <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
-                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="047d-3fd2-046a-723c">
@@ -129,7 +138,7 @@
                 <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                 <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">1</characteristic>
                 <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -206,6 +215,7 @@
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="43ea-9fd2-d44f-b54b" primary="true" name="Infantry"/>
         <categoryLink targetId="b6a7-11da-522a-6836" id="9a66-5a24-ed3f-a319" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="cd7e-037c-07a6-105a" primary="false" name="Steel Battleguard"/>
+        <categoryLink targetId="6f75-5838-fd71-c158" id="44e2-4a4c-1775-cd48" primary="false" name="Steel Artillery"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rocketsmith" hidden="false" id="3e86-cd9d-8bbb-e3c4">
@@ -269,6 +279,79 @@
         <categoryLink targetId="b6a7-11da-522a-6836" id="f052-fa4b-c99c-468c" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="8f61-5861-c77c-bca9" id="3a47-5264-7466-919d" primary="false" name="Minekin"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mining Mech with CR Drill" hidden="false" id="b4b6-e39d-4d3b-611e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="e520-1ef9-caf8-d755" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="6aec-557f-2690-9e53" includeChildSelections="true"/>
+          </constraints>
+          <profiles>
+            <profile name="CR Twin-drills" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="b15a-bab1-b2e7-fd71">
+              <characteristics>
+                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">6</characteristic>
+                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">4</characteristic>
+                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mining Mech with Rockblaster" hidden="false" id="6093-4d76-dbd0-26db">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="fa8a-2138-bcea-5345" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="8d32-52d3-46e3-e7d8" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
+          </costs>
+          <profiles>
+            <profile name="Rockblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="12fe-bfdd-c186-76a1">
+              <characteristics>
+                <characteristic name="Range" typeId="865a-2a77-c897-85fd">5</characteristic>
+                <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">7</characteristic>
+                <characteristic name="Damage" typeId="7e81-d394-055d-8486">D3+2</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+              </characteristics>
+            </profile>
+            <profile name="Power Fist" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="31b2-d769-3071-493c">
+              <characteristics>
+                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">3</characteristic>
+                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">3</characteristic>
+                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f9f3-c2b7-039c-38c7" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="DCM Mining Mech" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="3fd1-b00e-f290-1147">
+          <characteristics>
+            <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Armor" typeId="0983-b6e2-8552-397d">7</characteristic>
+            <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">5</characteristic>
+            <characteristic name="Control" typeId="cead-e6cb-357f-f63d">3</characteristic>
+            <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mining Laser" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="272a-bacd-b8ad-5b12">
+          <characteristics>
+            <characteristic name="Range" typeId="865a-2a77-c897-85fd">4</characteristic>
+            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">4</characteristic>
+            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">3</characteristic>
+            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Rapid Fire 2]</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="D-AT Transport Vehicle" hidden="false" id="c80b-e79c-ffc2-d725">
       <costs>
@@ -315,33 +398,6 @@
         <categoryLink targetId="b6a7-11da-522a-6836" id="c1d7-1dae-fb2d-cf3b" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="ffa3-b853-ddd8-bed2" primary="false" name="Disciples of the Forge"/>
       </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="1 Autoblaster" hidden="false" id="f1a6-2e0c-7b50-f8b3">
-      <profiles>
-        <profile name="Autoblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="bb93-1ccc-5ad2-cbdf">
-          <characteristics>
-            <characteristic name="Range" typeId="865a-2a77-c897-85fd">5</characteristic>
-            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">3</characteristic>
-            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">2</characteristic>
-            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
-            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="1 Steelforge Axe" hidden="false" id="437e-6983-0468-8bb6">
-      <profiles>
-        <profile name="1 Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="b1cc-cf2f-fffc-b3cb">
-          <characteristics>
-            <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
-            <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-            <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">1</characteristic>
-            <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
