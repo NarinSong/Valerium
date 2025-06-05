@@ -281,38 +281,12 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Mining Mech with CR Drill" hidden="false" id="b4b6-e39d-4d3b-611e" defaultAmount="">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Weapon Attachment" hidden="false" id="64d0-aed5-32ad-3897">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Attachment" id="4f8f-f122-1161-1b7b" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Rockblaster" hidden="false" id="ce56-14a7-e44c-8785">
-                  <costs>
-                    <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
-                  </costs>
+                <selectionEntry type="upgrade" import="true" name="CR Twin-drill" hidden="false" id="130d-3579-df32-7614">
                   <profiles>
-                    <profile name="Vorkite Rockblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="77ed-f36a-200f-31ad">
-                      <characteristics>
-                        <characteristic name="Range" typeId="865a-2a77-c897-85fd">4</characteristic>
-                        <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">1</characteristic>
-                        <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-                        <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">7</characteristic>
-                        <characteristic name="Damage" typeId="7e81-d394-055d-8486">D3+2</characteristic>
-                        <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
-                      </characteristics>
-                    </profile>
-                    <profile name="Power Fist" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="9132-7352-3cc8-986c">
-                      <characteristics>
-                        <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
-                        <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                        <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">3</characteristic>
-                        <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
-                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="CR Twin-drill" hidden="false" id="d35f-c374-bc88-315f" defaultAmount="1">
-                  <profiles>
-                    <profile name="CR Twin-drill" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="ab7b-7ab4-9895-8ca9">
+                    <profile name="CR Twin-drill" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="46ab-c59e-73e1-7fe3">
                       <characteristics>
                         <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">8</characteristic>
                         <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
@@ -323,13 +297,36 @@
                     </profile>
                   </profiles>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Rockblaster" hidden="false" id="6a61-9e00-36fe-b938">
+                  <profiles>
+                    <profile name="Vorkite Rockblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="1606-fd4a-1c14-6830">
+                      <characteristics>
+                        <characteristic name="Range" typeId="865a-2a77-c897-85fd">4</characteristic>
+                        <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                        <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                        <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">7</characteristic>
+                        <characteristic name="Damage" typeId="7e81-d394-055d-8486">D3+2</characteristic>
+                        <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+                      </characteristics>
+                    </profile>
+                    <profile name="Power Fist" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="2637-c178-a337-dba3">
+                      <characteristics>
+                        <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                        <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                        <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">3</characteristic>
+                        <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="991a-d234-250f-e930"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36ab-1c9d-8838-6c3d"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9843-79da-4dcc-38ca"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e3b-11d4-2b70-bc6d" includeChildSelections="false"/>
               </constraints>
-            </selectionEntry>
-          </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <constraints>
