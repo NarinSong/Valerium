@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
@@ -78,7 +78,7 @@
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="91fb-d534-e20a-10c2" primary="false" name="Steel Battleguard"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="D.H Engineering Corps" hidden="false" id="9c7a-65a8-15ed-6b43">
+    <selectionEntry type="unit" import="true" name="D.H Engineering Corps" hidden="false" id="20f2-052c-f0ec-bce8">
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
       </costs>
@@ -233,4 +233,23 @@
     <categoryEntry name="Steel Artillery" id="6f75-5838-fd71-c158" hidden="false"/>
     <categoryEntry name="Disciples of the Forge" id="ed0b-e183-e1d9-6a07" hidden="false"/>
   </categoryEntries>
+  <entryLinks>
+    <entryLink import="true" name="Blastbarrel Squad" hidden="false" id="a5d9-1966-8cb0-0fa6" type="selectionEntry" targetId="6e7f-fa0e-4e4e-d9ca"/>
+    <entryLink import="true" name="Bloodsteel Beserkers" hidden="false" id="2e53-8b06-d974-f65a" type="selectionEntry" targetId="d7a1-0e0c-81c8-88c4"/>
+    <entryLink import="true" name="Boltfire Squad" hidden="false" id="ab96-880e-6147-46f9" type="selectionEntry" targetId="4103-4acf-3b00-05a3"/>
+    <entryLink import="true" name="D-AT Transport Vehicle" hidden="false" id="1150-6e95-0cf7-6aa4" type="selectionEntry" targetId="c80b-e79c-ffc2-d725"/>
+    <entryLink import="true" name="D-TRC Mining Vehicle" hidden="false" id="e7d7-2ded-f00f-9c8a" type="selectionEntry" targetId="9a29-abbf-8d55-a845"/>
+    <entryLink import="true" name="D.H Engineering Corps" hidden="false" id="d6c9-14e6-e978-545b" type="selectionEntry" targetId="20f2-052c-f0ec-bce8"/>
+    <entryLink import="true" name="DCM Mining Mech" hidden="false" id="a4d3-1a21-c6e0-006c" type="selectionEntry" targetId="c50b-cd48-272d-a44c"/>
+    <entryLink import="true" name="DV-MCH Frontline" hidden="false" id="4f76-ed04-0017-16cf" type="selectionEntry" targetId="a9cf-3e5d-74e0-b5bb"/>
+    <entryLink import="true" name="DV-TKR2 Guardian" hidden="false" id="0b23-9987-0972-3520" type="selectionEntry" targetId="794e-1f9b-083d-b18d"/>
+    <entryLink import="true" name="Forgeguard Shieldline" hidden="false" id="3058-3e30-8b27-a44f" type="selectionEntry" targetId="6c16-9729-35c9-6e51"/>
+    <entryLink import="true" name="Forgekin Slayers" hidden="false" id="38bc-c7be-a0c7-029d" type="selectionEntry" targetId="f10a-d3c0-5ef9-71af"/>
+    <entryLink import="true" name="Lord Nazeim" hidden="false" id="1e3a-da51-5fbb-bba3" type="selectionEntry" targetId="5e3d-0f11-4a59-d233"/>
+    <entryLink import="true" name="Rocketsmith" hidden="false" id="9d1c-3c7e-a7f5-f782" type="selectionEntry" targetId="3e86-cd9d-8bbb-e3c4"/>
+    <entryLink import="true" name="Steel Assault" hidden="false" id="377a-64d0-d6b6-ec5e" type="selectionEntry" targetId="4463-96b5-7231-fa9a"/>
+    <entryLink import="true" name="Steel Marksman" hidden="false" id="1ea7-2aa1-dec1-bb27" type="selectionEntry" targetId="2178-d6f9-a6bc-380a"/>
+    <entryLink import="true" name="Steel Meditech" hidden="false" id="4803-3fda-252d-00a0" type="selectionEntry" targetId="b801-1eea-cbee-24e2"/>
+    <entryLink import="true" name="Steel Warriors" hidden="false" id="c33c-f7a5-c231-f303" type="selectionEntry" targetId="b5b0-d8db-9ed6-a6d6"/>
+  </entryLinks>
 </catalogue>
