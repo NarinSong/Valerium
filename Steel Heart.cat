@@ -217,6 +217,17 @@
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="cd7e-037c-07a6-105a" primary="false" name="Steel Battleguard"/>
         <categoryLink targetId="6f75-5838-fd71-c158" id="44e2-4a4c-1775-cd48" primary="false" name="Steel Artillery"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Blastbarrel Squad" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="8384-9691-3167-1d7f">
+          <characteristics>
+            <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+            <characteristic name="Armor" typeId="0983-b6e2-8552-397d">4</characteristic>
+            <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+            <characteristic name="Control" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="Organization" typeId="dc65-6857-527b-f20d">23</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rocketsmith" hidden="false" id="3e86-cd9d-8bbb-e3c4">
       <costs>
