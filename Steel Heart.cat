@@ -67,16 +67,16 @@
           </constraints>
           <modifiers>
             <modifier type="decrement" value="1" field="363f-7bcc-de80-1462">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="9626-f5f4-eb3d-1c0e" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="48fe-97ab-76a3-2293" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="9626-f5f4-eb3d-1c0e" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="48fe-97ab-76a3-2293" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
             </modifier>
             <modifier type="decrement" value="1" field="7259-1819-9afd-1741">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="9626-f5f4-eb3d-1c0e" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="48fe-97ab-76a3-2293" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="9626-f5f4-eb3d-1c0e" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="b5b0-d8db-9ed6-a6d6" childId="48fe-97ab-76a3-2293" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
             </modifier>
           </modifiers>
         </selectionEntry>
