@@ -280,9 +280,10 @@
         <categoryLink targetId="8f61-5861-c77c-bca9" id="3a47-5264-7466-919d" primary="false" name="Minekin"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Mining Mech with CR Drill" hidden="false" id="b4b6-e39d-4d3b-611e">
+        <selectionEntry type="upgrade" import="true" name="Mining Mech with CR Drill" hidden="false" id="b4b6-e39d-4d3b-611e" defaultAmount="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="cc81-cd25-d3b0-947f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="e340-b8a6-b351-4364"/>
           </constraints>
           <profiles>
             <profile name="CR Twin-drills" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="b15a-bab1-b2e7-fd71">
@@ -301,11 +302,17 @@
                 <condition type="atLeast" value="1" field="selections" scope="c50b-cd48-272d-a44c" childId="6093-4d76-dbd0-26db" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="decrement" value="1" field="e340-b8a6-b351-4364">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="c50b-cd48-272d-a44c" childId="6093-4d76-dbd0-26db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mining Mech with Rockblaster" hidden="false" id="6093-4d76-dbd0-26db">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="833e-dd62-d106-adf6" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="c50b-cd48-272d-a44c" shared="true" id="e335-79c1-23ee-b0e9"/>
           </constraints>
           <costs>
             <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
@@ -333,6 +340,11 @@
           </profiles>
           <modifiers>
             <modifier type="decrement" value="1" field="833e-dd62-d106-adf6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="c50b-cd48-272d-a44c" childId="b4b6-e39d-4d3b-611e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="e335-79c1-23ee-b0e9">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="c50b-cd48-272d-a44c" childId="b4b6-e39d-4d3b-611e" shared="true" includeChildSelections="true"/>
               </conditions>
