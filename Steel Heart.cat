@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
@@ -28,25 +28,6 @@
                 <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
               </characteristics>
             </profile>
-            <profile name="Autoblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="a03d-cc2d-3a8f-7845">
-              <characteristics>
-                <characteristic name="Range" typeId="865a-2a77-c897-85fd">5</characteristic>
-                <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">3</characteristic>
-                <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">2</characteristic>
-                <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
-                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="dbcb-1fd0-4e13-b786">
-              <characteristics>
-                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
-                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">1</characteristic>
-                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
-              </characteristics>
-            </profile>
             <profile name="Direct Orders" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="4084-3744-0c82-5971">
               <characteristics>
                 <characteristic name="Description" typeId="94fb-5af3-adea-b298">All models within this unit have +1 control</characteristic>
@@ -58,6 +39,10 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink name="A-Autoblaster" id="8da5-5049-aa24-1838" hidden="false" type="profile" targetId="cf77-2166-a618-6bc2"/>
+            <infoLink name="Steelforge Axe" id="dbc5-2a1c-76ff-ca9e" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Replace Steel Warrior with Steel Blitzer" hidden="false" id="9626-f5f4-eb3d-1c0e">
           <costs>
@@ -76,42 +61,19 @@
                 <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
               </characteristics>
             </profile>
-            <profile name="Autoblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="100e-5e1d-367a-8ff3">
-              <characteristics>
-                <characteristic name="Range" typeId="865a-2a77-c897-85fd">5</characteristic>
-                <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">3</characteristic>
-                <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">2</characteristic>
-                <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
-                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="6a18-fd5e-32f3-69e3">
-              <characteristics>
-                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
-                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">1</characteristic>
-                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
-              </characteristics>
-            </profile>
             <profile name="Rallying Charge" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="a01a-d29d-3fdb-e57a">
               <characteristics>
                 <characteristic name="Description" typeId="94fb-5af3-adea-b298">If this unit has made a charge this turn the melee attacks made by this unit have +1 to hit</characteristic>
               </characteristics>
             </profile>
-            <profile name="Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="80aa-98d1-6e71-9577">
-              <characteristics>
-                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
-                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">1</characteristic>
-                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
-              </characteristics>
-            </profile>
           </profiles>
+          <infoLinks>
+            <infoLink name="A-Autoblaster" id="06f3-9ad5-25d6-4022" hidden="false" type="profile" targetId="cf77-2166-a618-6bc2"/>
+            <infoLink name="A-Steelforge Axe" id="0893-ea31-a272-6cf3" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+            <infoLink name="A-Steelforge Axe" id="851a-8bb6-c762-6880" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+          </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Steel Warrior" hidden="false" id="d3f6-8bf2-3f94-3de7">
+        <selectionEntry type="model" import="true" name="Steel Warrior" hidden="false" id="d3f6-8bf2-3f94-3de7">
           <profiles>
             <profile name="Steel Warrior" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="7ba5-a4c0-c8f8-182d">
               <characteristics>
@@ -120,25 +82,6 @@
                 <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">1</characteristic>
                 <characteristic name="Control" typeId="cead-e6cb-357f-f63d">1</characteristic>
                 <characteristic name="Organization" typeId="dc65-6857-527b-f20d">2</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Autoblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="0bf4-55f9-76b6-701e">
-              <characteristics>
-                <characteristic name="Range" typeId="865a-2a77-c897-85fd">5</characteristic>
-                <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">3</characteristic>
-                <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">2</characteristic>
-                <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
-                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="047d-3fd2-046a-723c">
-              <characteristics>
-                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
-                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">1</characteristic>
-                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -160,6 +103,10 @@
               </repeats>
             </modifier>
           </modifiers>
+          <infoLinks>
+            <infoLink name="A-Autoblaster" id="9f25-5db7-159a-f90d" hidden="false" type="profile" targetId="cf77-2166-a618-6bc2"/>
+            <infoLink name="Steelforge Axe" id="f52b-0a57-5760-907d" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -206,6 +153,63 @@
         <categoryLink targetId="b6a7-11da-522a-6836" id="3f5b-8b1a-79a0-206a" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="d0db-55c5-34e0-e88d" primary="false" name="Disciples of the Forge"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bloodsteel Beserkers" hidden="false" id="9dc8-950b-23d5-81f3">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="5d79-c40c-feb5-db1b-min"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="5d79-c40c-feb5-db1b-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Bloodsteel Beserkers" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="8328-043d-8bce-fb4b">
+              <characteristics>
+                <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Armor" typeId="0983-b6e2-8552-397d">3</characteristic>
+                <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+                <characteristic name="Control" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="Organization" typeId="dc65-6857-527b-f20d">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Bloodsteel Battleaxe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="2b9f-b025-3740-15b7">
+              <characteristics>
+                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">5</characteristic>
+                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">6</characteristic>
+                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+              </characteristics>
+            </profile>
+            <profile name="Bloodsteel Battleaxe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="a75a-e972-c7cb-edef">
+              <characteristics>
+                <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">5</characteristic>
+                <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">6</characteristic>
+                <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Fearless Charge" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="d564-0a2e-3377-e88f">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">This unit has +1 to all charge and advance rolls</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Undying Rage" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="afc4-1c39-49d0-74cf">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">All models in this unit take this action and lose all blood tokens and restore that many destroyed models and regain all missing Hit Points. You must have atleast 1 blood token to use this action.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blood Pool" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="6ff8-8ef8-1332-1011">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">Each time this unit destroys an enemy unit it gains 1 blood token</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="76cf-a9a8-89c6-68c1" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Blastbarrel Squad" hidden="false" id="6e7f-fa0e-4e4e-d9ca">
       <costs>
@@ -215,19 +219,57 @@
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="43ea-9fd2-d44f-b54b" primary="true" name="Infantry"/>
         <categoryLink targetId="b6a7-11da-522a-6836" id="9a66-5a24-ed3f-a319" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="cd7e-037c-07a6-105a" primary="false" name="Steel Battleguard"/>
-        <categoryLink targetId="6f75-5838-fd71-c158" id="44e2-4a4c-1775-cd48" primary="false" name="Steel Artillery"/>
       </categoryLinks>
       <profiles>
-        <profile name="Blastbarrel Squad" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="8384-9691-3167-1d7f">
+        <profile name="Blastbarrel Artillery Rig" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="032b-848e-a211-10c5">
           <characteristics>
-            <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">3</characteristic>
-            <characteristic name="Armor" typeId="0983-b6e2-8552-397d">4</characteristic>
-            <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">2</characteristic>
-            <characteristic name="Control" typeId="cead-e6cb-357f-f63d">2</characteristic>
-            <characteristic name="Organization" typeId="dc65-6857-527b-f20d">23</characteristic>
+            <characteristic name="Range" typeId="865a-2a77-c897-85fd">20</characteristic>
+            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">4</characteristic>
+            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">4</characteristic>
+            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Blast] [Indirect Fire]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shelling Order" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="915b-d6b5-ea21-8f56">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">For each model alive in this unit add 2 to the attacks characteristics of the Blastbarrel Artillery Rig. When firing the Blastbarrel Artillery Rig all models in this unit use their shooting action to fire it.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heavy Artillery Rig" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="6ca4-d685-20af-9225">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">The Blastbarrel Artillery Rig may not be fired unless it is set up you may use the action of all Artillery Operators in this unit to set up the Rig reducing all the movement of all models in this unit to 1. You may pick up the artillery rig during the start of the movement phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Artillery Operators" hidden="false" id="a47c-5bb6-8b1f-d086" defaultAmount="3" page="Artillery Operators">
+          <profiles>
+            <profile name="Artillery Operator" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="7c81-38dc-3435-44d1">
+              <characteristics>
+                <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Armor" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="Control" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c18e-2e98-ac26-6d07-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c18e-2e98-ac26-6d07-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="A-Steelforge Axe" hidden="false" id="0b1c-22a8-9480-031d" type="profile" targetId="4586-83d5-cf61-04ea"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Blaster Pistol" id="c21f-d571-8060-7acc" hidden="false" type="profile" targetId="20ab-5c79-c2d7-a06c"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="32f2-2381-774f-ebff" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rocketsmith" hidden="false" id="3e86-cd9d-8bbb-e3c4">
       <costs>
@@ -247,8 +289,55 @@
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="dd2e-3648-8983-9ba5" primary="true" name="Infantry"/>
         <categoryLink targetId="b6a7-11da-522a-6836" id="227a-57a7-54e4-ad54" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="925e-cba0-b461-1494" primary="false" name="Steel Battleguard"/>
-        <categoryLink targetId="6f75-5838-fd71-c158" id="3ee6-cbe7-ef88-b951" primary="false" name="Steel Artillery"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Heavy Weapons Operators" hidden="false" id="3aea-ccf1-b571-cb98">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="83ff-7d89-952c-8924-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="83ff-7d89-952c-8924-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Heavy Weapons Operator" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="24c0-babe-7a5d-89ab">
+              <characteristics>
+                <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Armor" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="Control" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blaster Pistol" id="bcb4-3dc4-e83f-5c48" hidden="false" type="profile" targetId="20ab-5c79-c2d7-a06c"/>
+            <infoLink name="Steelforge Axe" id="8c3a-d48f-7a40-9d9d" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Boltfire Heavy Machine Gun" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="fbb3-cffb-5fdc-30b6">
+          <characteristics>
+            <characteristic name="Range" typeId="865a-2a77-c897-85fd">8</characteristic>
+            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">12</characteristic>
+            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">4</characteristic>
+            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Extra Attacks 1]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blistering Boltfire" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="a08a-6df6-39f3-46e9">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">After shooting with this unit select one enemy unit hit by the Boltfire Heavy Machine Gun they are suppressed until the start of your next turn having -1 to movement and -1 to hit on ranged attacks.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heavy Weapon Rig" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="c3c5-7311-22ef-f85e">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">The Boltfire Heavy Machine Gun may not be fired unless it is set up you may use the action of all Artillery Operators in this unit to set up the Gun reducing all the movement of all models in this unit to 1. You may pick up the machine gun during the start of the movement phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="400a-e3ad-b5e5-6d06" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Steel Meditech" hidden="false" id="b801-1eea-cbee-24e2">
       <categoryLinks>
@@ -318,6 +407,11 @@
             <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This unit may use their action to destroy a terrain feature. completes at the end of opponent&apos;s next turn</characteristic>
           </characteristics>
         </profile>
+        <profile name="Deadly Demise 1" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="60b6-6f7f-3112-2130">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this model dies roll a d6 on a 6 all units within 2 hex of this model take 1 damage</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Attachment" id="a669-94c5-4b0b-8d86" hidden="false" defaultSelectionEntryId="20a2-a61d-0bff-3164">
@@ -371,7 +465,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="D-AT Transport Vehicle" hidden="false" id="c80b-e79c-ffc2-d725">
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="55"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="65"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="4b0f-b2e5-3ef7-bb59" primary="false" name="Infantry"/>
@@ -379,16 +473,96 @@
         <categoryLink targetId="8f61-5861-c77c-bca9" id="877d-3f18-80f3-2aa9" primary="false" name="Minekin"/>
         <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="ae40-d901-79f8-3fc6" primary="true" name="Vehicle"/>
       </categoryLinks>
+      <profiles>
+        <profile name="D-AT" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="9246-2658-8d83-b361">
+          <characteristics>
+            <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">6</characteristic>
+            <characteristic name="Armor" typeId="0983-b6e2-8552-397d">6</characteristic>
+            <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">8</characteristic>
+            <characteristic name="Control" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="Organization" typeId="dc65-6857-527b-f20d">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="D-AT Transport Vehicle" typeId="b066-f9a8-93ac-c13a" typeName="Transport" hidden="false" id="4acf-a7f3-22d9-80ad">
+          <characteristics>
+            <characteristic name="Capacity" typeId="460f-a7a0-fbc9-d717">The D-AT can fit 10 Steel Heart Infantry models within any models with the Disciples of the Forge keyword take up 2 spots instead</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="D-AT Plating" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="2ddc-7db0-766c-0046">
+          <characteristics>
+            <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">4</characteristic>
+            <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+            <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">4</characteristic>
+            <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+        <profile name="Fire Support" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="8a8d-0d4d-3448-6e16">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">After shooting with this unit select one enemy unit hit by the deepcore vehicle gun units that disembarked from this transport this turn may reroll hits rolls of 1 made against them until the end of turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deadly Demise 1" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="3043-3e14-fd54-edec">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this model dies roll a d6 on a 6 all units within 2 hex of this model take 1 damage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deepcore Vehicle Gun" id="76f3-84bb-ca90-9715" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1b7d-64a3-49be-b3d8" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="D-TRC Mining Vehicle" hidden="false" id="9a29-abbf-8d55-a845">
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="75"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="85"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="6122-c6bc-3341-07a2" primary="true" name="Vehicle"/>
         <categoryLink targetId="b6a7-11da-522a-6836" id="602b-0155-5d59-493e" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="8f61-5861-c77c-bca9" id="c2ef-2120-4867-cd6d" primary="false" name="Minekin"/>
       </categoryLinks>
+      <profiles>
+        <profile name="D-TRC" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="cef5-b5e7-6034-5710">
+          <characteristics>
+            <characteristic name="Movement" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Armor" typeId="0983-b6e2-8552-397d">8</characteristic>
+            <characteristic name="Hit Points" typeId="3bd8-164f-92b5-6b50">10</characteristic>
+            <characteristic name="Control" typeId="cead-e6cb-357f-f63d">3</characteristic>
+            <characteristic name="Organization" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+        <profile name="D-TRC Heavy Drill" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="6001-e876-b202-d866">
+          <characteristics>
+            <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">8</characteristic>
+            <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">8</characteristic>
+            <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Extra Attacks 1]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deadly Demise D3" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="0056-d55f-af6d-c61e">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this model dies roll a d6 on a 6 all units within 2 hex of this model take D3 damage</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Damaged (1-3)" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="b88a-a79a-b4e1-3499">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this model has 1-3 Hit Points remaining it has -1 to hit</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Thundering Charge" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="d2c0-c572-6402-c8c3">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">After this model makes a successful charge it roll 1 d6 for each Hit Point this model has remaining adding one to the result if the charge was made against a vehicle or beast for each 6+ deal 1 damage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deepcore Vehicle Gun" id="6fa6-4d19-2daf-19b6" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
+        <infoLink name="Deepcore Vehicle Gun" id="6ed0-93e3-a18c-5da6" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="DV-MCH Frontline" hidden="false" id="a9cf-3e5d-74e0-b5bb">
       <costs>
@@ -415,11 +589,65 @@
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="ffa3-b853-ddd8-bed2" primary="false" name="Disciples of the Forge"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="A-Autoblaster" hidden="false" id="5789-8ed7-ba8d-1d49">
+      <profiles>
+        <profile name="Autoblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="cf77-2166-a618-6bc2">
+          <characteristics>
+            <characteristic name="Range" typeId="865a-2a77-c897-85fd">5</characteristic>
+            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">3</characteristic>
+            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">3</characteristic>
+            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="A-Steelforge Axe" hidden="false" id="7f16-3a25-e645-7e32">
+      <profiles>
+        <profile name="Steelforge Axe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="4586-83d5-cf61-04ea">
+          <characteristics>
+            <characteristic name="Attacks" typeId="4063-bcf9-f604-85d2">2</characteristic>
+            <characteristic name="Hit Score" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="Armor Piercing" typeId="4984-c247-cad3-da1d">3</characteristic>
+            <characteristic name="Damage" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="A-Blaster Pistol" hidden="false" id="084f-7a48-52e6-4192">
+      <profiles>
+        <profile name="Blaster Pistol" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="20ab-5c79-c2d7-a06c">
+          <characteristics>
+            <characteristic name="Range" typeId="865a-2a77-c897-85fd">4</characteristic>
+            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">3</characteristic>
+            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Pistol]</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="A-Deepcore" hidden="false" id="bd21-7b0f-6c55-6d0f">
+      <profiles>
+        <profile name="Deepcore Vehicle Gun" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="579e-f229-dbcd-d45d">
+          <characteristics>
+            <characteristic name="Range" typeId="865a-2a77-c897-85fd">6</characteristic>
+            <characteristic name="Attacks" typeId="f431-6fc1-7fb3-f314">4</characteristic>
+            <characteristic name="Hit Score" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="Armor Piercing" typeId="c45e-165d-8dbe-ca74">4</characteristic>
+            <characteristic name="Damage" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Steel Battleguard" id="4501-a2b4-8e44-d81f" hidden="false"/>
     <categoryEntry name="Minekin" id="8f61-5861-c77c-bca9" hidden="false"/>
-    <categoryEntry name="Steel Artillery" id="6f75-5838-fd71-c158" hidden="false"/>
     <categoryEntry name="Disciples of the Forge" id="ed0b-e183-e1d9-6a07" hidden="false"/>
   </categoryEntries>
   <entryLinks>
