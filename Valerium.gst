@@ -84,7 +84,7 @@
     </profileType>
   </profileTypes>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="61fa-30e2-a2ad-f016" defaultAmount="">
+    <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="61fa-30e2-a2ad-f016" defaultAmount="1">
       <categoryLinks>
         <categoryLink targetId="6c8d-d092-b350-6ff3" id="0a86-431f-0b7d-835b" primary="true" name="Configuration"/>
       </categoryLinks>
@@ -104,6 +104,8 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="98bd-301f-d4ba-03a5" includeChildSelections="true"/>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="4072-27dc-74b1-a053" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1168-b5ab-019f-4ddc-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1168-b5ab-019f-4ddc-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
