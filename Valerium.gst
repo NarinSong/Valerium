@@ -22,16 +22,6 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
-  <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="3e5c-5cab-0f3e-359e">
-      <entryLinks>
-        <entryLink import="true" name="Battle Size" hidden="false" id="ac29-63cc-e52a-6476" type="selectionEntry" targetId="61fa-30e2-a2ad-f016"/>
-      </entryLinks>
-      <categoryLinks>
-        <categoryLink targetId="6c8d-d092-b350-6ff3" id="0896-7333-b260-b3a3" primary="true" name="Configuration"/>
-      </categoryLinks>
-    </selectionEntry>
-  </selectionEntries>
   <costTypes>
     <costType name="Cost" id="3c11-724f-f23d-e3d4" defaultCostLimit="-1"/>
   </costTypes>
@@ -89,7 +79,7 @@
         <categoryLink targetId="6c8d-d092-b350-6ff3" id="0a86-431f-0b7d-835b" primary="true" name="Configuration"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="New Group" id="8d86-c4a1-56d5-d486" hidden="false">
+        <selectionEntryGroup name="Battle Size" id="8d86-c4a1-56d5-d486" hidden="false">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b74-2fc7-a530-05fd-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b74-2fc7-a530-05fd-max" includeChildSelections="false"/>
@@ -118,4 +108,7 @@
       <description>Weapons with [Precision] allow the user choose how to allocate damage of attacks if they succeed</description>
     </rule>
   </sharedRules>
+  <entryLinks>
+    <entryLink import="true" name="Battle Size" hidden="false" id="d2d5-a810-d34f-50fb" type="selectionEntry" targetId="61fa-30e2-a2ad-f016"/>
+  </entryLinks>
 </gameSystem>
