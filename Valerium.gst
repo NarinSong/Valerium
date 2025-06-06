@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
@@ -25,13 +25,11 @@
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="3e5c-5cab-0f3e-359e">
       <entryLinks>
-        <entryLink import="true" name="Battle Size" hidden="false" id="ac29-63cc-e52a-6476" type="selectionEntry" targetId="61fa-30e2-a2ad-f016">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c547-4ed4-b84b-62c9-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c547-4ed4-b84b-62c9-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Battle Size" hidden="false" id="ac29-63cc-e52a-6476" type="selectionEntry" targetId="61fa-30e2-a2ad-f016"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="6c8d-d092-b350-6ff3" id="0896-7333-b260-b3a3" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <costTypes>
@@ -104,8 +102,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="0ff5-b88a-7e1d-d770-min" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0ff5-b88a-7e1d-d770-max" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98bd-301f-d4ba-03a5" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4072-27dc-74b1-a053" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
