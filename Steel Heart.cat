@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
@@ -132,7 +132,7 @@
             <profile name="Forgekin Slayer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="5857-9379-817c-7447">
               <characteristics>
                 <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
-                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">6</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">7</characteristic>
                 <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">4</characteristic>
                 <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
                 <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
@@ -140,7 +140,7 @@
             </profile>
             <profile name="Forge Chainblade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="febd-5599-cd4b-560c">
               <characteristics>
-                <characteristic name="A" typeId="4063-bcf9-f604-85d2">6</characteristic>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
                 <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                 <characteristic name="AP" typeId="4984-c247-cad3-da1d">5</characteristic>
                 <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
@@ -156,14 +156,14 @@
       <profiles>
         <profile name="Killing Edge" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="fc71-a092-f175-87dd">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this unit destroys an enemy unit all Forge Chainblades wielded by this unit gain +1 attacks</characteristic>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this unit destroys an enemy unit all Forge Chainblade wielded by this unit gain +1 attacks</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bloodsteel Beserkers" hidden="false" id="d7a1-0e0c-81c8-88c4">
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="110"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="120"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="732f-ff62-6b6a-c0e7" primary="true" name="Infantry"/>
@@ -188,7 +188,7 @@
             </profile>
             <profile name="Bloodsteel Battleaxe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="2b9f-b025-3740-15b7">
               <characteristics>
-                <characteristic name="A" typeId="4063-bcf9-f604-85d2">5</characteristic>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
                 <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                 <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
                 <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
@@ -197,7 +197,7 @@
             </profile>
             <profile name="Bloodsteel Battleaxe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="a75a-e972-c7cb-edef">
               <characteristics>
-                <characteristic name="A" typeId="4063-bcf9-f604-85d2">5</characteristic>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
                 <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                 <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
                 <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
@@ -260,7 +260,7 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="unit" import="true" name="Artillery Operators" hidden="false" id="a47c-5bb6-8b1f-d086" defaultAmount="3" page="Artillery Operators">
+        <selectionEntry type="model" import="true" name="Artillery Operators" hidden="false" id="a47c-5bb6-8b1f-d086" defaultAmount="3" page="Artillery Operators">
           <profiles>
             <profile name="Artillery Operator" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="7c81-38dc-3435-44d1">
               <characteristics>
@@ -276,11 +276,9 @@
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c18e-2e98-ac26-6d07-min" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c18e-2e98-ac26-6d07-max" includeChildSelections="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="A-Steelforge Axe" hidden="false" id="0b1c-22a8-9480-031d" type="profile" targetId="4586-83d5-cf61-04ea"/>
-          </entryLinks>
           <infoLinks>
             <infoLink name="Blaster Pistol" id="c21f-d571-8060-7acc" hidden="false" type="profile" targetId="20ab-5c79-c2d7-a06c"/>
+            <infoLink name="Steelforge Axe" id="6296-10d5-31ab-35ef" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -408,6 +406,44 @@
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
       </costs>
+      <profiles>
+        <profile name="Steel Meditech" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="2e2e-1c1f-606f-a3fa">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Power MediSaw" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="73eb-7df4-fb43-11b8">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">8</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="No Dwarf Left Behind" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="2d9a-1c87-ff4a-23a6">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">When next to a allied Infantry unit you may heal that unit for D3+1 HP this heal can bring back destroyed models</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Combat Stimulus" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="d394-0cbf-80e1-bf72">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">Twice per battle at the start of your turn you may target an allied unit adjacent to this one giving all models +1 movement and +1 to hit on all attacks until the end of turn</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lone Operative*" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="d2c9-73ab-f156-d714">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">If this unit is adjacent to an allied unit this unit may only be targeted by ranged attacks within 4 hex</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blaster Pistol" id="2d6a-db53-2c29-db14" hidden="false" type="profile" targetId="20ab-5c79-c2d7-a06c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Steel Marksman" hidden="false" id="2178-d6f9-a6bc-380a">
       <costs>
@@ -430,7 +466,7 @@
                     <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
                     <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">6</characteristic>
                     <characteristic name="D" typeId="7e81-d394-055d-8486">3</characteristic>
-                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Heavy] [Anti-Infantry 3+]</characteristic>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Heavy] [Anti-Infantry 3+] [Precision]</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Dread Shot" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="ed20-cf67-5774-de4a">
@@ -449,7 +485,7 @@
                   <characteristics>
                     <characteristic name="R" typeId="865a-2a77-c897-85fd">16</characteristic>
                     <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
-                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">2+</characteristic>
                     <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">8</characteristic>
                     <characteristic name="D" typeId="7e81-d394-055d-8486">D3+2</characteristic>
                     <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Anti-Vehicle 3+] [Anti-Beast 3+]</characteristic>
@@ -596,7 +632,7 @@
                         <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                         <characteristic name="AP" typeId="4984-c247-cad3-da1d">8</characteristic>
                         <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
-                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti-Vehicle 4+] [Anti-Monster 4+]</characteristic>
+                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti-Vehicle 4+] [Anti-Beast 4+]</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Unbreakable Wall" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="e987-ff46-27ea-cda5">
@@ -1022,6 +1058,46 @@
         <categoryLink targetId="b6a7-11da-522a-6836" id="c1d7-1dae-fb2d-cf3b" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="ffa3-b853-ddd8-bed2" primary="false" name="Disciples of the Forge"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Lord Nazeim" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="1255-b318-4377-b60b">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">8</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">10</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">5</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Guilded MCT Autogun" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="fb08-ea50-4103-fbb2">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">6</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">2+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">5</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Rapid Fire 4] [Extra Attacks 1]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Royal Authority" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="3a83-c929-16bf-62e8">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">6</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">8</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wrath of the Forge" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="f916-394f-43eb-a390">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of your turn choose an enemy unit that Lord Nazeim can see that unit is your Wrath target all Disciples of the Forge units may reroll wound rolls against the target.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mover of Mountains" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="0cd3-38b2-4626-0207">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of your turn any objective held by Lord Naziem becomes gilded giving any allied Infantry unit in range of it +1 Armor and +1 Control while on the objective</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="A-Autoblaster" hidden="false" id="5789-8ed7-ba8d-1d49">
       <profiles>
@@ -1108,7 +1184,7 @@
             </profile>
             <profile name="Grenade" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="7178-1ad5-d4cb-861a">
               <characteristics>
-                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Once per battle this model may use this action to throw a grenade targeting 1 tile rolling a d6 for each unit within 2 tiles of the target tile on a 3+ deal D3 to that unit</characteristic>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Once per battle this model may use this action to throw a grenade up to 4 tiles targeting 1 tile rolling a d6 for each unit within 2 tiles of the target tile on a 3+ deal D3 to that unit</characteristic>
               </characteristics>
             </profile>
             <profile name="Plant Explosive" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="ef20-68b7-e975-9421">
@@ -1311,7 +1387,7 @@ the barricade has 6 AR and 3 HP</characteristic>
             </profile>
             <profile name="Grenade" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="a835-20a5-3671-a665">
               <characteristics>
-                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Once per battle this model may use this action to throw a grenade targeting 1 tile rolling a d6 for each unit within 2 tiles of the target tile on a 3+ deal D3 to that unit</characteristic>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Once per battle this model may use this action to throw a grenade up to 4 tiles targeting 1 tile rolling a d6 for each unit within 2 tiles of the target tile on a 3+ deal D3 to that unit</characteristic>
               </characteristics>
             </profile>
           </profiles>
