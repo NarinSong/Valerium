@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
@@ -89,23 +89,21 @@
         <categoryLink targetId="6c8d-d092-b350-6ff3" id="0a86-431f-0b7d-835b" primary="true" name="Configuration"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Size" id="ff7f-690c-0983-6921" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Skirmish (1000 cost)" hidden="false" id="e62d-b6c6-3806-5fbe" sortIndex="1"/>
-            <selectionEntry type="upgrade" import="true" name="Warzone (4000 cost)" hidden="false" id="e484-7ff7-4c3e-4a79" sortIndex="3"/>
-            <selectionEntry type="upgrade" import="true" name="Battle (2000 cost)" hidden="false" id="88bc-11c1-00f6-07f3" sortIndex="2"/>
-          </selectionEntries>
+        <selectionEntryGroup name="New Group" id="8d86-c4a1-56d5-d486" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3ec-7ab4-96af-dc65-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ec-7ab4-96af-dc65-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b74-2fc7-a530-05fd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b74-2fc7-a530-05fd-max" includeChildSelections="false"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skirmish (1000 cost)" hidden="false" id="5ad4-1203-eb48-6e47" sortIndex="1"/>
+            <selectionEntry type="upgrade" import="true" name="Onslaught (3000 cost)" hidden="false" id="da38-22db-729a-eed8" sortIndex="3"/>
+            <selectionEntry type="upgrade" import="true" name="Battle (2000 cost)" hidden="false" id="1c1f-b466-5007-808a" sortIndex="2"/>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="98bd-301f-d4ba-03a5" includeChildSelections="true"/>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="4072-27dc-74b1-a053" includeChildSelections="true"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1168-b5ab-019f-4ddc-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1168-b5ab-019f-4ddc-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
