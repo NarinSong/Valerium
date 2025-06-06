@@ -444,6 +444,9 @@
       <infoLinks>
         <infoLink name="Blaster Pistol" id="2d6a-db53-2c29-db14" hidden="false" type="profile" targetId="20ab-5c79-c2d7-a06c"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="70b9-9357-7454-82d6" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Steel Marksman" hidden="false" id="2178-d6f9-a6bc-380a">
       <costs>
@@ -1098,6 +1101,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ddfa-140c-8a15-48cb" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="A-Autoblaster" hidden="false" id="5789-8ed7-ba8d-1d49">
       <profiles>
