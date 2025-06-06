@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
@@ -496,7 +496,7 @@
                 </profile>
                 <profile name="Take it Down" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="88f8-7ab3-e5fb-7351">
                   <characteristics>
-                    <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+                    <characteristic name="Description" typeId="94fb-5af3-adea-b298">Any friendly units attacking a unit damaged by the Desolator Rifle this turn have +1 to wound against the target</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -902,6 +902,16 @@
             <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
           </characteristics>
         </profile>
+        <profile name="Damaged (4)" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="4a7d-9e0c-e776-e69c">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this model has 1-4 Hit Points remaining it has -1 to hit</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deadly Demise D3+1" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="78a7-36da-8763-6a95">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this model dies roll a d6 on a 6 all units within 2 hex of this model take D3+1 damage</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Selection" id="606a-9e08-beb4-921a" hidden="false" defaultSelectionEntryId="47e0-5a3d-a19e-77f1">
@@ -1046,6 +1056,16 @@
             <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Torrent]</characteristic>
           </characteristics>
         </profile>
+        <profile name="Damaged (6)" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="e6be-45d0-e7c7-2568">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this model has 1-6 Hit Points remaining it has -1 to hit</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Deadly Demise D6+1" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="ba37-2b24-d545-4d48">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this model dies roll a d6 on a 6 all units within 2 hex of this model take D6+1 damage</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Deepcore Vehicle Gun" id="c184-ce92-de56-857b" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
@@ -1097,7 +1117,7 @@
         </profile>
         <profile name="Mover of Mountains" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="0cd3-38b2-4626-0207">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of your turn any objective held by Lord Naziem becomes gilded giving any allied Infantry unit in range of it +1 Armor and +1 Control while on the objective</characteristic>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of your turn any objective held by Lord Nazeim becomes gilded giving any allied Infantry unit in range of it +1 Armor and +1 Control while on the objective</characteristic>
           </characteristics>
         </profile>
       </profiles>

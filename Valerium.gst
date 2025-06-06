@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
@@ -8,6 +8,7 @@
     <categoryEntry name="Champion" id="0e9f-f19d-fdfa-621a" hidden="false"/>
     <categoryEntry name="Faction: Steel Heart" id="b6a7-11da-522a-6836" hidden="false"/>
     <categoryEntry name="Faction: Infernal Legion" id="92d7-3555-3aad-3720" hidden="false"/>
+    <categoryEntry name="Configuration" id="6c8d-d092-b350-6ff3" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Battle Force" hidden="false" id="7887-592a-fbaf-3b5d">
@@ -17,6 +18,7 @@
         <categoryLink name="Cavalry" hidden="false" id="f2f2-d035-1bdc-0cd5" targetId="fd19-c051-4156-06c0"/>
         <categoryLink name="Vehicle" hidden="false" id="10c0-8e67-cd2b-837e" targetId="2b48-9f4d-3fc4-acb0"/>
         <categoryLink name="Beast" hidden="false" id="82c1-5c91-5a69-b42b" targetId="1c5c-47db-ab07-ba35"/>
+        <categoryLink name="Configuration" hidden="false" id="7020-ef5b-3d57-7d2f" targetId="6c8d-d092-b350-6ff3" type="categoryEntry"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -84,7 +86,24 @@
     </profileType>
   </profileTypes>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="61fa-30e2-a2ad-f016"/>
+    <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="61fa-30e2-a2ad-f016" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink targetId="6c8d-d092-b350-6ff3" id="0a86-431f-0b7d-835b" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Battle Size" id="ff7f-690c-0983-6921" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Skirmish (1000 cost)" hidden="false" id="e62d-b6c6-3806-5fbe" sortIndex="1"/>
+            <selectionEntry type="upgrade" import="true" name="Warzone (4000 cost)" hidden="false" id="e484-7ff7-4c3e-4a79" sortIndex="3"/>
+            <selectionEntry type="upgrade" import="true" name="Battle (2000 cost)" hidden="false" id="88bc-11c1-00f6-07f3" sortIndex="2"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="0ff5-b88a-7e1d-d770-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0ff5-b88a-7e1d-d770-max" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Assault" id="a415-abc8-4a0b-ee46" hidden="false">
