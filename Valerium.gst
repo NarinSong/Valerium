@@ -86,7 +86,7 @@
     </profileType>
   </profileTypes>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="61fa-30e2-a2ad-f016" defaultAmount="1">
+    <selectionEntry type="upgrade" import="true" name="Battle Size" hidden="false" id="61fa-30e2-a2ad-f016" defaultAmount="">
       <categoryLinks>
         <categoryLink targetId="6c8d-d092-b350-6ff3" id="0a86-431f-0b7d-835b" primary="true" name="Configuration"/>
       </categoryLinks>
@@ -97,6 +97,10 @@
             <selectionEntry type="upgrade" import="true" name="Warzone (4000 cost)" hidden="false" id="e484-7ff7-4c3e-4a79" sortIndex="3"/>
             <selectionEntry type="upgrade" import="true" name="Battle (2000 cost)" hidden="false" id="88bc-11c1-00f6-07f3" sortIndex="2"/>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3ec-7ab4-96af-dc65-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ec-7ab4-96af-dc65-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
