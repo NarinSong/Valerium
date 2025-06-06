@@ -13,12 +13,12 @@
   <forceEntries>
     <forceEntry name="Battle Force" hidden="false" id="7887-592a-fbaf-3b5d">
       <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="7020-ef5b-3d57-7d2f" targetId="6c8d-d092-b350-6ff3" type="categoryEntry"/>
         <categoryLink name="Champion" hidden="false" id="1cb6-d122-0bb8-bc16" targetId="0e9f-f19d-fdfa-621a"/>
         <categoryLink name="Infantry" hidden="false" id="bca2-cf37-d4af-36db" targetId="9d75-3e1c-4fee-6132"/>
         <categoryLink name="Cavalry" hidden="false" id="f2f2-d035-1bdc-0cd5" targetId="fd19-c051-4156-06c0"/>
-        <categoryLink name="Vehicle" hidden="false" id="10c0-8e67-cd2b-837e" targetId="2b48-9f4d-3fc4-acb0"/>
         <categoryLink name="Beast" hidden="false" id="82c1-5c91-5a69-b42b" targetId="1c5c-47db-ab07-ba35"/>
-        <categoryLink name="Configuration" hidden="false" id="7020-ef5b-3d57-7d2f" targetId="6c8d-d092-b350-6ff3" type="categoryEntry"/>
+        <categoryLink name="Vehicle" hidden="false" id="10c0-8e67-cd2b-837e" targetId="2b48-9f4d-3fc4-acb0"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -102,8 +102,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98bd-301f-d4ba-03a5" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4072-27dc-74b1-a053" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="98bd-301f-d4ba-03a5" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="4072-27dc-74b1-a053" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
