@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
@@ -81,7 +81,7 @@
                 <characteristic name="Ar" typeId="0983-b6e2-8552-397d">4</characteristic>
                 <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">1</characteristic>
                 <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
-                <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -113,36 +113,53 @@
         <constraint type="max" value="5" field="selections" scope="force" shared="true" id="58c7-5f90-5a82-55ad" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Steel Assault" hidden="false" id="4463-96b5-7231-fa9a">
-      <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="9d75-3e1c-4fee-6132" id="07ff-4681-32a1-04a4" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="1ef2-ed1a-443f-82f7" primary="false" name="Faction: Steel Heart"/>
-        <categoryLink targetId="4501-a2b4-8e44-d81f" id="91fb-d534-e20a-10c2" primary="false" name="Steel Battleguard"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="D.H Engineering Corps" hidden="false" id="20f2-052c-f0ec-bce8">
-      <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="9d75-3e1c-4fee-6132" id="768e-96e0-56f9-d87e" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="ed91-eb6c-21a2-1e47" primary="false" name="Faction: Steel Heart"/>
-        <categoryLink targetId="4501-a2b4-8e44-d81f" id="1ddb-fc8f-064f-97d6" primary="false" name="Steel Battleguard"/>
-        <categoryLink targetId="8f61-5861-c77c-bca9" id="ca58-0b26-23df-76f6" primary="false" name="Minekin"/>
-      </categoryLinks>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Forgekin Slayers" hidden="false" id="f10a-d3c0-5ef9-71af">
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="110"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="145"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="e1b9-26b3-7825-1276" primary="true" name="Infantry"/>
         <categoryLink targetId="b6a7-11da-522a-6836" id="7ef8-c769-f1ed-85a9" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="983a-bf5a-4ce5-331f" primary="false" name="Disciples of the Forge"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Forgekin Slayers" hidden="false" id="8a71-2dd2-0905-1931">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="45d5-94b6-b0f8-7fe2-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="45d5-94b6-b0f8-7fe2-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Forgekin Slayer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="5857-9379-817c-7447">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">6</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">4</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Forge Chainblade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="febd-5599-cd4b-560c">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">6</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">5</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti Infantry 3+]</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9ef3-5085-77fb-9ac6" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Killing Edge" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="fc71-a092-f175-87dd">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this unit destroys an enemy unit all Forge Chainblades wielded by this unit gain +1 attacks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bloodsteel Beserkers" hidden="false" id="d7a1-0e0c-81c8-88c4">
       <costs>
@@ -175,7 +192,7 @@
                 <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                 <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
                 <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Bloodsteel Battleaxe" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="a75a-e972-c7cb-edef">
@@ -184,7 +201,7 @@
                 <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                 <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
                 <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -243,7 +260,7 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Artillery Operators" hidden="false" id="a47c-5bb6-8b1f-d086" defaultAmount="3" page="Artillery Operators">
+        <selectionEntry type="unit" import="true" name="Artillery Operators" hidden="false" id="a47c-5bb6-8b1f-d086" defaultAmount="3" page="Artillery Operators">
           <profiles>
             <profile name="Artillery Operator" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="7c81-38dc-3435-44d1">
               <characteristics>
@@ -280,6 +297,49 @@
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="b4f4-4d32-5ca3-034e" primary="true" name="Infantry"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="0bf9-89bb-f6ca-c11d" primary="false" name="Steel Battleguard"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Rocketsmith" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="2b5a-59aa-e3e9-8f6a">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">2</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Destroyer Rocket System" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="47cd-1e51-fef7-a243">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">10</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">6</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">5</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">D3+1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Anti-Vehicle 4+] [Anti-Beast 4+]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Zillon Spear" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="fe3d-e3e5-6605-929a">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blasting Firepower" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="2a26-eea3-9a2d-728e">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When targeting vehicles or beast attacks from the Destroyer Rocket System always deal maximum damage</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lone Operative" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="4d13-972f-c055-fdd8">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">Ranged attacks from outside 5 hex cannot target this model</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="0d37-700b-9434-d96e" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Boltfire Squad" hidden="false" id="4103-4acf-3b00-05a3">
       <costs>
@@ -358,10 +418,93 @@
         <categoryLink targetId="b6a7-11da-522a-6836" id="60e0-03fc-6598-8338" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="8d27-b554-9979-fa29" primary="false" name="Steel Battleguard"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Selection" id="139a-281f-3a98-30ec" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rostilla Rifle" hidden="false" id="e1ac-8a31-3413-2100" sortIndex="1">
+              <profiles>
+                <profile name="Rostilla Rifle" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="24da-9035-df72-6340">
+                  <characteristics>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">16</characteristic>
+                    <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                    <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">6</characteristic>
+                    <characteristic name="D" typeId="7e81-d394-055d-8486">3</characteristic>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Heavy] [Anti-Infantry 3+]</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dread Shot" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="ed20-cf67-5774-de4a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="94fb-5af3-adea-b298">If an attack from this model destroys an enemy model the targeted unit must take a organization check</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Desolator Rifle" hidden="false" id="3a31-5dc0-c805-7b9b" sortIndex="2">
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Desolator Rifle" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="908c-2930-42d8-2b86">
+                  <characteristics>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">16</characteristic>
+                    <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                    <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">8</characteristic>
+                    <characteristic name="D" typeId="7e81-d394-055d-8486">D3+2</characteristic>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Anti-Vehicle 3+] [Anti-Beast 3+]</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Take it Down" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="88f8-7ab3-e5fb-7351">
+                  <characteristics>
+                    <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1801-11c1-be7d-3e1d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1801-11c1-be7d-3e1d-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ff9a-00df-8946-2587" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Lone Operative" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="97f6-ab88-6e5f-b5b0">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">Ranged attacks from outside 5 hex cannot target this model</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Steel Marksman" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="ec6f-c64e-cd7a-8569">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Impact Axe" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="33f0-ba7d-05cc-c810">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">5</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">2+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">6</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">2</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[One Shot]</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Steelforge Axe" id="aaa2-de83-a57c-eddd" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Forgeguard Shieldline" hidden="false" id="6c16-9729-35c9-6e51">
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="100"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="150"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="94f2-d52b-c054-9271" primary="true" name="Infantry"/>
@@ -369,6 +512,118 @@
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="170f-1ca9-39c5-05dc" primary="false" name="Disciples of the Forge"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="bbaa-f36c-b827-5258" primary="false" name="Steel Battleguard"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Composition" id="54f1-558f-f9bb-235f" hidden="false" defaultSelectionEntryId="8b8d-6a64-da12-4175">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fca0-eb21-50b6-af37-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fca0-eb21-50b6-af37-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="3 Forgeguard" hidden="false" id="8b8d-6a64-da12-4175">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Forgeguard" hidden="false" id="2145-cf9b-28f4-8e92" defaultAmount="3">
+                  <profiles>
+                    <profile name="Forgeguard" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="260d-a969-780d-2a28">
+                      <characteristics>
+                        <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                        <characteristic name="Ar" typeId="0983-b6e2-8552-397d">7</characteristic>
+                        <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">4</characteristic>
+                        <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+                        <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Vulkan Spear" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="e418-0ee0-c86a-e21a">
+                      <characteristics>
+                        <characteristic name="A" typeId="4063-bcf9-f604-85d2">8</characteristic>
+                        <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                        <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+                        <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti-Vehicle 4+] [Anti-Beast 4+]</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Vulkanite Blaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="4d57-27f5-e8c0-32f7">
+                      <characteristics>
+                        <characteristic name="R" typeId="865a-2a77-c897-85fd">4</characteristic>
+                        <characteristic name="A" typeId="f431-6fc1-7fb3-f314">2</characteristic>
+                        <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                        <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">8</characteristic>
+                        <characteristic name="D" typeId="7e81-d394-055d-8486">D3+1</characteristic>
+                        <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Concentration 2]</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="42e9-ac54-5d85-77b7-min" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="42e9-ac54-5d85-77b7-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="4 Forgeguard and Forgeguard Veteran" hidden="false" id="23bb-f0c0-9fef-8f53">
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Forgeguard" hidden="false" id="26d8-f509-2e6a-ab30">
+                  <constraints>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2040-aa57-ed25-966b-min" includeChildSelections="false"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2040-aa57-ed25-966b-max" includeChildSelections="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Vulkan Spear" id="8190-76dd-de3e-4c1c" hidden="false" type="profile" targetId="e418-0ee0-c86a-e21a"/>
+                    <infoLink name="Vulkanite Blaster" id="10a0-4c6e-ea38-acc5" hidden="false" type="profile" targetId="4d57-27f5-e8c0-32f7"/>
+                    <infoLink name="Forgeguard" id="170d-3db8-ae50-f8d8" hidden="false" type="profile" targetId="260d-a969-780d-2a28"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Forgeguard Veteran" hidden="false" id="b9fb-7968-de36-ce10">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c63a-56cd-f899-3570-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c63a-56cd-f899-3570-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Forgeguard Veteran" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="f9b6-64a4-8712-e027">
+                      <characteristics>
+                        <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                        <characteristic name="Ar" typeId="0983-b6e2-8552-397d">7</characteristic>
+                        <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">6</characteristic>
+                        <characteristic name="C" typeId="cead-e6cb-357f-f63d">4</characteristic>
+                        <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Forgeblessed Vulkan Spear" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="16aa-5853-fcf8-4645">
+                      <characteristics>
+                        <characteristic name="A" typeId="4063-bcf9-f604-85d2">10</characteristic>
+                        <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                        <characteristic name="AP" typeId="4984-c247-cad3-da1d">8</characteristic>
+                        <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti-Vehicle 4+] [Anti-Monster 4+]</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Unbreakable Wall" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="e987-ff46-27ea-cda5">
+                      <characteristics>
+                        <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of the turn this unit recovers D3 HP</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Vulkanite Blaster" id="c673-cb99-c6ca-8394" hidden="false" type="profile" targetId="4d57-27f5-e8c0-32f7"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ae72-922f-5659-b06a" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Defend the Great Forge" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="acb6-dc25-c4dc-e7f4">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">All models in this unit must use this at the same time putting up their shields blocking line of sight and reducing the movement of all models in this unit by 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="DCM Mining Mech" hidden="false" id="c50b-cd48-272d-a44c">
       <costs>
@@ -394,7 +649,7 @@
         </profile>
         <profile name="Mining Laser" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="272a-bacd-b8ad-5b12">
           <characteristics>
-            <characteristic name="R" typeId="865a-2a77-c897-85fd">4</characteristic>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
             <characteristic name="A" typeId="f431-6fc1-7fb3-f314">4</characteristic>
             <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
             <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">3</characteristic>
@@ -424,7 +679,7 @@
                     <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                     <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
                     <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-                    <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                    <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -436,12 +691,12 @@
               <profiles>
                 <profile name="Vorkite Rockblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="fcf9-6b98-8de6-2f95">
                   <characteristics>
-                    <characteristic name="R" typeId="865a-2a77-c897-85fd">6</characteristic>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
                     <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
                     <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
                     <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">7</characteristic>
                     <characteristic name="D" typeId="7e81-d394-055d-8486">D3+2</characteristic>
-                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Power Fist" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="f90d-2234-c4f5-7940">
@@ -450,7 +705,7 @@
                     <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
                     <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
                     <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
-                    <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                    <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -494,7 +749,7 @@
             <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
             <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
             <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
           </characteristics>
         </profile>
         <profile name="Fire Support" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="8a8d-0d4d-3448-6e16">
@@ -531,7 +786,7 @@
             <characteristic name="Ar" typeId="0983-b6e2-8552-397d">8</characteristic>
             <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">10</characteristic>
             <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
-            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
           </characteristics>
         </profile>
         <profile name="D-TRC Heavy Drill" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="6001-e876-b202-d866">
@@ -563,6 +818,9 @@
         <infoLink name="Deepcore Vehicle Gun" id="6fa6-4d19-2daf-19b6" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
         <infoLink name="Deepcore Vehicle Gun" id="6ed0-93e3-a18c-5da6" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e14d-a259-25bd-6713" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="DV-MCH Frontline" hidden="false" id="a9cf-3e5d-74e0-b5bb">
       <costs>
@@ -572,6 +830,84 @@
         <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="b471-2008-6e03-3d10" primary="true" name="Vehicle"/>
         <categoryLink targetId="b6a7-11da-522a-6836" id="7811-cc88-f2e2-6f97" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Deepcore Vehicle Gun" id="ace3-fc9a-3681-68d0" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
+        <infoLink name="Deepcore Vehicle Gun" id="ada8-eca9-aeca-f84c" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Destructor Lance" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="4cb6-8b9e-0443-636a">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">10</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">D6</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[One Shot]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="MCH Plating" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="3572-c822-42d8-6e45">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="DV-MCH" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="7fb6-e4d0-4e04-4b9b">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">5</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">10</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">12</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">4</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Selection" id="606a-9e08-beb4-921a" hidden="false" defaultSelectionEntryId="47e0-5a3d-a19e-77f1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="MCH Magma Cannon" hidden="false" id="47e0-5a3d-a19e-77f1" sortIndex="1">
+              <profiles>
+                <profile name="MCH Magma Cannon" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="e00a-af1b-7540-fada">
+                  <characteristics>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">12</characteristic>
+                    <characteristic name="A" typeId="f431-6fc1-7fb3-f314">D3+3</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                    <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">8</characteristic>
+                    <characteristic name="D" typeId="7e81-d394-055d-8486">D3</characteristic>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Blast]</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="D.S. Hammerforge Laser " hidden="false" id="71dc-838a-b4ba-8099" sortIndex="2">
+              <profiles>
+                <profile name="D.S. Hammerforge Laser " typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="b339-2723-af2c-8c3f">
+                  <characteristics>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">10</characteristic>
+                    <characteristic name="A" typeId="f431-6fc1-7fb3-f314">8</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                    <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">6</characteristic>
+                    <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Concentration 4] [Rapid Fire 6] [Extra Attacks 1]</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1eeb-92d4-cb68-3f39-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eeb-92d4-cb68-3f39-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="271f-869b-a225-3b9d" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="DV-TKR2 Guardian" hidden="false" id="794e-1f9b-083d-b18d">
       <costs>
@@ -581,6 +917,104 @@
         <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="c191-0a37-b4b5-b9d1" primary="true" name="Vehicle"/>
         <categoryLink targetId="b6a7-11da-522a-6836" id="e5da-9597-b717-f520" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Selection" id="aef7-2cd9-7c32-9507" hidden="false" defaultSelectionEntryId="c020-a956-cb2c-47e1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa4c-5b43-c884-c7ae" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c11-5526-622b-75aa" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="TKR Heavy Cannon" hidden="false" id="c020-a956-cb2c-47e1" sortIndex="1">
+              <profiles>
+                <profile name="TKR Heavy Cannon" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="bf40-9157-9112-0329">
+                  <characteristics>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">12</characteristic>
+                    <characteristic name="A" typeId="f431-6fc1-7fb3-f314">D6+4</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                    <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">10</characteristic>
+                    <characteristic name="D" typeId="7e81-d394-055d-8486">3</characteristic>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Blast]</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hammerforge Laser + Airal Lance Array" hidden="false" id="ad7b-02b2-76ff-a880" sortIndex="2">
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Hammerforge Laser" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="ed1c-2d36-4d92-a45e">
+                  <characteristics>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">10</characteristic>
+                    <characteristic name="A" typeId="f431-6fc1-7fb3-f314">8</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                    <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">6</characteristic>
+                    <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Concentration 4] [Rapid Fire 6] [Extra Attacks 1]</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Arial Lance Array" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="08ab-6c4f-a58e-844e">
+                  <characteristics>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">16</characteristic>
+                    <characteristic name="A" typeId="f431-6fc1-7fb3-f314">6</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                    <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">5</characteristic>
+                    <characteristic name="D" typeId="7e81-d394-055d-8486">2</characteristic>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Anti-Fly 3+]</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Destructor Lance" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="533c-26bd-4394-e4b7">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">10</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">D6</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[One Shot]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="DV-TKR2 Guardian" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="80a5-fb6f-ec2b-875b">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">12</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">16</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">6</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="TKR Plating" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="6f13-5a08-ba3f-a650">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">6</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">8</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="TKR Immolator" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="815e-c8d8-3abb-f297">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">5</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">D6+3</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">N/A</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">6</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Torrent]</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deepcore Vehicle Gun" id="c184-ce92-de56-857b" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
+        <infoLink name="Deepcore Vehicle Gun" id="fd0a-1670-1385-f89e" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="deb7-9b01-51c1-fdb8" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lord Nazeim" hidden="false" id="5e3d-0f11-4a59-d233">
       <categoryLinks>
@@ -593,12 +1027,12 @@
       <profiles>
         <profile name="Autoblaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="cf77-2166-a618-6bc2">
           <characteristics>
-            <characteristic name="R" typeId="865a-2a77-c897-85fd">5</characteristic>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">6</characteristic>
             <characteristic name="A" typeId="f431-6fc1-7fb3-f314">3</characteristic>
             <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
             <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">3</characteristic>
             <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
-            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -611,7 +1045,7 @@
             <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
             <characteristic name="AP" typeId="4984-c247-cad3-da1d">3</characteristic>
             <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -634,12 +1068,308 @@
       <profiles>
         <profile name="Deepcore Vehicle Gun" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="579e-f229-dbcd-d45d">
           <characteristics>
-            <characteristic name="R" typeId="865a-2a77-c897-85fd">6</characteristic>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">10</characteristic>
             <characteristic name="A" typeId="f431-6fc1-7fb3-f314">4</characteristic>
             <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
             <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">4</characteristic>
             <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
-            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="D.H Engineering Corps" hidden="false" id="d970-bbd2-310e-4281">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="1957-7346-b125-692e" primary="true" name="Infantry"/>
+        <categoryLink targetId="b6a7-11da-522a-6836" id="c0e3-8118-df6c-e76c" primary="false" name="Faction: Steel Heart"/>
+        <categoryLink targetId="4501-a2b4-8e44-d81f" id="0ed0-ba52-fb81-4913" primary="false" name="Steel Battleguard"/>
+        <categoryLink targetId="8f61-5861-c77c-bca9" id="135a-9940-d6d7-bc46" primary="false" name="Minekin"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Replace D.H Corps Defender with Demolitionist" hidden="false" id="bd55-80fa-5135-3296">
+          <costs>
+            <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3523-ceed-68de-6a07" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="D.H. Corps Demolitionist" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="fe3d-c62b-67f9-f3a0">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Grenade" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="7178-1ad5-d4cb-861a">
+              <characteristics>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Once per battle this model may use this action to throw a grenade targeting 1 tile rolling a d6 for each unit within 2 tiles of the target tile on a 3+ deal D3 to that unit</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Plant Explosive" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="ef20-68b7-e975-9421">
+              <characteristics>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may place an Explosive on an adjacent tile and detonate it on a later turn dealing D6+1 damage to ALL units within 3 tiles </characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Blaze of Glory" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="84b2-f807-ff96-f429">
+              <characteristics>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">While in melee range you may use this ability and destroy this model to deal D6+2 damage to this unit and D6 damage to the enemy unit</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Burst Fire Gun" id="a5cb-be36-e7fc-d140" hidden="false" type="profile" targetId="65d4-fed2-fb9c-276e"/>
+            <infoLink name="Corps Shovel" id="e04f-1d58-7d2c-6809" hidden="false" type="profile" targetId="d19a-8bd0-2a9f-a6c3"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Replace D.H Corps Defender with Engineer" hidden="false" id="302c-c6f5-40a3-31b2">
+          <costs>
+            <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="51b3-8103-2030-5c99"/>
+          </constraints>
+          <profiles>
+            <profile name="D.H. Corps Engineer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="2c10-af82-fe47-90ac">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="D.H. Flamer" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="6298-19e7-db2f-50cb">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">3</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">D6</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">N/A</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">3</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Torrent]</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sabotoge" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="c02e-0bca-96de-27fe">
+              <characteristics>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This unit may use their action to destroy a terrain feature. completes at the end of opponent&apos;s next turn</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Repair" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="d52a-85b0-a4ae-0d97">
+              <characteristics>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use their action to repair a vehicle model within 2 tiles for D6 HP</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Corps Shovel" id="94a6-4dc3-ef66-9acf" hidden="false" type="profile" targetId="d19a-8bd0-2a9f-a6c3"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="D.H. Corps Defender" hidden="false" id="6750-1324-9463-bfc4">
+          <profiles>
+            <profile name="D.H. Corps Defender" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="1010-ae75-e50e-8fbb">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Barricade" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="a493-3bae-de66-04e4">
+              <characteristics>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may place a barricade blocking enemy movement through that tile
+the barricade has 6 AR and 3 HP</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="7614-38ac-0695-f48f" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="5cf6-8f82-8b0e-0775" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="7614-38ac-0695-f48f">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d970-bbd2-310e-4281" childId="302c-c6f5-40a3-31b2" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="d970-bbd2-310e-4281" childId="bd55-80fa-5135-3296" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="5cf6-8f82-8b0e-0775">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d970-bbd2-310e-4281" childId="302c-c6f5-40a3-31b2" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="d970-bbd2-310e-4281" childId="bd55-80fa-5135-3296" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Corps Shovel" id="1b02-62e8-d9ba-b74f" hidden="false" type="profile" targetId="d19a-8bd0-2a9f-a6c3"/>
+            <infoLink name="Burst Fire Gun" id="1f0c-10f8-ddb1-d4d1" hidden="false" type="profile" targetId="65d4-fed2-fb9c-276e"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="12d7-1fb3-a547-5fe9" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Entrenchment" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="7bc6-fd29-738e-b8e0">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">After a turn of not moving enemy units targeting this unit with ranged attacks have -1 to hit and models in this unit have +1 armor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="A-Corps Shovel" hidden="false" id="c622-9d76-1981-aa18">
+      <profiles>
+        <profile name="Corps Shovel" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="d19a-8bd0-2a9f-a6c3">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">3</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="A-Burst Fire Gun" hidden="false" id="c828-974f-5f5d-74cc">
+      <profiles>
+        <profile name="Burst Fire Gun" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="65d4-fed2-fb9c-276e">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">2</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">4</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Rapid Fire 4] [Extra Attacks 1]</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Steel Assault" hidden="false" id="e3d2-4eb7-91c2-b334">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="fe8a-92a2-2385-30d4" primary="true" name="Infantry"/>
+        <categoryLink targetId="b6a7-11da-522a-6836" id="ffe4-2411-9ba2-ad86" primary="false" name="Faction: Steel Heart"/>
+        <categoryLink targetId="4501-a2b4-8e44-d81f" id="fa83-831c-1fe5-adfd" primary="false" name="Steel Battleguard"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Replace Steel Assault with Steel Officer" hidden="false" id="e91a-fe63-6482-0ca4">
+          <costs>
+            <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e66-61f2-bcf8-2a82" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Steel Officer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="f16e-483d-9985-7d2f">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Direct Orders" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="4c1d-c934-2ab3-c024">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">All models within this unit have +1 control</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Command" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="8d8a-95b8-6e07-c283">
+              <characteristics>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">You may use this targeting another allied unit within 3 tiles and give them +1 move and +1 control for the rest of the turn</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="A-Assault Blaster" id="0c69-7909-2679-45ed" hidden="false" type="profile" targetId="6888-be94-ad97-1062"/>
+            <infoLink name="Steelforge Axe" id="2b80-8bc3-bad0-2cb6" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Replace Steel Assault with Steel Specialist" hidden="false" id="bc0e-ff46-6e61-bd0f">
+          <costs>
+            <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a19-37e2-f59d-7ea2"/>
+          </constraints>
+          <profiles>
+            <profile name="Steel Assault Specialist" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="bac5-1da6-ebdd-44cc">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Grenade" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="a835-20a5-3671-a665">
+              <characteristics>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Once per battle this model may use this action to throw a grenade targeting 1 tile rolling a d6 for each unit within 2 tiles of the target tile on a 3+ deal D3 to that unit</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Burst Fire Gun" id="bf7d-976f-0406-ab55" hidden="false" type="profile" targetId="65d4-fed2-fb9c-276e"/>
+            <infoLink name="Steelforge Axe" id="da4b-4ab9-be8a-20c4" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Steel Assault" hidden="false" id="5017-d725-4511-f6d0">
+          <profiles>
+            <profile name="Steel Assault" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="9c52-99d7-0ff4-8eda">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">1</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b7fa-3a0a-82f8-5613" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="b2d2-7015-1e8f-2a83" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="b7fa-3a0a-82f8-5613">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="e3d2-4eb7-91c2-b334" childId="bc0e-ff46-6e61-bd0f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="e3d2-4eb7-91c2-b334" childId="e91a-fe63-6482-0ca4" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="b2d2-7015-1e8f-2a83">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="e3d2-4eb7-91c2-b334" childId="bc0e-ff46-6e61-bd0f" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="e3d2-4eb7-91c2-b334" childId="e91a-fe63-6482-0ca4" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="A-Assault Blaster" id="cc27-567f-d069-00b1" hidden="false" type="profile" targetId="6888-be94-ad97-1062"/>
+            <infoLink name="Steelforge Axe" id="7dcb-0f12-1585-ba3f" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="5" field="selections" scope="force" shared="true" id="2dd3-86d3-d011-c608" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="A-Assault Blaster" hidden="false" id="e27b-8c73-8db9-ace3">
+      <profiles>
+        <profile name="A-Assault Blaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="6888-be94-ad97-1062">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">5</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">3</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">3</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Assault]</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -656,7 +1386,7 @@
     <entryLink import="true" name="Boltfire Squad" hidden="false" id="ab96-880e-6147-46f9" type="selectionEntry" targetId="4103-4acf-3b00-05a3"/>
     <entryLink import="true" name="D-AT Transport Vehicle" hidden="false" id="1150-6e95-0cf7-6aa4" type="selectionEntry" targetId="c80b-e79c-ffc2-d725"/>
     <entryLink import="true" name="D-TRC Mining Vehicle" hidden="false" id="e7d7-2ded-f00f-9c8a" type="selectionEntry" targetId="9a29-abbf-8d55-a845"/>
-    <entryLink import="true" name="D.H Engineering Corps" hidden="false" id="d6c9-14e6-e978-545b" type="selectionEntry" targetId="20f2-052c-f0ec-bce8"/>
+    <entryLink import="true" name="D.H Engineering Corps" hidden="false" id="d6c9-14e6-e978-545b" type="selectionEntry" targetId="d970-bbd2-310e-4281"/>
     <entryLink import="true" name="DCM Mining Mech" hidden="false" id="a4d3-1a21-c6e0-006c" type="selectionEntry" targetId="c50b-cd48-272d-a44c"/>
     <entryLink import="true" name="DV-MCH Frontline" hidden="false" id="4f76-ed04-0017-16cf" type="selectionEntry" targetId="a9cf-3e5d-74e0-b5bb"/>
     <entryLink import="true" name="DV-TKR2 Guardian" hidden="false" id="0b23-9987-0972-3520" type="selectionEntry" targetId="794e-1f9b-083d-b18d"/>
@@ -664,7 +1394,7 @@
     <entryLink import="true" name="Forgekin Slayers" hidden="false" id="38bc-c7be-a0c7-029d" type="selectionEntry" targetId="f10a-d3c0-5ef9-71af"/>
     <entryLink import="true" name="Lord Nazeim" hidden="false" id="1e3a-da51-5fbb-bba3" type="selectionEntry" targetId="5e3d-0f11-4a59-d233"/>
     <entryLink import="true" name="Rocketsmith" hidden="false" id="9d1c-3c7e-a7f5-f782" type="selectionEntry" targetId="3e86-cd9d-8bbb-e3c4"/>
-    <entryLink import="true" name="Steel Assault" hidden="false" id="377a-64d0-d6b6-ec5e" type="selectionEntry" targetId="4463-96b5-7231-fa9a"/>
+    <entryLink import="true" name="Steel Assault" hidden="false" id="96f7-d56a-09c9-629b" type="selectionEntry" targetId="e3d2-4eb7-91c2-b334"/>
     <entryLink import="true" name="Steel Marksman" hidden="false" id="1ea7-2aa1-dec1-bb27" type="selectionEntry" targetId="2178-d6f9-a6bc-380a"/>
     <entryLink import="true" name="Steel Meditech" hidden="false" id="4803-3fda-252d-00a0" type="selectionEntry" targetId="b801-1eea-cbee-24e2"/>
     <entryLink import="true" name="Steel Warriors" hidden="false" id="c33c-f7a5-c231-f303" type="selectionEntry" targetId="b5b0-d8db-9ed6-a6d6"/>
