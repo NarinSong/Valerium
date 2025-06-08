@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="877f-ee23-3fe1-0bf4" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="1" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="877f-ee23-3fe1-0bf4" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="2" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
@@ -9,23 +9,35 @@
     <categoryEntry name="Shadow" id="fa11-5829-87e0-34eb" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Infernal Imps" hidden="false" id="d9d5-b97e-3987-0cb4">
+    <selectionEntry type="unit" import="true" name="Infernal Imps" hidden="false" id="d9d5-b97e-3987-0cb4">
       <categoryLinks>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="80fc-3d25-a519-63fd" primary="false" name="Infernal"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="3bbb-f534-00fb-9f52" primary="false" name="Demon"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="ea13-d993-8249-37a8" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="9a50-fc2a-2229-1443" primary="true" name="Infantry"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="40"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="force" shared="true" id="2c23-b773-455b-1ba0" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Shadow Imps" hidden="false" id="333a-35e7-b3e0-6f1c">
+    <selectionEntry type="unit" import="true" name="Shadow Imps" hidden="false" id="333a-35e7-b3e0-6f1c">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="b6b4-3b16-1e88-6ddf" primary="true" name="Infantry"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="dcd4-d347-9f12-d2b7" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="4fe1-ff3f-9cd8-b29d" primary="false" name="Demon"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="7d2e-e03f-dc2b-c3f4" primary="false" name="Shadow"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="force" shared="true" id="6782-f12b-0767-2746" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Shamblers" hidden="false" id="4937-5438-3be8-33ab">
+    <selectionEntry type="unit" import="true" name="Shamblers" hidden="false" id="4937-5438-3be8-33ab">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="a2d9-756b-a794-3cbd" primary="true" name="Infantry"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="f01c-099c-72f6-e83e" primary="false" name="Demon"/>
@@ -33,8 +45,14 @@
         <categoryLink targetId="22f9-cf84-899d-c724" id="aff3-d812-0995-f343" primary="false" name="Human"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="cfdf-f5e1-3d58-255f" primary="false" name="Shadow"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="40"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="736f-e8c3-56ef-910a" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hex Casters" hidden="false" id="7b18-da7a-6921-ca7c">
+    <selectionEntry type="unit" import="true" name="Hex Casters" hidden="false" id="7b18-da7a-6921-ca7c">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="0e22-b077-66f4-aa5f" primary="true" name="Infantry"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="97be-600d-01c7-f39c" primary="false" name="Faction: Infernal Legion"/>
@@ -42,8 +60,14 @@
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="c739-fcdd-1557-99e4" primary="false" name="Caster"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="e72c-59e9-9a2f-88bf" primary="false" name="Infernal"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="55"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6a37-0979-6678-10f5" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Shadowclaws" hidden="false" id="3753-350d-2ba3-c8c9">
+    <selectionEntry type="unit" import="true" name="Shadowclaws" hidden="false" id="3753-350d-2ba3-c8c9">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="c8d2-97ab-8ccc-72a7" primary="true" name="Infantry"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="19b7-1227-e78a-9867" primary="false" name="Demon"/>
@@ -51,16 +75,28 @@
         <categoryLink targetId="fa11-5829-87e0-34eb" id="5439-2405-c378-5f82" primary="false" name="Shadow"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="5ea1-a08b-4932-f9ab" primary="false" name="Faction: Infernal Legion"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2c79-61c9-5e1b-49a2" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Magma Hounds" hidden="false" id="f6c9-5ab9-b58d-a80b">
+    <selectionEntry type="unit" import="true" name="Magma Hounds" hidden="false" id="f6c9-5ab9-b58d-a80b">
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="e26d-57a4-ab37-a1bb" primary="true" name="Beast"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="4126-8c1a-30ce-ab01" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="fb76-8f6f-ffed-9d18" primary="false" name="Demon"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="b63d-4e29-336f-eb1e" primary="false" name="Infernal"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="75"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f38d-2c72-9555-c6cb" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Demon Sorcerers" hidden="false" id="d000-30a7-8aac-3500">
+    <selectionEntry type="unit" import="true" name="Demon Sorcerers" hidden="false" id="d000-30a7-8aac-3500">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="8347-25a0-7af3-4b19" primary="true" name="Infantry"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="595b-34a0-cd3b-c9b2" primary="false" name="Demon"/>
@@ -68,8 +104,14 @@
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="462e-6a10-73d6-18bd" primary="false" name="Infernal"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="a31b-a487-fecd-7002" primary="false" name="Faction: Infernal Legion"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="920d-d70d-0829-51b2" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pactbound" hidden="false" id="5938-2d90-5c2e-626a">
+    <selectionEntry type="unit" import="true" name="Pactbound" hidden="false" id="5938-2d90-5c2e-626a">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="3bac-0d71-0f27-5059" primary="true" name="Infantry"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="cd4a-aea9-2b25-9c64" primary="false" name="Faction: Infernal Legion"/>
@@ -77,15 +119,27 @@
         <categoryLink targetId="22f9-cf84-899d-c724" id="e82d-1379-7c7f-aeeb" primary="false" name="Human"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="89cd-a068-d8a7-0d2b" primary="false" name="Shadow"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="100"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="bbd4-f698-de8e-0447" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Magma Golems" hidden="false" id="8547-c2e5-140a-0f69">
+    <selectionEntry type="unit" import="true" name="Magma Golems" hidden="false" id="8547-c2e5-140a-0f69">
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="ad49-6d5c-baf6-c773" primary="true" name="Beast"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="9a6b-a86d-c78b-0982" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="ce26-3325-3da1-2da3" primary="false" name="Infernal"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="120"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="5980-a7ae-a3cf-a0ca" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Guilded Sorcerers" hidden="false" id="ecfd-22c1-9a78-44e0">
+    <selectionEntry type="unit" import="true" name="Guilded Sorcerers" hidden="false" id="ecfd-22c1-9a78-44e0">
       <categoryLinks>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="9c9f-3613-b1cc-a432" primary="false" name="Shadow"/>
         <categoryLink targetId="22f9-cf84-899d-c724" id="65e3-7945-6509-b2e2" primary="false" name="Human"/>
@@ -93,16 +147,28 @@
         <categoryLink targetId="92d7-3555-3aad-3720" id="1d64-6fa5-87f2-5a96" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="3448-dedd-c4dd-96f0" primary="true" name="Infantry"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="140"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f77e-a453-bbd3-30a7" includeChildSelections="false" percentValue="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bloodlords" hidden="false" id="1a8f-37bd-6c54-265a">
+    <selectionEntry type="unit" import="true" name="Bloodlords" hidden="false" id="1a8f-37bd-6c54-265a">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="1f46-ac06-3966-c0bb" primary="true" name="Infantry"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="3a27-13bc-b0a1-367d" primary="false" name="Demon"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="3ea7-881e-f9ec-b7a3" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="558a-7a66-a140-1a30" primary="false" name="Shadow"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="150"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="61cd-71a0-4389-b54e" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Demonic Mastermind" hidden="false" id="c336-5a3a-d1b7-67f1">
+    <selectionEntry type="unit" import="true" name="Demonic Mastermind" hidden="false" id="c336-5a3a-d1b7-67f1">
       <categoryLinks>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="60eb-3ba5-2740-37c6" primary="false" name="Infernal"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="a506-f0c7-cdd7-f9c9" primary="false" name="Caster"/>
@@ -110,32 +176,56 @@
         <categoryLink targetId="92d7-3555-3aad-3720" id="fea0-16c4-3289-8986" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="3057-7210-c927-e674" primary="true" name="Infantry"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="120"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1abf-6266-1283-bfc5" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Abyssal Overlord" hidden="false" id="25a7-22d8-3c85-9d68">
+    <selectionEntry type="unit" import="true" name="Abyssal Overlord" hidden="false" id="25a7-22d8-3c85-9d68">
       <categoryLinks>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="9af8-bf41-48f2-7bf2" primary="false" name="Demon"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="c691-0265-e391-94e5" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="8aee-3366-fc2b-e69a" primary="true" name="Beast"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="848d-672e-8f7a-7c45" primary="false" name="Shadow"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="160"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2bde-52f6-be50-dca1" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Starscourge" hidden="false" id="2a93-7496-050a-26e1">
+    <selectionEntry type="unit" import="true" name="Starscourge" hidden="false" id="2a93-7496-050a-26e1">
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="0e05-6ed1-1b73-9b29" primary="true" name="Beast"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="08d0-cc64-2a74-9d3c" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="781e-c264-d01b-914c" primary="false" name="Caster"/>
         <categoryLink targetId="05a6-7fa9-ae44-a7a3" id="13b7-91c9-f418-b2f6" primary="false" name="Starscourge"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="175"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ead3-8464-e261-b449" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Greater Starscourge" hidden="false" id="d47f-4d5e-5e88-e8c3">
+    <selectionEntry type="unit" import="true" name="Greater Starscourge" hidden="false" id="d47f-4d5e-5e88-e8c3">
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="8200-2510-af56-c51c" primary="true" name="Beast"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="133e-2c6f-96cc-cb99" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="c6b2-77d5-1f6e-28df" primary="false" name="Caster"/>
         <categoryLink targetId="05a6-7fa9-ae44-a7a3" id="8de6-cd01-b55b-fc1e" primary="false" name="Starscourge"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="320"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="41a0-799f-dfd3-9c7c" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Starscourge Yundvall" hidden="false" id="a4c9-5117-ea99-4ea0">
+    <selectionEntry type="unit" import="true" name="Starscourge Yundvall" hidden="false" id="a4c9-5117-ea99-4ea0">
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="575b-1c4d-8e84-dd09" primary="false" name="Beast"/>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="c6bb-b2b5-d234-483f" primary="true" name="Champion"/>
@@ -143,6 +233,9 @@
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="5419-f41c-bb31-73bd" primary="false" name="Caster"/>
         <categoryLink targetId="05a6-7fa9-ae44-a7a3" id="b127-b0b2-1692-17c2" primary="false" name="Starscourge"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bd47-f167-1943-e306" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
