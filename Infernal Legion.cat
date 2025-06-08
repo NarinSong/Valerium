@@ -300,12 +300,19 @@
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e49f-c412-5eb2-884e-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e49f-c412-5eb2-884e-max" includeChildSelections="false"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="6c8d-d092-b350-6ff3" id="4daf-228e-c956-2f26" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Starscourge Magic Table" hidden="false" id="0488-672a-ae46-da2b" defaultAmount="1">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="dca9-9679-4061-1c35-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dca9-9679-4061-1c35-max" includeChildSelections="false"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="7a3c-3481-9891-8c46" primary="false" name="Champion"/>
+        <categoryLink targetId="6c8d-d092-b350-6ff3" id="0868-0033-3a21-64d4" primary="true" name="Configuration"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -325,9 +332,9 @@
     <entryLink import="true" name="Shamblers" hidden="false" id="cb97-4516-0b32-b564" type="selectionEntry" targetId="4937-5438-3be8-33ab"/>
     <entryLink import="true" name="Starscourge" hidden="false" id="3fdc-2913-4728-fe76" type="selectionEntry" targetId="2a93-7496-050a-26e1"/>
     <entryLink import="true" name="Starscourge Yundvall" hidden="false" id="204e-7a06-ac34-3daa" type="selectionEntry" targetId="a4c9-5117-ea99-4ea0"/>
-    <entryLink import="true" name="Hex Magic Table" hidden="false" id="d638-c3f0-9f8e-280d" type="selectionEntry" targetId="794b-9bc1-c664-1205"/>
-    <entryLink import="true" name="Pact Magic Table" hidden="false" id="70c5-c618-22ec-57b5" type="selectionEntry" targetId="1a0e-e59c-8c8a-0064"/>
-    <entryLink import="true" name="Starscourge Magic Table" hidden="false" id="3bbb-808a-ad4e-3ec4" type="selectionEntry" targetId="0488-672a-ae46-da2b"/>
+    <entryLink import="true" name="Hex Magic Table" hidden="false" id="d638-c3f0-9f8e-280d" type="selectionEntry" targetId="794b-9bc1-c664-1205" sortIndex="2"/>
+    <entryLink import="true" name="Pact Magic Table" hidden="false" id="70c5-c618-22ec-57b5" type="selectionEntry" targetId="1a0e-e59c-8c8a-0064" sortIndex="3"/>
+    <entryLink import="true" name="Starscourge Magic Table" hidden="false" id="3bbb-808a-ad4e-3ec4" type="selectionEntry" targetId="0488-672a-ae46-da2b" sortIndex="4"/>
   </entryLinks>
   <publications>
     <publication name="Infernal Legion Codex" id="3776-9efc-a909-b376" hidden="false" publisher="Infernal Legion Codex" publicationDate="6/8/2025"/>

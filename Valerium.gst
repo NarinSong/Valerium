@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
@@ -84,7 +84,7 @@
         <categoryLink targetId="6c8d-d092-b350-6ff3" id="0a86-431f-0b7d-835b" primary="true" name="Configuration"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Battle Size" id="8d86-c4a1-56d5-d486" hidden="false">
+        <selectionEntryGroup name="Battle Size" id="8d86-c4a1-56d5-d486" hidden="false" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b74-2fc7-a530-05fd-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b74-2fc7-a530-05fd-max" includeChildSelections="false"/>
