@@ -163,4 +163,7 @@
     <entryLink import="true" name="Starscourge" hidden="false" id="3fdc-2913-4728-fe76" type="selectionEntry" targetId="2a93-7496-050a-26e1"/>
     <entryLink import="true" name="Starscourge Yundvall" hidden="false" id="204e-7a06-ac34-3daa" type="selectionEntry" targetId="a4c9-5117-ea99-4ea0"/>
   </entryLinks>
+  <publications>
+    <publication name="Infernal Legion Codex" id="3776-9efc-a909-b376" hidden="false" publisher="Infernal Legion Codex" publicationDate="6/8/2025"/>
+  </publications>
 </catalogue>
