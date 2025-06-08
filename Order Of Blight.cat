@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="06b5-c913-a207-422c" name="Order Of Blight" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="1" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Chief K&apos;thzan" hidden="false" id="cb43-b748-f683-5fb4">
+      <categoryLinks>
+        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="958b-422b-5a21-2971" primary="true" name="Champion"/>
+        <categoryLink targetId="1c5c-47db-ab07-ba35" id="8074-6716-3bf6-7674" primary="false" name="Beast"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5535-788e-e940-973c" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Chief K&apos;thzan" hidden="false" id="decc-0210-9898-9cab" type="selectionEntry" targetId="cb43-b748-f683-5fb4"/>
+  </entryLinks>
+</catalogue>

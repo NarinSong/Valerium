@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="015e-82a2-b38a-6e91" name="Draconius Calithonus" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="1" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="The Progenitor" hidden="false" id="e66b-128f-b3eb-adf0">
+      <categoryLinks>
+        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="8e79-70d5-8fb8-750a" primary="true" name="Champion"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0f4d-7b35-82ea-f213" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="The Progenitor" hidden="false" id="17ac-140b-8d58-d1ba" type="selectionEntry" targetId="e66b-128f-b3eb-adf0"/>
+  </entryLinks>
+</catalogue>

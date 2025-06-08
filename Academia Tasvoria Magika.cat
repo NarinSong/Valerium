@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="477c-bec9-58f2-967c" name="Academia Tasvoria Magika" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="1" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Magus Porotosm" hidden="false" id="fe16-28ab-7ab9-b9b9">
+      <categoryLinks>
+        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="26bd-f8ef-c2ec-9854" primary="true" name="Champion"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d208-abaf-a907-f33b" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Magus Porotosm" hidden="false" id="cf6d-6173-af8f-6115" type="selectionEntry" targetId="fe16-28ab-7ab9-b9b9"/>
+  </entryLinks>
+</catalogue>

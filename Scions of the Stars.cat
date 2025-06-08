@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="c621-a6be-6626-d89d" name="Scions of the Stars" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="1" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Renallia of the First Light" hidden="false" id="ec34-d43e-637d-6632">
+      <categoryLinks>
+        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="ee8f-6052-c154-1206" primary="true" name="Champion"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1d2e-9798-9c71-3622" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Renallia of the First Light" hidden="false" id="70f6-6bc0-68a2-c183" type="selectionEntry" targetId="ec34-d43e-637d-6632"/>
+  </entryLinks>
+</catalogue>
