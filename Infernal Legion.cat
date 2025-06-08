@@ -310,7 +310,6 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dca9-9679-4061-1c35-max" includeChildSelections="false"/>
       </constraints>
       <categoryLinks>
-        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="7a3c-3481-9891-8c46" primary="false" name="Champion"/>
         <categoryLink targetId="6c8d-d092-b350-6ff3" id="0868-0033-3a21-64d4" primary="true" name="Configuration"/>
       </categoryLinks>
     </selectionEntry>
