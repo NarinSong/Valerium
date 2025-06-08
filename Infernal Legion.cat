@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="4" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="5" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
