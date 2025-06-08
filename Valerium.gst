@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
@@ -13,8 +13,13 @@
   <forceEntries>
     <forceEntry name="Battle Force" hidden="false" id="7887-592a-fbaf-3b5d">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="7020-ef5b-3d57-7d2f" targetId="6c8d-d092-b350-6ff3" type="categoryEntry"/>
-        <categoryLink name="Champion" hidden="false" id="1cb6-d122-0bb8-bc16" targetId="0e9f-f19d-fdfa-621a"/>
+        <categoryLink name="Configuration" hidden="false" id="7020-ef5b-3d57-7d2f" targetId="6c8d-d092-b350-6ff3"/>
+        <categoryLink name="Champion" hidden="false" id="1cb6-d122-0bb8-bc16" targetId="0e9f-f19d-fdfa-621a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e18e-878d-0628-65eb-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e18e-878d-0628-65eb-max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink name="Infantry" hidden="false" id="bca2-cf37-d4af-36db" targetId="9d75-3e1c-4fee-6132"/>
         <categoryLink name="Cavalry" hidden="false" id="f2f2-d035-1bdc-0cd5" targetId="fd19-c051-4156-06c0"/>
         <categoryLink name="Beast" hidden="false" id="82c1-5c91-5a69-b42b" targetId="1c5c-47db-ab07-ba35"/>
