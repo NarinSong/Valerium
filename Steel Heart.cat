@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Nari">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Nari">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
+    <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6" sortIndex="">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="e534-75cc-41f6-d9a8" primary="true" name="Infantry"/>
         <categoryLink targetId="b6a7-11da-522a-6836" id="6117-12d1-e1ed-42e0" primary="false" name="Faction: Steel Heart"/>
@@ -41,7 +41,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="A-Autoblaster" id="8da5-5049-aa24-1838" hidden="false" type="profile" targetId="cf77-2166-a618-6bc2"/>
+            <infoLink name="Autoblaster" id="8da5-5049-aa24-1838" hidden="false" type="profile" targetId="cf77-2166-a618-6bc2"/>
             <infoLink name="Steelforge Axe" id="dbc5-2a1c-76ff-ca9e" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
           </infoLinks>
         </selectionEntry>
@@ -69,9 +69,9 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="A-Autoblaster" id="06f3-9ad5-25d6-4022" hidden="false" type="profile" targetId="cf77-2166-a618-6bc2"/>
-            <infoLink name="A-Steelforge Axe" id="0893-ea31-a272-6cf3" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
-            <infoLink name="A-Steelforge Axe" id="851a-8bb6-c762-6880" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+            <infoLink name="Autoblaster" id="06f3-9ad5-25d6-4022" hidden="false" type="profile" targetId="cf77-2166-a618-6bc2"/>
+            <infoLink name="Steelforge Axe" id="0893-ea31-a272-6cf3" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
+            <infoLink name="Steelforge Axe" id="851a-8bb6-c762-6880" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Steel Warrior" hidden="false" id="d3f6-8bf2-3f94-3de7">
@@ -105,7 +105,7 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink name="A-Autoblaster" id="9f25-5db7-159a-f90d" hidden="false" type="profile" targetId="cf77-2166-a618-6bc2"/>
+            <infoLink name="Autoblaster" id="9f25-5db7-159a-f90d" hidden="false" type="profile" targetId="cf77-2166-a618-6bc2"/>
             <infoLink name="Steelforge Axe" id="f52b-0a57-5760-907d" hidden="false" type="profile" targetId="4586-83d5-cf61-04ea"/>
           </infoLinks>
         </selectionEntry>
@@ -1226,7 +1226,7 @@
             </profile>
             <profile name="Plant Explosive" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="ef20-68b7-e975-9421">
               <characteristics>
-                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may place an Explosive on an adjacent tile and detonate it on a later turn dealing D6+1 damage to ALL units within 3 tiles </characteristic>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may place an Explosive on an adjacent tile and detonate it on a later turn dealing D6+1 damage to ALL units within 3 tiles</characteristic>
               </characteristics>
             </profile>
             <profile name="Blaze of Glory" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="84b2-f807-ff96-f429">
@@ -1362,7 +1362,7 @@ the barricade has 6 AR and 3 HP</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Steel Assault" hidden="false" id="e3d2-4eb7-91c2-b334">
+    <selectionEntry type="unit" import="true" name="Steel Assault" hidden="false" id="e3d2-4eb7-91c2-b334" sortIndex="">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="fe8a-92a2-2385-30d4" primary="true" name="Infantry"/>
         <categoryLink targetId="b6a7-11da-522a-6836" id="ffe4-2411-9ba2-ad86" primary="false" name="Faction: Steel Heart"/>
@@ -1496,22 +1496,22 @@ the barricade has 6 AR and 3 HP</characteristic>
     <categoryEntry name="Dwarf" id="7c7c-e945-35f7-e463" hidden="false"/>
   </categoryEntries>
   <entryLinks>
-    <entryLink import="true" name="Blastbarrel Squad" hidden="false" id="a5d9-1966-8cb0-0fa6" type="selectionEntry" targetId="6e7f-fa0e-4e4e-d9ca"/>
-    <entryLink import="true" name="Bloodsteel Beserkers" hidden="false" id="2e53-8b06-d974-f65a" type="selectionEntry" targetId="d7a1-0e0c-81c8-88c4"/>
-    <entryLink import="true" name="Boltfire Squad" hidden="false" id="ab96-880e-6147-46f9" type="selectionEntry" targetId="4103-4acf-3b00-05a3"/>
-    <entryLink import="true" name="D-AT Transport Vehicle" hidden="false" id="1150-6e95-0cf7-6aa4" type="selectionEntry" targetId="c80b-e79c-ffc2-d725"/>
-    <entryLink import="true" name="D-TRC Mining Vehicle" hidden="false" id="e7d7-2ded-f00f-9c8a" type="selectionEntry" targetId="9a29-abbf-8d55-a845"/>
-    <entryLink import="true" name="D.H Engineering Corps" hidden="false" id="d6c9-14e6-e978-545b" type="selectionEntry" targetId="d970-bbd2-310e-4281"/>
-    <entryLink import="true" name="DCM Mining Mech" hidden="false" id="a4d3-1a21-c6e0-006c" type="selectionEntry" targetId="c50b-cd48-272d-a44c"/>
-    <entryLink import="true" name="DV-MCH Frontline" hidden="false" id="4f76-ed04-0017-16cf" type="selectionEntry" targetId="a9cf-3e5d-74e0-b5bb"/>
-    <entryLink import="true" name="DV-TKR2 Guardian" hidden="false" id="0b23-9987-0972-3520" type="selectionEntry" targetId="794e-1f9b-083d-b18d"/>
-    <entryLink import="true" name="Forgeguard Shieldline" hidden="false" id="3058-3e30-8b27-a44f" type="selectionEntry" targetId="6c16-9729-35c9-6e51"/>
-    <entryLink import="true" name="Forgekin Slayers" hidden="false" id="38bc-c7be-a0c7-029d" type="selectionEntry" targetId="f10a-d3c0-5ef9-71af"/>
+    <entryLink import="true" name="Blastbarrel Squad" hidden="false" id="a5d9-1966-8cb0-0fa6" type="selectionEntry" targetId="6e7f-fa0e-4e4e-d9ca" sortIndex="4"/>
+    <entryLink import="true" name="Bloodsteel Beserkers" hidden="false" id="2e53-8b06-d974-f65a" type="selectionEntry" targetId="d7a1-0e0c-81c8-88c4" sortIndex="6"/>
+    <entryLink import="true" name="Boltfire Squad" hidden="false" id="ab96-880e-6147-46f9" type="selectionEntry" targetId="4103-4acf-3b00-05a3" sortIndex="5"/>
+    <entryLink import="true" name="D-AT Transport Vehicle" hidden="false" id="1150-6e95-0cf7-6aa4" type="selectionEntry" targetId="c80b-e79c-ffc2-d725" sortIndex="13"/>
+    <entryLink import="true" name="D-TRC Mining Vehicle" hidden="false" id="e7d7-2ded-f00f-9c8a" type="selectionEntry" targetId="9a29-abbf-8d55-a845" sortIndex="14"/>
+    <entryLink import="true" name="D.H Engineering Corps" hidden="false" id="d6c9-14e6-e978-545b" type="selectionEntry" targetId="d970-bbd2-310e-4281" sortIndex="3"/>
+    <entryLink import="true" name="DCM Mining Mech" hidden="false" id="a4d3-1a21-c6e0-006c" type="selectionEntry" targetId="c50b-cd48-272d-a44c" sortIndex="12"/>
+    <entryLink import="true" name="DV-MCH Frontline" hidden="false" id="4f76-ed04-0017-16cf" type="selectionEntry" targetId="a9cf-3e5d-74e0-b5bb" sortIndex="15"/>
+    <entryLink import="true" name="DV-TKR2 Guardian" hidden="false" id="0b23-9987-0972-3520" type="selectionEntry" targetId="794e-1f9b-083d-b18d" sortIndex="16"/>
+    <entryLink import="true" name="Forgeguard Shieldline" hidden="false" id="3058-3e30-8b27-a44f" type="selectionEntry" targetId="6c16-9729-35c9-6e51" sortIndex="8"/>
+    <entryLink import="true" name="Forgekin Slayers" hidden="false" id="38bc-c7be-a0c7-029d" type="selectionEntry" targetId="f10a-d3c0-5ef9-71af" sortIndex="7"/>
     <entryLink import="true" name="Lord Nazeim" hidden="false" id="1e3a-da51-5fbb-bba3" type="selectionEntry" targetId="5e3d-0f11-4a59-d233"/>
-    <entryLink import="true" name="Rocketsmith" hidden="false" id="9d1c-3c7e-a7f5-f782" type="selectionEntry" targetId="3e86-cd9d-8bbb-e3c4"/>
-    <entryLink import="true" name="Steel Assault" hidden="false" id="96f7-d56a-09c9-629b" type="selectionEntry" targetId="e3d2-4eb7-91c2-b334"/>
-    <entryLink import="true" name="Steel Marksman" hidden="false" id="1ea7-2aa1-dec1-bb27" type="selectionEntry" targetId="2178-d6f9-a6bc-380a"/>
-    <entryLink import="true" name="Steel Meditech" hidden="false" id="4803-3fda-252d-00a0" type="selectionEntry" targetId="b801-1eea-cbee-24e2"/>
-    <entryLink import="true" name="Steel Warriors" hidden="false" id="c33c-f7a5-c231-f303" type="selectionEntry" targetId="b5b0-d8db-9ed6-a6d6"/>
+    <entryLink import="true" name="Rocketsmith" hidden="false" id="9d1c-3c7e-a7f5-f782" type="selectionEntry" targetId="3e86-cd9d-8bbb-e3c4" sortIndex="10"/>
+    <entryLink import="true" name="Steel Assault" hidden="false" id="96f7-d56a-09c9-629b" type="selectionEntry" targetId="e3d2-4eb7-91c2-b334" sortIndex="2"/>
+    <entryLink import="true" name="Steel Marksman" hidden="false" id="1ea7-2aa1-dec1-bb27" type="selectionEntry" targetId="2178-d6f9-a6bc-380a" sortIndex="11"/>
+    <entryLink import="true" name="Steel Meditech" hidden="false" id="4803-3fda-252d-00a0" type="selectionEntry" targetId="b801-1eea-cbee-24e2" sortIndex="9"/>
+    <entryLink import="true" name="Steel Warriors" hidden="false" id="c33c-f7a5-c231-f303" type="selectionEntry" targetId="b5b0-d8db-9ed6-a6d6" sortIndex="1"/>
   </entryLinks>
 </catalogue>
