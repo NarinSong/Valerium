@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="8" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="9" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
@@ -303,6 +303,44 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2c79-61c9-5e1b-49a2" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Shadowclaw" hidden="false" id="e886-f32d-efcf-601a">
+          <profiles>
+            <profile name="Shadowclaw" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="34b2-ae06-c22e-d8ee">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">4</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Shadow Talons" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="0713-6ede-f948-f932">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+              </characteristics>
+            </profile>
+            <profile name="Riftwalk" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="ef6a-199b-a194-5d65">
+              <characteristics>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">If every model in this unit uses this action they may move 2 tiles</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Stealth" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="8aca-2d9d-2480-fda1">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">Enemy units have -1 to hit on ranged attacks against this unit</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="45ca-1fb8-da04-4480-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="45ca-1fb8-da04-4480-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Magma Hounds" hidden="false" id="f6c9-5ab9-b58d-a80b" sortIndex="7">
       <categoryLinks>
@@ -317,6 +355,75 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f38d-2c72-9555-c6cb" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Magma Hound" hidden="false" id="4082-4660-ef51-060b">
+          <profiles>
+            <profile name="Magma Hound" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="9299-db6d-b313-7f3a">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+              </characteristics>
+            </profile>
+            <profile name="Infernal Bite" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="dff8-a3bf-20a0-9ac7">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="901f-cb0f-0fc0-9301-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="901f-cb0f-0fc0-9301-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Houndmaster" hidden="false" id="e748-db35-fc4b-9911">
+          <profiles>
+            <profile name="Houndmaster" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="1987-d310-0a97-736d">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">5</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">1</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">4</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Infernal Bite" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="7738-c26f-2634-6b5a">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Blazing Spear" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="e742-4e14-97cf-24df">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">5</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d32e-6eac-af4d-7730-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d32e-6eac-af4d-7730-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Hex Magic" id="d8ac-ea01-2726-b107" hidden="false" type="profile" targetId="7b4e-99ed-ad32-5790"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Immolate" id="efca-7357-862b-758f" hidden="false" type="profile" targetId="e588-e564-f2d1-d606"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Demon Sorcerers" hidden="false" id="d000-30a7-8aac-3500" sortIndex="8">
       <categoryLinks>
