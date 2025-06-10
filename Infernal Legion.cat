@@ -360,11 +360,11 @@
           <profiles>
             <profile name="Magma Hound" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="9299-db6d-b313-7f3a">
               <characteristics>
-                <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
-                <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
-                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
-                <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
-                <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">1</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">4</characteristic>
               </characteristics>
             </profile>
             <profile name="Infernal Bite" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="dff8-a3bf-20a0-9ac7">
