@@ -254,7 +254,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Infernal Claws" id="b5ce-e94e-f98d-7c2c" hidden="false" type="profile" targetId="1e0b-b2da-dd96-85bc"/>
-            <infoLink name="Hex Magic" id="ab48-d985-4667-82b1" hidden="false" type="profile" targetId="7b4e-99ed-ad32-5790"/>
+            <infoLink name="Mastered Hex Magic" id="ab48-d985-4667-82b1" hidden="false" type="profile" targetId="805e-4d0e-57a3-9a09"/>
           </infoLinks>
           <costs>
             <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
