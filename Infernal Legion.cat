@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="10" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="11" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
@@ -903,19 +903,10 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ead3-8464-e261-b449" includeChildSelections="false"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="New Group" id="ccb8-27b6-0ad7-fd67" hidden="false">
+        <selectionEntryGroup name="Starscourge" id="ccb8-27b6-0ad7-fd67" hidden="false" defaultSelectionEntryId="6f62-cfd6-527b-995d">
           <selectionEntries>
             <selectionEntry type="unit" import="true" name="Starscourge Caster" hidden="false" id="6f62-cfd6-527b-995d">
               <profiles>
-                <profile name="Starscourge Caster" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="8c02-70aa-861a-af56">
-                  <characteristics>
-                    <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
-                    <characteristic name="Ar" typeId="0983-b6e2-8552-397d">8</characteristic>
-                    <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">12</characteristic>
-                    <characteristic name="C" typeId="cead-e6cb-357f-f63d">5</characteristic>
-                    <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
-                  </characteristics>
-                </profile>
                 <profile name="Starblight Staff" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="4a0b-432b-0a96-e4fe">
                   <characteristics>
                     <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
@@ -944,15 +935,6 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             </selectionEntry>
             <selectionEntry type="unit" import="true" name="Starscourge Executioner" hidden="false" id="cbfb-68f1-e698-a4ed">
               <profiles>
-                <profile name="Starscourge Executioner" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="3403-cfb5-edcc-48e8">
-                  <characteristics>
-                    <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
-                    <characteristic name="Ar" typeId="0983-b6e2-8552-397d">9</characteristic>
-                    <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">12</characteristic>
-                    <characteristic name="C" typeId="cead-e6cb-357f-f63d">5</characteristic>
-                    <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
-                  </characteristics>
-                </profile>
                 <profile name="Starblight Cleaver" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="c335-d161-86c5-6ba9">
                   <characteristics>
                     <characteristic name="A" typeId="4063-bcf9-f604-85d2">6</characteristic>
@@ -983,6 +965,15 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         <profile name="Scouge&apos;s Eruption" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="6a3d-0cc7-f4e8-81b2">
           <characteristics>
             <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this unit dies on a 2+ it deals 3 damage to ALL units within 3 tiles of it</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Starscourge" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="0807-6d9c-c3fc-fa10">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">8</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">12</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">5</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
           </characteristics>
         </profile>
       </profiles>
