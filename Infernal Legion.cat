@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="9" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="10" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
@@ -317,11 +317,11 @@
             </profile>
             <profile name="Shadow Talons" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="0713-6ede-f948-f932">
               <characteristics>
-                <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
-                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
-                <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
-                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Riftwalk" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="ef6a-199b-a194-5d65">
@@ -439,6 +439,38 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="920d-d70d-0829-51b2" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Demon Sorcerer" hidden="false" id="2de2-7147-5808-a2ac">
+          <infoLinks>
+            <infoLink name="Immolate" id="314a-3f99-e185-5af1" hidden="false" type="profile" targetId="e588-e564-f2d1-d606"/>
+            <infoLink name="Pact Magic" id="5944-535c-61d0-2df3" hidden="false" type="profile" targetId="28c1-5066-7d7c-10f4"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Demon Sorcerer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="3162-8e9a-d5c3-2be3">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">4</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Infernal Talons" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="3dd8-7935-bd85-f0aa">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="52fd-3466-65f8-290a-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="52fd-3466-65f8-290a-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pactbound" hidden="false" id="5938-2d90-5c2e-626a" sortIndex="9">
       <categoryLinks>
@@ -449,11 +481,125 @@
         <categoryLink targetId="fa11-5829-87e0-34eb" id="89cd-a068-d8a7-0d2b" primary="false" name="Shadow"/>
       </categoryLinks>
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="100"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="130"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="bbd4-f698-de8e-0447" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Pactbound" hidden="false" id="8f80-956a-9b6d-a263">
+          <profiles>
+            <profile name="Pactbound" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="0e0a-f392-a2c0-ee1e">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Pact Blade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="bfb1-a99c-2484-499e">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Eldritch Blast" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="988a-dd26-0992-e4be">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">7</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">3</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">5</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d8e1-f2f3-9aaa-1aa3-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="d8e1-f2f3-9aaa-1aa3-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="d8e1-f2f3-9aaa-1aa3-min">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="de72-2f7a-3491-303c" childId="294b-fa35-d940-6dd0" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="d8e1-f2f3-9aaa-1aa3-max">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="de72-2f7a-3491-303c" childId="294b-fa35-d940-6dd0" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Pact Magic" id="00e3-e0b7-95a3-327e" hidden="false" type="profile" targetId="28c1-5066-7d7c-10f4"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Master Pactbound" hidden="false" id="294b-fa35-d940-6dd0">
+          <profiles>
+            <profile name="Master Pactbound" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="3812-d0fd-9e1b-3337">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">4</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Shadowflame Cutlass" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="d203-017b-ef00-e323">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">7</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cursed Cutlass" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="09fd-0025-db31-bdd6">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">When you deal damage to a Vehicle or Beast with the Shadowflame Cutlass it takes 10% of it&apos;s max health as damage rounded down</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Eldritch Blast" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="abfd-5a98-89bb-52ac">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">7</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">3</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">5</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="397c-2a8f-162b-7a17" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="20"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Mastered Pact Magic" id="4326-5d74-3703-48d5" hidden="false" type="profile" targetId="18fe-ae8b-4f1a-8a1b"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Cabal of the Starscourge" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="9eef-662f-5b20-384b">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of each turn this unit may choose one of the following abilities until the next turn
+Ethereal Armor - 
+This unit has a 6+ Invulnerable
+
+Eldritch Mastery -
+Eldritch Blast gains 1 to its attacks and 1 to its damage
+
+Blade Mastery -
+You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Magma Golems" hidden="false" id="8547-c2e5-140a-0f69" sortIndex="11">
       <categoryLinks>
@@ -467,6 +613,41 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="5980-a7ae-a3cf-a0ca" includeChildSelections="false"/>
       </constraints>
+      <profiles>
+        <profile name="Eruption" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="2917-a99c-266e-004b">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this a model in this unit dies roll a D6 on a 3+ all units within 2 tiles of it takes 2 damage </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Magma Golem" hidden="false" id="5bf0-edfb-c004-b806">
+          <profiles>
+            <profile name="Magma Golem" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="18c3-69b2-39f0-f9af">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">2</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">6</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">4</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Magma Golem" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="4de6-6d9e-7062-92e2">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">9</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">3</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="755d-51a8-8dec-e2cc-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="755d-51a8-8dec-e2cc-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Guilded Sorcerers" hidden="false" id="ecfd-22c1-9a78-44e0" sortIndex="11">
       <categoryLinks>
@@ -482,6 +663,50 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f77e-a453-bbd3-30a7" includeChildSelections="false" percentValue="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Guilded Sorcerer" hidden="false" id="42af-f044-0388-2a78">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2802-716e-4098-b3b0-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2802-716e-4098-b3b0-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Guilded Sorcerer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="c550-4c56-5761-46cd">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">4</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">4</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Pyrecaster" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="e385-2fbf-6fd8-3563">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">6</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">D6</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">6</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Rapid Fire D6] [Concentration 2]</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Sorcerer&apos;s Radiance" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="7569-8bca-5e5e-1bb0">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">All allies within 3 tiles have +1 to magic checks they make</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Summon Elemental" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="5309-9115-c261-4e25">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">A model in this unit may use this action to bring back a destroyed Magma Golem to a Magma Golems unit within 6 tiles</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mastered Pact Magic" id="a1e8-9eda-53b6-c644" hidden="false" type="profile" targetId="18fe-ae8b-4f1a-8a1b"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bloodlords" hidden="false" id="1a8f-37bd-6c54-265a" sortIndex="12">
       <categoryLinks>
@@ -496,6 +721,73 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="61cd-71a0-4389-b54e" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bloodlord Sorcerer" hidden="false" id="93e9-6b3d-f791-ef3e">
+          <infoLinks>
+            <infoLink name="Mastered Pact Magic" id="d517-985e-2e00-c90e" hidden="false" type="profile" targetId="18fe-ae8b-4f1a-8a1b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Blood Weapon" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="158f-3c9a-d043-878e">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">7</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Bloodlord Sorcerer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="ae01-f318-be49-987f">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="73e5-7407-836a-f260-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="73e5-7407-836a-f260-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Bloodlord Lector" hidden="false" id="b655-6af4-5dfd-bce0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4902-a729-3e8c-358f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4902-a729-3e8c-358f-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Bloodlord Lector" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="e972-c111-98a2-1c11">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">4</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Blood Weapon" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="d15e-205f-e438-59cb">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">7</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Mastered Pact Magic" id="3afc-9a28-a3b2-17ee" hidden="false" type="profile" targetId="18fe-ae8b-4f1a-8a1b"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Blood Funnel" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="6439-8639-24dd-b23c">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this unit kills an enemy unit create a new unit of Shamblers within melee range of this unit at strength equal to the destroyed unit (max of 10)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Demonic Mastermind" hidden="false" id="c336-5a3a-d1b7-67f1" sortIndex="13">
       <categoryLinks>
@@ -511,6 +803,44 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1abf-6266-1283-bfc5" includeChildSelections="false"/>
       </constraints>
+      <profiles>
+        <profile name="Demonic Mastermind" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="ab59-7c29-7603-adf7">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Abyssal Reinforcements" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="0a69-a455-332d-2bbe">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Twice per battle you may summon a unit of either Infernal Imps or Shadow Imps with D6+4 models in it </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Shroud" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="5e8d-c44b-867d-2fa4">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">Ranged attacks targeting this unit have -1 to hit and -1 to wound</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lone Operative" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="5604-dd2b-38ed-fea6">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">Ranged attacks from outside 5 hex cannot target this model</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Abyss Forged Trident" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="9c11-649e-e03a-7ea7">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">8</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mastered Pact Magic" id="8275-b153-5973-3f40" hidden="false" type="profile" targetId="18fe-ae8b-4f1a-8a1b"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Abyssal Overlord" hidden="false" id="25a7-22d8-3c85-9d68" sortIndex="14">
       <categoryLinks>
@@ -525,6 +855,39 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2bde-52f6-be50-dca1" includeChildSelections="false"/>
       </constraints>
+      <profiles>
+        <profile name="Abyssal Overlord" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="d3ff-f4cc-4134-cbe4">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">8</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">8</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">4</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Overlord Trident" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="f8b7-1fa2-d496-63a7">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">5</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">10</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">D3</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Abyssal Gate" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="8531-7c5c-6926-5bbb">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Twice per battle you may teleport an allied unit to this unit for this unit to an allied unit</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Overlord of Darkness" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="d3cb-882e-3390-c858">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">All allied Demons within 4 Hex may reroll 1s on hit rolls for melee attacks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mastered Pact Magic" id="1581-d98e-4c01-1b87" hidden="false" type="profile" targetId="18fe-ae8b-4f1a-8a1b"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Starscourge" hidden="false" id="2a93-7496-050a-26e1" sortIndex="15">
       <categoryLinks>
@@ -534,11 +897,98 @@
         <categoryLink targetId="05a6-7fa9-ae44-a7a3" id="13b7-91c9-f418-b2f6" primary="false" name="Starscourge"/>
       </categoryLinks>
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="175"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="210"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ead3-8464-e261-b449" includeChildSelections="false"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="New Group" id="ccb8-27b6-0ad7-fd67" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="unit" import="true" name="Starscourge Caster" hidden="false" id="6f62-cfd6-527b-995d">
+              <profiles>
+                <profile name="Starscourge Caster" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="8c02-70aa-861a-af56">
+                  <characteristics>
+                    <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                    <characteristic name="Ar" typeId="0983-b6e2-8552-397d">8</characteristic>
+                    <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">12</characteristic>
+                    <characteristic name="C" typeId="cead-e6cb-357f-f63d">5</characteristic>
+                    <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starblight Staff" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="4a0b-432b-0a96-e4fe">
+                  <characteristics>
+                    <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+                    <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+                    <characteristic name="AP" typeId="4984-c247-cad3-da1d">7</characteristic>
+                    <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">D3+1</characteristic>
+                    <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starblight Staff (ranged)" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="5c90-363a-68a2-bcda">
+                  <characteristics>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">10</characteristic>
+                    <characteristic name="A" typeId="f431-6fc1-7fb3-f314">2D6</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">2+</characteristic>
+                    <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">9</characteristic>
+                    <characteristic name="D" typeId="7e81-d394-055d-8486">2</characteristic>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Blast] [Concentration 3]</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Master of Sorcery" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="23bc-0394-c310-bfe3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="94fb-5af3-adea-b298">This unit and all allied units within 4 hex of it have +1 to all magic checks</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="unit" import="true" name="Starscourge Executioner" hidden="false" id="cbfb-68f1-e698-a4ed">
+              <profiles>
+                <profile name="Starscourge Executioner" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="3403-cfb5-edcc-48e8">
+                  <characteristics>
+                    <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                    <characteristic name="Ar" typeId="0983-b6e2-8552-397d">9</characteristic>
+                    <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">12</characteristic>
+                    <characteristic name="C" typeId="cead-e6cb-357f-f63d">5</characteristic>
+                    <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Starblight Cleaver" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="c335-d161-86c5-6ba9">
+                  <characteristics>
+                    <characteristic name="A" typeId="4063-bcf9-f604-85d2">6</characteristic>
+                    <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+                    <characteristic name="AP" typeId="4984-c247-cad3-da1d">10</characteristic>
+                    <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">3</characteristic>
+                    <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Piercing]</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Slaughter the Stars" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="2621-be4f-cea3-857d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="94fb-5af3-adea-b298">All allied units within 4 hex of it have +1 Attacks on all their melee weapons and +1 Armor Penetration</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="14bf-74c3-879a-90b5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14bf-74c3-879a-90b5-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Scouge&apos;s Eruption" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="6a3d-0cc7-f4e8-81b2">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this unit dies on a 2+ it deals 3 damage to ALL units within 3 tiles of it</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Starscourge Magic" id="3c4e-5364-18a2-702a" hidden="false" type="profile" targetId="5297-d6b3-3438-3fe4"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Greater Starscourge" hidden="false" id="d47f-4d5e-5e88-e8c3" sortIndex="16">
       <categoryLinks>
@@ -548,11 +998,49 @@
         <categoryLink targetId="05a6-7fa9-ae44-a7a3" id="8de6-cd01-b55b-fc1e" primary="false" name="Starscourge"/>
       </categoryLinks>
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="320"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="380"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="41a0-799f-dfd3-9c7c" includeChildSelections="false"/>
       </constraints>
+      <profiles>
+        <profile name="Greater Starscourge" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="0f17-e077-0ab0-240b">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">5</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">12</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">25</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">8</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Starblight Blade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="5741-0695-53fd-7855">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">10</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">13</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">D6+2</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Piercing]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blot out the Stars" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="0e36-9d6f-4140-c424">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Once per battle you may use this. All allied units get +2 movement +1 armor and +1 attacks on all melee weapons</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scouge&apos;s Eruption" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="77b8-5c0b-f584-4294">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this unit dies on a 2+ it deals 5 damage to ALL units within 3 tiles of it</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="4082-2a5c-81c1-6c65">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When an attack deals damage on a 4+ it deals no damage instead</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Starscourge Magic" id="f345-ee31-7801-7df4" hidden="false" type="profile" targetId="5297-d6b3-3438-3fe4"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Starscourge Yundvall" hidden="false" id="a4c9-5117-ea99-4ea0">
       <categoryLinks>
@@ -577,7 +1065,7 @@
         </profile>
         <profile name="Scouge&apos;s Eruption" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="e524-f861-d273-017c">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this unit dies on a 2+ it deals 3 damage to ALL units within 3 tiles of it</characteristic>
           </characteristics>
         </profile>
         <profile name="Cosmoshatter - Shatter" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="efad-cd9a-58a5-3a67">
@@ -589,19 +1077,14 @@
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Starscourge Magic" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="052b-7896-c896-decf">
-          <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a"/>
-          </characteristics>
-        </profile>
         <profile name="Infernal Cabal" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="445f-11f4-f780-811f">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">All infernal units in your army get +1 organization and have a +1 to the result of any immolate rolls</characteristic>
           </characteristics>
         </profile>
         <profile name="Infernal Calling" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="3ef3-d653-e17d-797b">
           <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a"/>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Twice per battle you may use this on an infernal unit to return it to full strength</characteristic>
           </characteristics>
         </profile>
         <profile name="Cosmoshatter - Slice" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="1c71-c0d1-53e1-7899">
@@ -613,7 +1096,15 @@
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="afc7-9a63-7194-0cc5">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When an attack deals damage on a 5+ it deals no damage instead</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Starscourge Magic" id="7ea8-cd36-fcd2-5269" hidden="false" type="profile" targetId="5297-d6b3-3438-3fe4"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hex Magic Table" hidden="false" id="794b-9bc1-c664-1205" defaultAmount="1" sortIndex="0">
       <categoryLinks>
@@ -704,6 +1195,56 @@
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="76f5-cde0-c9c5-47b3" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Legionare" hidden="false" id="306e-e7c7-72c5-0d05">
+          <profiles>
+            <profile name="Legionare" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="5ddf-3c2d-9ef5-c3e6">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">6</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">4</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Infernal Trident" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="8821-e8bf-3473-0456">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">5</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">7</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Pyre Bolt" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="5bd1-2e54-4a26-34d5">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">4</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">5</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Resilient Legion" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="8766-1e6e-3690-bd24">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of each turn this unit heals D3 Hit Points
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hatebound Armor" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="d7e7-d3a6-fc58-c0e9">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this unit is below half strength improve their armor characteristic to 7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Immolate" id="ef49-1a3e-2216-dae3" hidden="false" type="profile" targetId="e588-e564-f2d1-d606"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hex Cast" hidden="false" id="f80e-4a60-3417-be7b" sortIndex="2">
       <profiles>
@@ -772,7 +1313,7 @@
     <entryLink import="true" name="Hex Magic Table" hidden="false" id="d638-c3f0-9f8e-280d" type="selectionEntry" targetId="794b-9bc1-c664-1205" sortIndex="2"/>
     <entryLink import="true" name="Pact Magic Table" hidden="false" id="70c5-c618-22ec-57b5" type="selectionEntry" targetId="1a0e-e59c-8c8a-0064" sortIndex="3"/>
     <entryLink import="true" name="Starscourge Magic Table" hidden="false" id="3bbb-808a-ad4e-3ec4" type="selectionEntry" targetId="0488-672a-ae46-da2b" sortIndex="4"/>
-    <entryLink import="true" name="Legionares" hidden="false" id="ffe9-9f12-4b2d-55af" type="selectionEntry" targetId="6704-2c42-60af-25bb" sortIndex="13"/>
+    <entryLink import="true" name="Legionares" hidden="false" id="ffe9-9f12-4b2d-55af" type="selectionEntry" targetId="6704-2c42-60af-25bb" sortIndex="12"/>
   </entryLinks>
   <publications>
     <publication name="Infernal Legion Codex" id="3776-9efc-a909-b376" hidden="false" publisher="Infernal Legion Codex" publicationDate="6/8/2025"/>
