@@ -905,7 +905,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Starscourge" id="ccb8-27b6-0ad7-fd67" hidden="false" defaultSelectionEntryId="6f62-cfd6-527b-995d">
           <selectionEntries>
-            <selectionEntry type="unit" import="true" name="Starscourge Caster" hidden="false" id="6f62-cfd6-527b-995d">
+            <selectionEntry type="upgrade" import="true" name="Starscourge Caster" hidden="false" id="6f62-cfd6-527b-995d">
               <profiles>
                 <profile name="Starblight Staff" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="4a0b-432b-0a96-e4fe">
                   <characteristics>
@@ -933,7 +933,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="unit" import="true" name="Starscourge Executioner" hidden="false" id="cbfb-68f1-e698-a4ed">
+            <selectionEntry type="upgrade" import="true" name="Starscourge Executioner" hidden="false" id="cbfb-68f1-e698-a4ed">
               <profiles>
                 <profile name="Starblight Cleaver" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="c335-d161-86c5-6ba9">
                   <characteristics>
