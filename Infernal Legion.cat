@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="13" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="14" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
@@ -1140,8 +1140,8 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         <profile name="Weakness Curse" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="560a-f2fe-df24-b750">
           <characteristics>
             <characteristic name="R" typeId="db30-9146-1102-eded">5</characteristic>
-            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">5+</characteristic>
-            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">10+</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">8+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">13+</characteristic>
             <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit has -1 AP on their attacks on a critical cast the target unit also deals 1 less damage on all their attacks (minimum of 1) (this effect cannot stack)</characteristic>
             <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Twice per turn</characteristic>
           </characteristics>
