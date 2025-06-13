@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
@@ -134,12 +134,12 @@
     </profile>
     <profile name="Lone Operative" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="768c-8046-72b1-0a90">
       <characteristics>
-        <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+        <characteristic name="Description" typeId="94fb-5af3-adea-b298">Ranged attacks from outside 5 hex cannot target this model</characteristic>
       </characteristics>
     </profile>
     <profile name="Stealth" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="fc30-c203-b879-479a">
       <characteristics>
-        <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+        <characteristic name="Description" typeId="94fb-5af3-adea-b298">Enemy units have -1 to hit on ranged attacks against this unit</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="15" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Legio Demonica" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="16" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
@@ -620,7 +620,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
       <profiles>
         <profile name="Eruption" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="2917-a99c-266e-004b">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this a model in this unit dies roll a D6 on a 3+ all units within 2 tiles of it takes 2 damage </characteristic>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this a model in this unit dies roll a D6 on a 3+ all units within 2 tiles of it takes 2 damage</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -819,7 +819,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         </profile>
         <profile name="Abyssal Reinforcements" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="0a69-a455-332d-2bbe">
           <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Twice per battle you may summon a unit of either Infernal Imps or Shadow Imps with D6+4 models in it </characteristic>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Twice per battle you may summon a unit of either Infernal Imps or Shadow Imps with D6+4 models in it</characteristic>
           </characteristics>
         </profile>
         <profile name="Infernal Shroud" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="5e8d-c44b-867d-2fa4">
@@ -899,6 +899,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         <categoryLink targetId="92d7-3555-3aad-3720" id="08d0-cc64-2a74-9d3c" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="781e-c264-d01b-914c" primary="false" name="Caster"/>
         <categoryLink targetId="05a6-7fa9-ae44-a7a3" id="13b7-91c9-f418-b2f6" primary="false" name="Starscourge"/>
+        <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="8b0b-caab-ec63-9fa3" primary="false" name="Demon"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="210"/>
@@ -991,6 +992,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         <categoryLink targetId="92d7-3555-3aad-3720" id="133e-2c6f-96cc-cb99" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="c6b2-77d5-1f6e-28df" primary="false" name="Caster"/>
         <categoryLink targetId="05a6-7fa9-ae44-a7a3" id="8de6-cd01-b55b-fc1e" primary="false" name="Starscourge"/>
+        <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="5bc7-dc08-081b-8b33" primary="false" name="Demon"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="380"/>
@@ -1027,7 +1029,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this unit dies on a 2+ it deals 5 damage to ALL units within 3 tiles of it</characteristic>
           </characteristics>
         </profile>
-        <profile name="Invulnerable" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="4082-2a5c-81c1-6c65">
+        <profile name="Invulnerable (4+)" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="4082-2a5c-81c1-6c65">
           <characteristics>
             <characteristic name="Description" typeId="94fb-5af3-adea-b298">When an attack deals damage on a 4+ it deals no damage instead</characteristic>
           </characteristics>
@@ -1065,21 +1067,21 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         </profile>
         <profile name="Cosmoshatter - Shatter" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="efad-cd9a-58a5-3a67">
           <characteristics>
-            <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
             <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
             <characteristic name="AP" typeId="4984-c247-cad3-da1d">10</characteristic>
             <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">4</characteristic>
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Infernal Cabal" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="445f-11f4-f780-811f">
+        <profile name="Bringer of the End" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="445f-11f4-f780-811f">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298">All infernal units in your army get +1 organization and have a +1 to the result of any immolate rolls</characteristic>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When this Starscourge Yundvall destroys an enemy vehicle or beast Cosmoshatter - Shatter gains 1 extra attack. If Starscourge Yundvall destroys the enemy Champion Cosmoshatter - Shatter gains 1 extra attack, 3 extra AP, and 1 extra damage</characteristic>
           </characteristics>
         </profile>
-        <profile name="Infernal Calling" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="3ef3-d653-e17d-797b">
+        <profile name="Scourge&apos;s Blessing" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="3ef3-d653-e17d-797b">
           <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Twice per battle you may use this on an infernal unit to return it to full strength</characteristic>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Once per battle you may Improve a target Starscourge&apos;s Movement, Armor, and Control by 2 and the Starscourge&apos;s weapons Attacks, AP, and Damage by 1 until the end of turn</characteristic>
           </characteristics>
         </profile>
         <profile name="Cosmoshatter - Slice" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="1c71-c0d1-53e1-7899">
@@ -1091,15 +1093,23 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Invulnerable" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="afc7-9a63-7194-0cc5">
+        <profile name="Invulnerable (5+)" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="afc7-9a63-7194-0cc5">
           <characteristics>
             <characteristic name="Description" typeId="94fb-5af3-adea-b298">When an attack deals damage on a 5+ it deals no damage instead</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Commander of the Starscourges" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="ffe4-6a28-9a53-6a34">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">While an allied Starscourge is within 4 tiles of Starscourge Yundvall they may reroll sorcery checks</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Starscourge Magic" id="7ea8-cd36-fcd2-5269" hidden="false" type="profile" targetId="5297-d6b3-3438-3fe4"/>
       </infoLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pact Magic Table" hidden="false" id="1a0e-e59c-8c8a-0064" defaultAmount="1" sortIndex="0" collapsible="true">
       <constraints>
@@ -1326,8 +1336,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
       <profiles>
         <profile name="Resilient Legion" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="8766-1e6e-3690-bd24">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of each turn this unit heals D3 Hit Points
-</characteristic>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of each turn this unit heals D3 Hit Points</characteristic>
           </characteristics>
         </profile>
         <profile name="Hatebound Armor" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="d7e7-d3a6-fc58-c0e9">
@@ -1372,6 +1381,69 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zorthar Hier to the Abyss" hidden="false" id="e873-3979-972a-14c6">
+      <categoryLinks>
+        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="1fe2-c150-db06-67d8" primary="true" name="Champion"/>
+        <categoryLink targetId="92d7-3555-3aad-3720" id="707a-aa91-4e47-91f9" primary="false" name="Faction: Infernal Legion"/>
+        <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="ad7d-78a6-46bf-f568" primary="false" name="Demon"/>
+        <categoryLink targetId="1c5c-47db-ab07-ba35" id="d3b5-3b84-7622-d502" primary="false" name="Beast"/>
+        <categoryLink targetId="fa11-5829-87e0-34eb" id="ad00-9e4e-51c6-c628" primary="false" name="Shadow"/>
+        <categoryLink targetId="bfe6-c722-8fc8-42a6" id="9c9d-5b93-30f2-0b5b" primary="false" name="Caster"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Trorranith Prince of Flame" hidden="false" id="8e16-5849-5d10-e5e4">
+      <categoryLinks>
+        <categoryLink targetId="1c5c-47db-ab07-ba35" id="7c9b-35c6-8a01-bace" primary="false" name="Beast"/>
+        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="e99e-10d4-1447-beb0" primary="true" name="Champion"/>
+        <categoryLink targetId="92d7-3555-3aad-3720" id="e1e8-a83b-82cd-55cb" primary="false" name="Faction: Infernal Legion"/>
+        <categoryLink targetId="bfe6-c722-8fc8-42a6" id="7620-52b3-4177-4e42" primary="false" name="Caster"/>
+        <categoryLink targetId="2ce8-5b51-a752-3da7" id="adfe-35cb-091e-0536" primary="false" name="Infernal"/>
+        <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="91a4-f7a1-faf2-7aca" primary="false" name="Demon"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c306-ee12-471f-da43" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Trorranith Prince of Flame" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="575d-9f70-8c82-bba1">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">5</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">8</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">12</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">4</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Akilon - Blight of Flame" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="9cb2-b5bc-fede-f383">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">12</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">5</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Cabal" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="9bd7-ca3c-ce4f-2a08">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">All infernal units in your army get +1 organization and have a +1 to the result of any immolate rolls</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable (5+)" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="6bb3-e307-d6de-9894">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">When an attack deals damage on a 5+ it deals no damage instead</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grand Immolate" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="2c70-2c05-4a6c-3ca5">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of each turn on a 4+ it deals 1 damage to all enemy units within melee range of it</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wake of Flame" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="033a-7091-1e10-bc8f">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of your turn you may bless 2 Infernal units within line of sight granting them both +1 movement and +1 attacks on all melee weapons</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Abyssal Overlord" hidden="false" id="ccb1-fce6-6199-1c77" type="selectionEntry" targetId="25a7-22d8-3c85-9d68" sortIndex="18"/>
@@ -1380,7 +1452,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
     <entryLink import="true" name="Demonic Mastermind" hidden="false" id="41c9-228a-b444-3512" type="selectionEntry" targetId="c336-5a3a-d1b7-67f1" sortIndex="17"/>
     <entryLink import="true" name="Greater Starscourge" hidden="false" id="31eb-1b6a-44e4-9858" type="selectionEntry" targetId="d47f-4d5e-5e88-e8c3" sortIndex="20"/>
     <entryLink import="true" name="Guilded Sorcerers" hidden="false" id="19e1-fda3-d333-2254" type="selectionEntry" targetId="ecfd-22c1-9a78-44e0" sortIndex="14"/>
-    <entryLink import="true" name="Hex Casters" hidden="false" id="3fad-5e44-9921-ec97" type="selectionEntry" targetId="7b18-da7a-6921-ca7c" sortIndex="8"/>
+    <entryLink import="true" name="Hexcasters" hidden="false" id="3fad-5e44-9921-ec97" type="selectionEntry" targetId="7b18-da7a-6921-ca7c" sortIndex="8"/>
     <entryLink import="true" name="Infernal Imps" hidden="false" id="8b00-3117-ae0e-f8f3" type="selectionEntry" targetId="d9d5-b97e-3987-0cb4" sortIndex="5"/>
     <entryLink import="true" name="Magma Golems" hidden="false" id="a2c8-d0d2-6b9a-f1e2" type="selectionEntry" targetId="8547-c2e5-140a-0f69" sortIndex="15"/>
     <entryLink import="true" name="Magma Hounds" hidden="false" id="e5d2-f5f6-a795-b5db" type="selectionEntry" targetId="f6c9-5ab9-b58d-a80b" sortIndex="10"/>
@@ -1393,9 +1465,10 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
     <entryLink import="true" name="Pact Magic Table" hidden="false" id="70c5-c618-22ec-57b5" type="selectionEntry" targetId="1a0e-e59c-8c8a-0064" sortIndex="3"/>
     <entryLink import="true" name="Starscourge Magic Table" hidden="false" id="3bbb-808a-ad4e-3ec4" type="selectionEntry" targetId="0488-672a-ae46-da2b" sortIndex="4"/>
     <entryLink import="true" name="Legionares" hidden="false" id="ffe9-9f12-4b2d-55af" type="selectionEntry" targetId="6704-2c42-60af-25bb" sortIndex="12"/>
+    <entryLink import="true" name="Trorranith Prince of Flame" hidden="false" id="814b-264b-f3b6-bd9e" type="selectionEntry" targetId="8e16-5849-5d10-e5e4"/>
   </entryLinks>
   <publications>
-    <publication name="Infernal Legion Codex" id="3776-9efc-a909-b376" hidden="false" publisher="Infernal Legion Codex" publicationDate="6/8/2025"/>
+    <publication name="Legio Demonica Codex" id="3776-9efc-a909-b376" hidden="false" publisher="Infernal Legion Codex" publicationDate="6/8/2025"/>
   </publications>
   <profileTypes>
     <profileType name="Sorcery" id="5c3c-94d1-6e27-0dea" hidden="false" sortIndex="7">
