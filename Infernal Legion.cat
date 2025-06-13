@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="14" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="15" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
@@ -1115,7 +1115,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             <characteristic name="R" typeId="db30-9146-1102-eded">8</characteristic>
             <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">4+</characteristic>
             <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">9+</characteristic>
-            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Land an attack with 5 AP that deals 1 damage on a critical cast this attack has 7 AP and deals 2 damage</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Land an attack with 5 AP that deals 1 damage. On a critical cast this attack has 7 AP and deals 2 damage</characteristic>
             <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">None</characteristic>
           </characteristics>
         </profile>
@@ -1124,7 +1124,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             <characteristic name="R" typeId="db30-9146-1102-eded">4</characteristic>
             <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">4+</characteristic>
             <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">9+</characteristic>
-            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Land 2 attacks with 6 AP dealing 2 damage on a critical cast the attacks have 8 AP instead</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Land 2 attacks with 6 AP dealing 2 damage. On a critical cast the attacks have 8 AP instead</characteristic>
             <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">None</characteristic>
           </characteristics>
         </profile>
@@ -1133,7 +1133,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             <characteristic name="R" typeId="db30-9146-1102-eded">6</characteristic>
             <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">8+</characteristic>
             <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">14+</characteristic>
-            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit has -1 armor for the rest of the turn on a critical cast the target unit has -2 armor instead (this effect cannot stack)</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit has -1 armor for the rest of the turn. On a critical cast the target unit has -2 armor instead. (this effect cannot stack)</characteristic>
             <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Twice per turn</characteristic>
           </characteristics>
         </profile>
@@ -1142,7 +1142,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             <characteristic name="R" typeId="db30-9146-1102-eded">5</characteristic>
             <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">8+</characteristic>
             <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">13+</characteristic>
-            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit has -1 AP on their attacks on a critical cast the target unit also deals 1 less damage on all their attacks (minimum of 1) (this effect cannot stack)</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit has -1 AP on their attacks. On a critical cast the target unit also deals 1 less damage on all their attacks (minimum of 1) (this effect cannot stack)</characteristic>
             <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Twice per turn</characteristic>
           </characteristics>
         </profile>
@@ -1151,7 +1151,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             <characteristic name="R" typeId="db30-9146-1102-eded">3</characteristic>
             <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">9+</characteristic>
             <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">14+</characteristic>
-            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit gains +1 damage on all their attacks but the unit that cast this takes D3 damage (this effect cannot stack) on a critical cast Target unit gains +1 damage and +2 AP on all their attacks but the unit that cast this takes D3+3 damage</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit gains +1 damage on all their attacks, but the unit that cast this takes D3 damage. on a critical cast Target unit gains +1 damage and +2 AP on all their attacks, but the unit that cast this takes D3+3 damage (this effect cannot stack)</characteristic>
             <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Twice per turn</characteristic>
           </characteristics>
         </profile>
@@ -1203,7 +1203,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             <characteristic name="R" typeId="db30-9146-1102-eded">8</characteristic>
             <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">1+</characteristic>
             <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">17+</characteristic>
-            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target Unit has the sorcery roll&apos;s total divided by 2 attacks land on them each with 6 AP dealing 1 damage each on a critical cast the attacks have 8 AP instead</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target Unit has the sorcery roll&apos;s total divided by 2 attacks land on them with 6 AP dealing 1 damage each on a critical cast the attacks have 8 AP instead</characteristic>
             <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">None</characteristic>
           </characteristics>
         </profile>
