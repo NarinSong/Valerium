@@ -222,8 +222,8 @@
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ac7c-18fc-fa0b-85cb-min" includeChildSelections="false"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="ac7c-18fc-fa0b-85cb-max" includeChildSelections="false"/>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="ac7c-18fc-fa0b-85cb-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="ac7c-18fc-fa0b-85cb-max" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="decrement" value="1" field="ac7c-18fc-fa0b-85cb-min">
@@ -257,7 +257,7 @@
             <infoLink name="Mastered Pact Magic" id="c18d-633e-12f1-a167" hidden="false" type="profile" targetId="18fe-ae8b-4f1a-8a1b"/>
           </infoLinks>
           <costs>
-            <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
+            <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="10"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8d7-037d-38a1-4268" includeChildSelections="false"/>
@@ -1214,6 +1214,11 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">18+</characteristic>
             <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit no longer has an Invulnerable for the rest of the turn. On a critical cast they also have 2 less Armor</characteristic>
             <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Once per turn</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sorcery Casting Rule" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="b500-afbb-bc84-219e">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Any model with the Pact Magic, Mastered Pact Magic, or Starscourge Magic Special Action may attempt to cast a spell from their respective spell table you succeed in casting the spell if you beat the MS check and you critically cast if you beat the CS check. Any rolled doubles will result in the unit casting the spell taking D3 damage. Any rolled triples will result in the unit taking D6 damage. You take maximum damage if the triples or doubles are 1s</characteristic>
           </characteristics>
         </profile>
       </profiles>
