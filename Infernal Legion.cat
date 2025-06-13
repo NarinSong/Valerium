@@ -1418,7 +1418,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
             <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
             <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
             <characteristic name="AP" typeId="4984-c247-cad3-da1d">12</characteristic>
-            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">5</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">D3+2</characteristic>
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
           </characteristics>
         </profile>
