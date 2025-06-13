@@ -1443,6 +1443,9 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Mastered Pact Magic" id="b5ee-d666-ee11-899e" hidden="false" type="profile" targetId="18fe-ae8b-4f1a-8a1b"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
