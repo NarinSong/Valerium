@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Legio Demonica" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="16" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Legio Demonica" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="17" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
@@ -1440,6 +1440,11 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         <profile name="Wake of Flame" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="033a-7091-1e10-bc8f">
           <characteristics>
             <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of your turn you may bless 2 Infernal units within line of sight granting them both +1 movement and +1 attacks on all melee weapons</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Calling" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="b635-f4c3-b8e3-385d">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Once per battle you may return a destroyed Infernal unit back to the battle at full strength and within 1 tiles of this unit</characteristic>
           </characteristics>
         </profile>
       </profiles>
