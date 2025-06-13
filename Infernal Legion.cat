@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="12" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Infernal Legion" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="13" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
@@ -208,7 +208,7 @@
         <selectionEntry type="model" import="true" name="Hexcaster" hidden="false" id="1c06-0423-5bf2-d9ef">
           <infoLinks>
             <infoLink name="Infernal Claws" id="5943-fdf0-5b5e-cc3c" hidden="false" type="profile" targetId="1e0b-b2da-dd96-85bc"/>
-            <infoLink name="Hex Magic" id="f727-87af-f809-10f5" hidden="false" type="profile" targetId="7b4e-99ed-ad32-5790"/>
+            <infoLink name="Pact Magic" id="e208-b3d7-d073-e99e" hidden="false" type="profile" targetId="28c1-5066-7d7c-10f4"/>
           </infoLinks>
           <profiles>
             <profile name="Hexcaster" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="9879-ddfa-4405-d480">
@@ -254,7 +254,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Infernal Claws" id="b5ce-e94e-f98d-7c2c" hidden="false" type="profile" targetId="1e0b-b2da-dd96-85bc"/>
-            <infoLink name="Mastered Hex Magic" id="ab48-d985-4667-82b1" hidden="false" type="profile" targetId="805e-4d0e-57a3-9a09"/>
+            <infoLink name="Mastered Pact Magic" id="c18d-633e-12f1-a167" hidden="false" type="profile" targetId="18fe-ae8b-4f1a-8a1b"/>
           </infoLinks>
           <costs>
             <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="15"/>
@@ -288,6 +288,13 @@
       <infoLinks>
         <infoLink name="Immolate" id="d0fa-b489-8765-8bf1" hidden="false" type="profile" targetId="e588-e564-f2d1-d606"/>
       </infoLinks>
+      <profiles>
+        <profile name="Hex Mages" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="52a4-c2c5-3151-31f7">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">All Sorceries cast by this unit have -3 to their rolls</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shadowclaws" hidden="false" id="3753-350d-2ba3-c8c9" sortIndex="6">
       <categoryLinks>
@@ -416,9 +423,6 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d32e-6eac-af4d-7730-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d32e-6eac-af4d-7730-max" includeChildSelections="false"/>
           </constraints>
-          <infoLinks>
-            <infoLink name="Hex Magic" id="d8ac-ea01-2726-b107" hidden="false" type="profile" targetId="7b4e-99ed-ad32-5790"/>
-          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -651,11 +655,11 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Guilded Sorcerers" hidden="false" id="ecfd-22c1-9a78-44e0" sortIndex="11">
       <categoryLinks>
-        <categoryLink targetId="fa11-5829-87e0-34eb" id="9c9f-3613-b1cc-a432" primary="false" name="Shadow"/>
         <categoryLink targetId="22f9-cf84-899d-c724" id="65e3-7945-6509-b2e2" primary="false" name="Human"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="d932-cf76-e7df-7577" primary="false" name="Caster"/>
         <categoryLink targetId="92d7-3555-3aad-3720" id="1d64-6fa5-87f2-5a96" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="3448-dedd-c4dd-96f0" primary="true" name="Infantry"/>
+        <categoryLink targetId="2ce8-5b51-a752-3da7" id="9145-ccd9-7b47-cc78" primary="false" name="Infernal"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="140"/>
@@ -693,9 +697,9 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Sorcerer&apos;s Radiance" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="7569-8bca-5e5e-1bb0">
+        <profile name="Masters of Sorcery" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="7569-8bca-5e5e-1bb0">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298">All allies within 3 tiles have +1 to magic checks they make</characteristic>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">Models in this unit have +2 to sorcery rolls</characteristic>
           </characteristics>
         </profile>
         <profile name="Summon Elemental" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="5309-9115-c261-4e25">
@@ -926,7 +930,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
                     <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Blast] [Concentration 3]</characteristic>
                   </characteristics>
                 </profile>
-                <profile name="Master of Sorcery" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="23bc-0394-c310-bfe3">
+                <profile name="Gift of Magic" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="23bc-0394-c310-bfe3">
                   <characteristics>
                     <characteristic name="Description" typeId="94fb-5af3-adea-b298">This unit and all allied units within 4 hex of it have +1 to all magic checks</characteristic>
                   </characteristics>
@@ -1097,16 +1101,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         <infoLink name="Starscourge Magic" id="7ea8-cd36-fcd2-5269" hidden="false" type="profile" targetId="5297-d6b3-3438-3fe4"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hex Magic Table" hidden="false" id="794b-9bc1-c664-1205" defaultAmount="1" sortIndex="0">
-      <categoryLinks>
-        <categoryLink targetId="6c8d-d092-b350-6ff3" id="97bf-d88a-dccb-0af6" primary="true" name="Configuration"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3753-a5d2-41dd-6e4f-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3753-a5d2-41dd-6e4f-max" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pact Magic Table" hidden="false" id="1a0e-e59c-8c8a-0064" defaultAmount="1" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Pact Magic Table" hidden="false" id="1a0e-e59c-8c8a-0064" defaultAmount="1" sortIndex="0" collapsible="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e49f-c412-5eb2-884e-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e49f-c412-5eb2-884e-max" includeChildSelections="false"/>
@@ -1114,8 +1109,78 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
       <categoryLinks>
         <categoryLink targetId="6c8d-d092-b350-6ff3" id="4daf-228e-c956-2f26" primary="true" name="Configuration"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Dark Bolt" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="047b-ad91-b0f5-01f8">
+          <characteristics>
+            <characteristic name="R" typeId="db30-9146-1102-eded">8</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">4+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">9+</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Land an attack with 5 AP that deals 1 damage on a critical cast this attack has 7 AP and deals 2 damage</characteristic>
+            <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">None</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dark Blast" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="1e82-f217-14bc-ffbb">
+          <characteristics>
+            <characteristic name="R" typeId="db30-9146-1102-eded">4</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">4+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">9+</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Land 2 attacks with 6 AP dealing 2 damage on a critical cast the attacks have 8 AP instead</characteristic>
+            <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">None</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hex of Frailty" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="87dc-7d4a-3cb1-fe7e">
+          <characteristics>
+            <characteristic name="R" typeId="db30-9146-1102-eded">6</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">8+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">14+</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit has -1 armor for the rest of the turn on a critical cast the target unit has -2 armor instead (this effect cannot stack)</characteristic>
+            <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Twice per turn</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Weakness Curse" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="560a-f2fe-df24-b750">
+          <characteristics>
+            <characteristic name="R" typeId="db30-9146-1102-eded">5</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">5+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">10+</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit has -1 AP on their attacks on a critical cast the target unit also deals 1 less damage on all their attacks (minimum of 1) (this effect cannot stack)</characteristic>
+            <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Twice per turn</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Pact" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="f81a-68e2-ff1e-9b44">
+          <characteristics>
+            <characteristic name="R" typeId="db30-9146-1102-eded">3</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">9+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">14+</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit gains +1 damage on all their attacks but the unit that cast this takes D3 damage (this effect cannot stack) on a critical cast Target unit gains +1 damage and +2 AP on all their attacks but the unit that cast this takes D3+3 damage</characteristic>
+            <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Twice per turn</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sorcery Casting Rule" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="8300-9b9a-91fd-60e2">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Any model with the Pact Magic, Mastered Pact Magic, or Starscourge Magic Special Action may attempt to cast a spell from their respective spell table you succeed in casting the spell if you beat the MS check and you critically cast if you beat the CS check. Any rolled doubles will result in the unit casting the spell taking D3 damage. Any rolled triples will result in the unit taking D6 damage. You take maximum damage if the triples or doubles are 1s</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Abyssal Boon" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="460c-3c5d-45c2-e431">
+          <characteristics>
+            <characteristic name="R" typeId="db30-9146-1102-eded">3</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">7+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">13+</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target allied unit heals D3+1 Hit Points bringing back any destroyed models if needed. On a critical cast heal D3+3 instead. On a failed cast the target unit takes D3 damage instead.</characteristic>
+            <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Once per turn</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shatter Mind" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="ec59-4c39-6824-2452">
+          <characteristics>
+            <characteristic name="R" typeId="db30-9146-1102-eded">4</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">8+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">14+</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Make the target unit take an organization test with -1 to the result. On a critical cast the target unit becomes disorganized</characteristic>
+            <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Once per turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Starscourge Magic Table" hidden="false" id="0488-672a-ae46-da2b" defaultAmount="1" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Starscourge Magic Table" hidden="false" id="0488-672a-ae46-da2b" defaultAmount="1" sortIndex="0" collapsible="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="dca9-9679-4061-1c35-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dca9-9679-4061-1c35-max" includeChildSelections="false"/>
@@ -1123,6 +1188,35 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
       <categoryLinks>
         <categoryLink targetId="6c8d-d092-b350-6ff3" id="0868-0033-3a21-64d4" primary="true" name="Configuration"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Astral Blight" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="faa8-a24a-790b-434c">
+          <characteristics>
+            <characteristic name="R" typeId="db30-9146-1102-eded">6</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">15+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">19+</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit suffers Astral Blight at the start of each turn for the rest of the game roll a D6 for each afflicted unit on a 4+ that unit takes D6 damage. On a critical cast they suffer this effect twice.</characteristic>
+            <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Twice per battle</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infernal Storm" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="289b-5f34-d069-a01d">
+          <characteristics>
+            <characteristic name="R" typeId="db30-9146-1102-eded">8</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">1+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">17+</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target Unit has the sorcery roll&apos;s total divided by 2 attacks land on them each with 6 AP dealing 1 damage each on a critical cast the attacks have 8 AP instead</characteristic>
+            <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">None</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fated Demise" typeId="5c3c-94d1-6e27-0dea" typeName="Sorcery" hidden="false" id="42f8-8385-abc9-ebf6">
+          <characteristics>
+            <characteristic name="R" typeId="db30-9146-1102-eded">6</characteristic>
+            <characteristic name="MS" typeId="9fc9-625c-60b0-6dbb">13+</characteristic>
+            <characteristic name="CS" typeId="46f8-ccc8-d66f-d72d">18+</characteristic>
+            <characteristic name="Description" typeId="5ac5-68ee-8b22-2b97">Target unit no longer has an Invulnerable for the rest of the turn. On a critical cast they also have 2 less Armor</characteristic>
+            <characteristic name="Limit" typeId="7c8e-d242-124d-efbc">Once per turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Infernal Claws" hidden="false" id="681c-daa6-d78d-ed71" sortIndex="1">
       <profiles>
@@ -1241,30 +1335,16 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         <infoLink name="Immolate" id="ef49-1a3e-2216-dae3" hidden="false" type="profile" targetId="e588-e564-f2d1-d606"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hex Cast" hidden="false" id="f80e-4a60-3417-be7b" sortIndex="2">
-      <profiles>
-        <profile name="Hex Magic" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="7b4e-99ed-ad32-5790">
-          <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use an ability from the Hex Magic Table</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Mastered Hex Magic" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="805e-4d0e-57a3-9a09">
-          <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use an ability from the Hex Magic Table with +2 to the result</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pact Magic" hidden="false" id="6d3d-7f52-95bc-0932" sortIndex="2">
       <profiles>
         <profile name="Pact Magic" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="28c1-5066-7d7c-10f4">
           <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use an ability from the Pact Magic Table, or an ability from the Hex Magic table with +2 to the result</characteristic>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use an ability from the Pact Magic Table rolling 2D6 for spell checks</characteristic>
           </characteristics>
         </profile>
         <profile name="Mastered Pact Magic" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="18fe-ae8b-4f1a-8a1b">
           <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use an ability from the Pact Magic Table with +2 to the result, or an ability from the Hex Magic table with +4 to the result</characteristic>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use an ability from the Pact Magic Table rolling 2D6 with the option to roll 3D6 for spell checks</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1273,7 +1353,7 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
       <profiles>
         <profile name="Starscourge Magic" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="5297-d6b3-3438-3fe4">
           <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use an ability from the Starscourge Magic Table, an ability from the Pact Magic table with +3 to the result, or an ability from the Hex Magic table with +6 to the result</characteristic>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use an ability from the Starscourge Magic Table or two abilities from the pact magic table rolling 3D6 with the option to roll 4D6 for spell checks</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1305,7 +1385,6 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
     <entryLink import="true" name="Shamblers" hidden="false" id="cb97-4516-0b32-b564" type="selectionEntry" targetId="4937-5438-3be8-33ab" sortIndex="7"/>
     <entryLink import="true" name="Starscourge" hidden="false" id="3fdc-2913-4728-fe76" type="selectionEntry" targetId="2a93-7496-050a-26e1" sortIndex="19"/>
     <entryLink import="true" name="Starscourge Yundvall" hidden="false" id="204e-7a06-ac34-3daa" type="selectionEntry" targetId="a4c9-5117-ea99-4ea0"/>
-    <entryLink import="true" name="Hex Magic Table" hidden="false" id="d638-c3f0-9f8e-280d" type="selectionEntry" targetId="794b-9bc1-c664-1205" sortIndex="2"/>
     <entryLink import="true" name="Pact Magic Table" hidden="false" id="70c5-c618-22ec-57b5" type="selectionEntry" targetId="1a0e-e59c-8c8a-0064" sortIndex="3"/>
     <entryLink import="true" name="Starscourge Magic Table" hidden="false" id="3bbb-808a-ad4e-3ec4" type="selectionEntry" targetId="0488-672a-ae46-da2b" sortIndex="4"/>
     <entryLink import="true" name="Legionares" hidden="false" id="ffe9-9f12-4b2d-55af" type="selectionEntry" targetId="6704-2c42-60af-25bb" sortIndex="12"/>
@@ -1313,4 +1392,15 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
   <publications>
     <publication name="Infernal Legion Codex" id="3776-9efc-a909-b376" hidden="false" publisher="Infernal Legion Codex" publicationDate="6/8/2025"/>
   </publications>
+  <profileTypes>
+    <profileType name="Sorcery" id="5c3c-94d1-6e27-0dea" hidden="false" sortIndex="7">
+      <characteristicTypes>
+        <characteristicType name="R" id="db30-9146-1102-eded"/>
+        <characteristicType name="MS" id="9fc9-625c-60b0-6dbb"/>
+        <characteristicType name="CS" id="46f8-ccc8-d66f-d72d"/>
+        <characteristicType name="Description" id="5ac5-68ee-8b22-2b97"/>
+        <characteristicType name="Limit" id="7c8e-d242-124d-efbc"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
 </catalogue>
