@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
@@ -116,4 +116,31 @@
   <entryLinks>
     <entryLink import="true" name="Battle Size" hidden="false" id="d2d5-a810-d34f-50fb" type="selectionEntry" targetId="61fa-30e2-a2ad-f016"/>
   </entryLinks>
+  <sharedProfiles>
+    <profile name="Invulnerable (4+)" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="a1a0-8b24-4db4-9048">
+      <characteristics>
+        <characteristic name="Description" typeId="94fb-5af3-adea-b298">When an attack deals damage on a 4+ it deals no damage instead</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Invulnerable (5+)" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="d0ca-f05c-a92c-4974">
+      <characteristics>
+        <characteristic name="Description" typeId="94fb-5af3-adea-b298">When an attack deals damage on a 5+ it deals no damage instead</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Invulnerable (6+)" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="6e1c-2cf6-fb8d-f11f">
+      <characteristics>
+        <characteristic name="Description" typeId="94fb-5af3-adea-b298">When an attack deals damage on a 6+ it deals no damage instead</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lone Operative" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="768c-8046-72b1-0a90">
+      <characteristics>
+        <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+      </characteristics>
+    </profile>
+    <profile name="Stealth" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="fc30-c203-b879-479a">
+      <characteristics>
+        <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>
