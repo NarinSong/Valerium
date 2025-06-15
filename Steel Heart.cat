@@ -1556,7 +1556,7 @@ the barricade has 6 AR and 3 HP</characteristic>
         </profile>
         <profile name="Unyielding Craft" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="c527-7068-99cc-16ed">
           <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">You may repair target allied vehicle within melee range healing it for D3+1 and giving it Invulnerable 4+ until start of your next turn</characteristic>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">You may repair target allied vehicle within melee range healing it for D3+1 and giving it Invulnerable (4+) until start of your next turn</characteristic>
           </characteristics>
         </profile>
         <profile name="Lone Operative*" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="e023-3d3e-3ee3-5485">
