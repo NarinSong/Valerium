@@ -1288,9 +1288,9 @@
                 <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This unit may use their action to destroy a terrain feature. completes at the end of opponent&apos;s next turn</characteristic>
               </characteristics>
             </profile>
-            <profile name="Repair" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="d52a-85b0-a4ae-0d97">
+            <profile name="Field Repair" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="d52a-85b0-a4ae-0d97">
               <characteristics>
-                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use their action to repair a vehicle model within 2 tiles for D6 HP</characteristic>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model may use their action to repair a vehicle model within melee range for D3 HP</characteristic>
               </characteristics>
             </profile>
           </profiles>
