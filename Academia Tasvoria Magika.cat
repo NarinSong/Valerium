@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="477c-bec9-58f2-967c" name="Academia Tasvoria Magika" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="1" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="477c-bec9-58f2-967c" name="Academia Tasvoria Magika" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="2" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Magus Porotosm" hidden="false" id="fe16-28ab-7ab9-b9b9">
+    <selectionEntry type="unit" import="true" name="Magus Porotosm" hidden="false" id="fe16-28ab-7ab9-b9b9">
       <categoryLinks>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="26bd-f8ef-c2ec-9854" primary="true" name="Champion"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d208-abaf-a907-f33b" includeChildSelections="false"/>
       </constraints>
+      <profiles>
+        <profile name="Porotosm Staff" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="e198-d488-cf20-81e7">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">12</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">4</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">2+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">50000</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">2</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Entry" hidden="false" id="5411-dce1-6eb2-1a2a"/>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Magus Porotosm" hidden="false" id="cf6d-6173-af8f-6115" type="selectionEntry" targetId="fe16-28ab-7ab9-b9b9"/>
