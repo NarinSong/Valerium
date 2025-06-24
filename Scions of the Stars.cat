@@ -476,6 +476,12 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="b7e9-e362-1112-ddf6" primary="false" name="Infantry"/>
+        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="0a2f-51a6-175e-e234" primary="true" name="Champion"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="b62f-3d42-4c03-40c6" primary="false" name="Faction: Scions of the Stars"/>
+        <categoryLink targetId="0a26-5020-be5b-468e" id="58a0-e7ec-636d-8c8e" primary="false" name="Scion"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Purgation" hidden="false" id="5374-90f2-2afc-7c4e" sortIndex="0">
       <profiles>
