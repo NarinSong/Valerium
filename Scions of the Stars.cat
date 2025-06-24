@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c621-a6be-6626-d89d" name="Scions of the Stars" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="2" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c621-a6be-6626-d89d" name="Scions of the Stars" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="3" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Renallia, of the First Light" hidden="false" id="ec34-d43e-637d-6632" sortIndex="100">
       <categoryLinks>
@@ -276,11 +276,9 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Purgation of Faith" hidden="false" id="e1f7-4584-af1c-034e" type="profile" targetId="8775-1750-f909-0978"/>
-      </entryLinks>
       <infoLinks>
         <infoLink name="Purgation of Faith - Cleanse" id="a031-ad03-f6ce-5f82" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
+        <infoLink name="Purgation of Faith - Smite" id="9e38-0a33-7d57-8b8b" hidden="false" type="profile" targetId="8775-1750-f909-0978"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scion of Judgement" hidden="false" id="689e-028a-d8c8-089c" sortIndex="4">
@@ -315,11 +313,9 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Purgation of Faith" hidden="false" id="d0a9-f223-878f-5098" type="profile" targetId="8775-1750-f909-0978"/>
-      </entryLinks>
       <infoLinks>
         <infoLink name="Purgation of Faith - Cleanse" id="6e08-fa5c-7b0e-3a03" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
+        <infoLink name="Purgation of Faith - Smite" id="a01a-7fd1-6820-3b87" hidden="false" type="profile" targetId="8775-1750-f909-0978"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scion of Restoration" hidden="false" id="0eb4-a42b-2f4d-115b" sortIndex="4">
@@ -350,11 +346,9 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Purgation of Faith" hidden="false" id="49dc-847a-5aef-2528" type="profile" targetId="8775-1750-f909-0978"/>
-      </entryLinks>
       <infoLinks>
         <infoLink name="Purgation of Faith - Cleanse" id="78b1-c8ed-65d4-a5e5" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
+        <infoLink name="Purgation of Faith - Smite" id="a569-3e37-618f-5636" hidden="false" type="profile" targetId="8775-1750-f909-0978"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scion of Conquest" hidden="false" id="848c-35f3-2b49-2619" sortIndex="4">
@@ -389,11 +383,9 @@
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Purgation of Faith" hidden="false" id="6e34-0b17-e40b-55dd" type="profile" targetId="8775-1750-f909-0978"/>
-      </entryLinks>
       <infoLinks>
         <infoLink name="Purgation of Faith - Cleanse" id="240f-90ad-7f00-4557" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
+        <infoLink name="Purgation of Faith - Smite" id="6b2a-7649-fa6b-dfb9" hidden="false" type="profile" targetId="8775-1750-f909-0978"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Herald of the Stars" hidden="false" id="dc07-7a24-96ce-3f6d" sortIndex="3">
