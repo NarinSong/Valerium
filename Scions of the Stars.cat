@@ -1,16 +1,524 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c621-a6be-6626-d89d" name="Scions of the Stars" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="1" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c621-a6be-6626-d89d" name="Scions of the Stars" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="2" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Renallia of the First Light" hidden="false" id="ec34-d43e-637d-6632">
+    <selectionEntry type="unit" import="true" name="Renallia, of the First Light" hidden="false" id="ec34-d43e-637d-6632" sortIndex="100">
       <categoryLinks>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="ee8f-6052-c154-1206" primary="true" name="Champion"/>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="a2d7-891a-3a83-5b71" primary="false" name="Infantry"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="7e68-55fb-9595-e241" primary="false" name="Faction: Scions of the Stars"/>
+        <categoryLink targetId="0a26-5020-be5b-468e" id="6c01-2379-5de9-6589" primary="false" name="Scion"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1d2e-9798-9c71-3622" includeChildSelections="false"/>
       </constraints>
+      <profiles>
+        <profile name="Renallia of the First Light" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="6246-c14b-e156-ff40">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">6</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">10</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">16</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">8</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Providence - Strike" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="fead-9922-3e85-9808">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+        <profile name="Providence - Sweep" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="a753-53c6-3d60-9aff">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+        <profile name="Celestial Reckoning" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="a4a4-eb7a-1f42-99fc">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd"/>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314"/>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a"/>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74"/>
+            <characteristic name="D" typeId="7e81-d394-055d-8486"/>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="100"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Purgation of Faith - Cleanse" id="3362-c5b8-b74c-068e" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
+        <infoLink name="Purgation of Faith - Smite" id="2bc2-a822-8fb4-4022" hidden="false" type="profile" targetId="8775-1750-f909-0978"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Empyrean Guardian" hidden="false" id="29b1-35d2-f8b5-b218" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="04ad-b0ab-a875-cf5a" primary="true" name="Vehicle"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="7702-1fa8-fcaa-8a2a" primary="false" name="Faction: Scions of the Stars"/>
+        <categoryLink targetId="95a6-c0c9-39fa-ab2a" id="87b2-fe03-94df-f8e8" primary="false" name="Watcher"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="320"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="d474-3ced-8592-93b7" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Empyrean Guardian" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="c9df-ee57-1d92-30f1">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+        <profile name="Empyrean Holy Blade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="b729-9bcc-a722-0584">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+        <profile name="Empyrean Inferno" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="bf78-f28a-a25c-93b9">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd"/>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314"/>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a"/>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74"/>
+            <characteristic name="D" typeId="7e81-d394-055d-8486"/>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Starhost Magi" hidden="false" id="eb60-6f88-a5d7-661c" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="fea1-2751-6687-ba24" primary="true" name="Infantry"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="73f6-886e-3ee2-d531" primary="false" name="Faction: Scions of the Stars"/>
+        <categoryLink targetId="ddba-5d11-cf52-ae5d" id="57fe-0fbb-3482-6c7f" primary="false" name="Starhost"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="120"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="5" field="selections" scope="force" shared="true" id="6801-8e24-e64b-cbc6" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Starhost Magi" hidden="false" id="518e-bf32-aabb-36c3">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f699-8762-9d90-faf2-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f699-8762-9d90-faf2-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Starhost Magi" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="4bf1-1dd9-1c58-0d27">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+              </characteristics>
+            </profile>
+            <profile name="Staff of the Stars (Ranged)" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="d108-7c1c-5427-911b">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd"/>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314"/>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a"/>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74"/>
+                <characteristic name="D" typeId="7e81-d394-055d-8486"/>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+              </characteristics>
+            </profile>
+            <profile name="Staff of the Stars (Melee)" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="caa4-6fa2-0328-e46a">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Starhost Conquerors" hidden="false" id="c3c0-5799-2573-9a2e" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="e456-6a25-49fc-e6d8" primary="true" name="Infantry"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="f1fe-48f2-9820-e207" primary="false" name="Faction: Scions of the Stars"/>
+        <categoryLink targetId="ddba-5d11-cf52-ae5d" id="6d25-655d-50f0-d933" primary="false" name="Starhost"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="170"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="80b3-74d7-f2a7-c02d" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Starhost Conqueror" hidden="false" id="f81b-8ac3-a4ff-6a03">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8389-69ca-095b-1d7e-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8389-69ca-095b-1d7e-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Starhost Conqueror" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="38d1-3c5a-48eb-d956">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+              </characteristics>
+            </profile>
+            <profile name="Divine Spear" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="e566-8d73-0981-f8fd">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Starhost Protectors" hidden="false" id="3b36-e55b-a71e-66b7" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="170c-24a4-89c4-57ee" primary="true" name="Infantry"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="2846-8fdb-2bfe-1048" primary="false" name="Faction: Scions of the Stars"/>
+        <categoryLink targetId="ddba-5d11-cf52-ae5d" id="e8ee-3a3d-4014-838c" primary="false" name="Starhost"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="130"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="5" field="selections" scope="force" shared="true" id="aaa4-6ef1-9715-5e96" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Starhost Protector" hidden="false" id="181b-f8b5-5a48-67ef">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ed58-7438-7f04-0def-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ed58-7438-7f04-0def-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Starhost Protector" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="caa5-d41d-848b-1338">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+              </characteristics>
+            </profile>
+            <profile name="Sanctified Blade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="e62f-1ec5-9166-122b">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+              </characteristics>
+            </profile>
+            <profile name="Cleansing Fire" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="d792-c50e-71d7-08f7">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd"/>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314"/>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a"/>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74"/>
+                <characteristic name="D" typeId="7e81-d394-055d-8486"/>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scion of Wrath" hidden="false" id="e826-9bde-60ad-60dc" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="b532-bc98-8ee2-3aa6" primary="true" name="Infantry"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="3f72-ddd2-c041-62e0" primary="false" name="Faction: Scions of the Stars"/>
+        <categoryLink targetId="0a26-5020-be5b-468e" id="1960-a1c1-d8d3-7538" primary="false" name="Scion"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="270"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="af3a-2861-a787-1504" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Tyrant&apos;s Bane" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="4036-5ce6-620c-4092">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+        <profile name="Scion of Wrath" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="9ab5-59ab-6aca-2f97">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Purgation of Faith" hidden="false" id="e1f7-4584-af1c-034e" type="profile" targetId="8775-1750-f909-0978"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Purgation of Faith - Cleanse" id="a031-ad03-f6ce-5f82" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scion of Judgement" hidden="false" id="689e-028a-d8c8-089c" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="b493-2e8c-5a6d-dc66" primary="true" name="Infantry"/>
+        <categoryLink targetId="0a26-5020-be5b-468e" id="e7da-36cd-47c9-a86f" primary="false" name="Scion"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="627e-154f-10eb-8577" primary="false" name="Faction: Scions of the Stars"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="230"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="e945-9564-4d6a-3b8e" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Fires of Judgement" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="0fd0-e5b7-673b-9b06">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+        <profile name="Scion of Judgement" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="f28a-1369-53f3-2188">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Purgation of Faith" hidden="false" id="d0a9-f223-878f-5098" type="profile" targetId="8775-1750-f909-0978"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Purgation of Faith - Cleanse" id="6e08-fa5c-7b0e-3a03" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scion of Restoration" hidden="false" id="0eb4-a42b-2f4d-115b" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="8997-a8f8-d89b-720c" primary="true" name="Infantry"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="d39b-83db-9bf9-ac70" primary="false" name="Faction: Scions of the Stars"/>
+        <categoryLink targetId="0a26-5020-be5b-468e" id="6a27-072d-7086-e43c" primary="false" name="Scion"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="190"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="b40c-dc41-e7ff-4d78" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Grace&apos;s Hand" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="cefc-8daf-b3bb-9c0b">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+        <profile name="Scion of Restoration" typeId="b066-f9a8-93ac-c13a" typeName="Transport" hidden="false" id="c89d-723e-e406-3ba1">
+          <characteristics>
+            <characteristic name="Capacity" typeId="460f-a7a0-fbc9-d717"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Purgation of Faith" hidden="false" id="49dc-847a-5aef-2528" type="profile" targetId="8775-1750-f909-0978"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Purgation of Faith - Cleanse" id="78b1-c8ed-65d4-a5e5" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scion of Conquest" hidden="false" id="848c-35f3-2b49-2619" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="abbf-db40-8489-d82a" primary="true" name="Infantry"/>
+        <categoryLink targetId="0a26-5020-be5b-468e" id="4205-ad07-5b3e-8417" primary="false" name="Scion"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="172e-bd3c-d05d-eb76" primary="false" name="Faction: Scions of the Stars"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="210"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="4a19-878d-1c1c-8c9f" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Lightbringer" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="8c89-2ee2-3cd5-d7c4">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+        <profile name="Scion of Conquest" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="21f8-6579-adbe-5b98">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Purgation of Faith" hidden="false" id="6e34-0b17-e40b-55dd" type="profile" targetId="8775-1750-f909-0978"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Purgation of Faith - Cleanse" id="240f-90ad-7f00-4557" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Herald of the Stars" hidden="false" id="dc07-7a24-96ce-3f6d" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="7e64-9a9f-d007-e2de" primary="true" name="Infantry"/>
+        <categoryLink targetId="f085-0745-ae49-ca86" id="5fc9-b063-548b-6253" primary="false" name="Faction: Scions of the Stars"/>
+        <categoryLink targetId="95a6-c0c9-39fa-ab2a" id="29d9-f24c-8e8d-2e39" primary="false" name="Watcher"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="160"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2e88-5ff4-1b61-f945" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Herald of the Stars" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="4f6a-0b32-8370-80bb">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+        <profile name="Divine Starfire" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="ea74-ae79-2c05-e9d5">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd"/>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314"/>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a"/>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74"/>
+            <characteristic name="D" typeId="7e81-d394-055d-8486"/>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+          </characteristics>
+        </profile>
+        <profile name="Scales of Judgement" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="a243-be38-129b-63d7">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Zendephron, Hand of the Creator" hidden="false" id="ea72-f0d8-b9eb-5bb3" sortIndex="100">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7c9c-893c-247e-33dd" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="150"/>
+      </costs>
+      <profiles>
+        <profile name="Zendephron, Hand of the Creator" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="c0b0-cbae-07f7-94d7">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+        <profile name="Fire of Sinai" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="0bc7-63a7-2cde-be94">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd"/>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314"/>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a"/>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74"/>
+            <characteristic name="D" typeId="7e81-d394-055d-8486"/>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+          </characteristics>
+        </profile>
+        <profile name="Hand of the Creator" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="da67-c7aa-d7b2-ce12">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Purgation" hidden="false" id="5374-90f2-2afc-7c4e" sortIndex="0">
+      <profiles>
+        <profile name="Purgation of Faith - Smite" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="8775-1750-f909-0978">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd"/>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314"/>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a"/>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74"/>
+            <characteristic name="D" typeId="7e81-d394-055d-8486"/>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+          </characteristics>
+        </profile>
+        <profile name="Purgation of Faith - Cleanse" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="1728-bd49-e2c6-c89e">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd"/>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314"/>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a"/>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74"/>
+            <characteristic name="D" typeId="7e81-d394-055d-8486"/>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Renallia of the First Light" hidden="false" id="70f6-6bc0-68a2-c183" type="selectionEntry" targetId="ec34-d43e-637d-6632"/>
+    <entryLink import="true" name="Renallia of the First Light" hidden="false" id="70f6-6bc0-68a2-c183" type="selectionEntry" targetId="ec34-d43e-637d-6632" sortIndex="99"/>
+    <entryLink import="true" name="Starhost Magi" hidden="false" id="ab77-cc0e-7099-0d92" type="selectionEntry" targetId="eb60-6f88-a5d7-661c" sortIndex="1"/>
+    <entryLink import="true" name="Starhost Protector" hidden="false" id="031f-8292-e081-33b8" type="selectionEntry" targetId="3b36-e55b-a71e-66b7" sortIndex="2"/>
+    <entryLink import="true" name="Starhost Conquerors" hidden="false" id="07ed-1c5b-c313-4650" type="selectionEntry" targetId="c3c0-5799-2573-9a2e" sortIndex="3"/>
+    <entryLink import="true" name="Empyrean Guardian" hidden="false" id="f27f-30cf-d021-6ff2" type="selectionEntry" targetId="29b1-35d2-f8b5-b218" sortIndex="1"/>
+    <entryLink import="true" name="Herald of Stars" hidden="false" id="2356-9178-87bf-2bd2" type="selectionEntry" targetId="dc07-7a24-96ce-3f6d" sortIndex="4"/>
+    <entryLink import="true" name="Scion of Conquest" hidden="false" id="b799-4f19-94e8-9c50" type="selectionEntry" targetId="848c-35f3-2b49-2619" sortIndex="6"/>
+    <entryLink import="true" name="Scion of Judgement" hidden="false" id="3aaf-731c-d97d-9f7e" type="selectionEntry" targetId="689e-028a-d8c8-089c" sortIndex="7"/>
+    <entryLink import="true" name="Scion of Restoration" hidden="false" id="702c-88de-406a-77f3" type="selectionEntry" targetId="0eb4-a42b-2f4d-115b" sortIndex="5"/>
+    <entryLink import="true" name="Scion of Wrath" hidden="false" id="1829-7d19-3475-41ef" type="selectionEntry" targetId="e826-9bde-60ad-60dc" sortIndex="8"/>
+    <entryLink import="true" name="Zendephron, Hand of the Creator" hidden="false" id="a178-139b-0f1d-68b3" type="selectionEntry" targetId="ea72-f0d8-b9eb-5bb3" sortIndex="99"/>
   </entryLinks>
+  <categoryEntries>
+    <categoryEntry name="Faction: Scions of the Stars" id="f085-0745-ae49-ca86" hidden="false"/>
+    <categoryEntry name="Starhost" id="ddba-5d11-cf52-ae5d" hidden="false"/>
+    <categoryEntry name="Scion" id="0a26-5020-be5b-468e" hidden="false"/>
+    <categoryEntry name="Watcher" id="95a6-c0c9-39fa-ab2a" hidden="false"/>
+  </categoryEntries>
 </catalogue>

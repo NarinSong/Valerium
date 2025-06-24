@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
@@ -106,12 +106,15 @@
     <rule name="Assault" id="a415-abc8-4a0b-ee46" hidden="false">
       <description>Weapons with [Assault] are able to shoot even after a unit has made an advance move</description>
     </rule>
-    <rule name="Set Up" id="9d05-b245-eea8-f00c" hidden="false">
-      <description>Weapons with [Set Up] have +1 to hit if the unit the user is in has not moved this turn</description>
+    <rule name="Heavy" id="9d05-b245-eea8-f00c" hidden="false">
+      <description>Weapons with [Heavy] have +1 to hit if the unit the user is in has not moved this turn</description>
     </rule>
     <rule name="Precision" id="2a76-239c-bbe3-e25e" hidden="false">
       <description>Weapons with [Precision] allow the user choose how to allocate damage of attacks if they succeed</description>
     </rule>
+    <rule name="Concentration" id="2ae3-298a-4b3d-f419" hidden="false"/>
+    <rule name="Anti" id="fea9-99e5-5514-d564" hidden="false"/>
+    <rule name="Pistol" id="fd95-c2cb-6167-ba4f" hidden="false"/>
   </sharedRules>
   <entryLinks>
     <entryLink import="true" name="Battle Size" hidden="false" id="d2d5-a810-d34f-50fb" type="selectionEntry" targetId="61fa-30e2-a2ad-f016"/>
