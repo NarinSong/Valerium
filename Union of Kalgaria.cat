@@ -203,6 +203,9 @@
               </selectionEntries>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dff-5467-2577-25c3" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
@@ -212,9 +215,9 @@
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="5" field="6da1-06be-224b-6415" scope="force" affects="entries">
+        <modifier type="set" value="5" field="6da1-06be-224b-6415">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="9ef3-df21-f4c0-7984" shared="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="9ef3-df21-f4c0-7984" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
