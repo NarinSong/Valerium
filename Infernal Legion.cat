@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Legio Demonica" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="17" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f5c5-fe4a-7017-1adb" name="Legio Demonica" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="6" revision="18" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Demon" id="d9cb-a2e2-9220-8bbc" hidden="false"/>
     <categoryEntry name="Caster" id="bfe6-c722-8fc8-42a6" hidden="false"/>
@@ -7,14 +7,15 @@
     <categoryEntry name="Human" id="22f9-cf84-899d-c724" hidden="false"/>
     <categoryEntry name="Infernal" id="2ce8-5b51-a752-3da7" hidden="false"/>
     <categoryEntry name="Shadow" id="fa11-5829-87e0-34eb" hidden="false"/>
+    <categoryEntry name="Faction: Legio Demonica" id="8bb4-d4a7-4470-3ae4" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Infernal Imps" hidden="false" id="d9d5-b97e-3987-0cb4" sortIndex="3">
       <categoryLinks>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="80fc-3d25-a519-63fd" primary="false" name="Infernal"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="3bbb-f534-00fb-9f52" primary="false" name="Demon"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="ea13-d993-8249-37a8" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="9a50-fc2a-2229-1443" primary="true" name="Infantry"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="c100-507e-a689-6ab9" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="40"/>
@@ -73,9 +74,9 @@
     <selectionEntry type="unit" import="true" name="Shadow Imps" hidden="false" id="333a-35e7-b3e0-6f1c" sortIndex="3">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="b6b4-3b16-1e88-6ddf" primary="true" name="Infantry"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="dcd4-d347-9f12-d2b7" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="4fe1-ff3f-9cd8-b29d" primary="false" name="Demon"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="7d2e-e03f-dc2b-c3f4" primary="false" name="Shadow"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="766c-f5e4-bc8d-8c5c" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
@@ -144,9 +145,9 @@
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="a2d9-756b-a794-3cbd" primary="true" name="Infantry"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="f01c-099c-72f6-e83e" primary="false" name="Demon"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="28b2-1fe5-d985-5821" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="22f9-cf84-899d-c724" id="aff3-d812-0995-f343" primary="false" name="Human"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="cfdf-f5e1-3d58-255f" primary="false" name="Shadow"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="59b2-cf72-7c57-62c3" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="40"/>
@@ -193,10 +194,10 @@
     <selectionEntry type="unit" import="true" name="Hexcasters" hidden="false" id="7b18-da7a-6921-ca7c" sortIndex="5">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="0e22-b077-66f4-aa5f" primary="true" name="Infantry"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="97be-600d-01c7-f39c" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="cbed-e4a7-b0c0-412c" primary="false" name="Demon"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="c739-fcdd-1557-99e4" primary="false" name="Caster"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="e72c-59e9-9a2f-88bf" primary="false" name="Infernal"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="a94d-172c-6f2f-c810" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="55"/>
@@ -302,7 +303,7 @@
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="19b7-1227-e78a-9867" primary="false" name="Demon"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="1816-0d0e-d7de-335b" primary="false" name="Infernal"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="5439-2405-c378-5f82" primary="false" name="Shadow"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="5ea1-a08b-4932-f9ab" primary="false" name="Faction: Infernal Legion"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="8202-eafd-ab62-5053" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
@@ -352,9 +353,9 @@
     <selectionEntry type="unit" import="true" name="Magma Hounds" hidden="false" id="f6c9-5ab9-b58d-a80b" sortIndex="7">
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="e26d-57a4-ab37-a1bb" primary="true" name="Beast"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="4126-8c1a-30ce-ab01" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="fb76-8f6f-ffed-9d18" primary="false" name="Demon"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="b63d-4e29-336f-eb1e" primary="false" name="Infernal"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="d412-c7c2-bec5-0c40" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="75"/>
@@ -435,7 +436,7 @@
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="595b-34a0-cd3b-c9b2" primary="false" name="Demon"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="fb75-adb6-8418-9c57" primary="false" name="Caster"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="462e-6a10-73d6-18bd" primary="false" name="Infernal"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="a31b-a487-fecd-7002" primary="false" name="Faction: Infernal Legion"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="db4c-cbc3-70be-e2ab" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
@@ -479,10 +480,10 @@
     <selectionEntry type="unit" import="true" name="Pactbound" hidden="false" id="5938-2d90-5c2e-626a" sortIndex="9">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="3bac-0d71-0f27-5059" primary="true" name="Infantry"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="cd4a-aea9-2b25-9c64" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="ef16-3649-d769-ffd5" primary="false" name="Caster"/>
         <categoryLink targetId="22f9-cf84-899d-c724" id="e82d-1379-7c7f-aeeb" primary="false" name="Human"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="89cd-a068-d8a7-0d2b" primary="false" name="Shadow"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="d56d-9317-c068-c886" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="130"/>
@@ -608,8 +609,8 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
     <selectionEntry type="unit" import="true" name="Magma Golems" hidden="false" id="8547-c2e5-140a-0f69" sortIndex="11">
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="ad49-6d5c-baf6-c773" primary="true" name="Beast"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="9a6b-a86d-c78b-0982" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="ce26-3325-3da1-2da3" primary="false" name="Infernal"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="168c-d244-5d61-e8d0" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="120"/>
@@ -657,9 +658,9 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
       <categoryLinks>
         <categoryLink targetId="22f9-cf84-899d-c724" id="65e3-7945-6509-b2e2" primary="false" name="Human"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="d932-cf76-e7df-7577" primary="false" name="Caster"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="1d64-6fa5-87f2-5a96" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="3448-dedd-c4dd-96f0" primary="true" name="Infantry"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="9145-ccd9-7b47-cc78" primary="false" name="Infernal"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="1ef6-ee16-13a4-750c" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="140"/>
@@ -716,8 +717,8 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="1f46-ac06-3966-c0bb" primary="true" name="Infantry"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="3a27-13bc-b0a1-367d" primary="false" name="Demon"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="3ea7-881e-f9ec-b7a3" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="558a-7a66-a140-1a30" primary="false" name="Shadow"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="64ca-15c0-3acb-a701" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="150"/>
@@ -798,8 +799,8 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="60eb-3ba5-2740-37c6" primary="false" name="Infernal"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="a506-f0c7-cdd7-f9c9" primary="false" name="Caster"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="1578-2dc2-0caf-7d0d" primary="false" name="Demon"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="fea0-16c4-3289-8986" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="3057-7210-c927-e674" primary="true" name="Infantry"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="7304-914a-76ce-9e8e" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="120"/>
@@ -849,9 +850,9 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
     <selectionEntry type="unit" import="true" name="Abyssal Overlord" hidden="false" id="25a7-22d8-3c85-9d68" sortIndex="14">
       <categoryLinks>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="9af8-bf41-48f2-7bf2" primary="false" name="Demon"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="c691-0265-e391-94e5" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="8aee-3366-fc2b-e69a" primary="true" name="Beast"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="848d-672e-8f7a-7c45" primary="false" name="Shadow"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="f8f7-d1f3-4315-bcca" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="160"/>
@@ -896,10 +897,10 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
     <selectionEntry type="unit" import="true" name="Starscourge" hidden="false" id="2a93-7496-050a-26e1" sortIndex="15">
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="0e05-6ed1-1b73-9b29" primary="true" name="Beast"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="08d0-cc64-2a74-9d3c" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="781e-c264-d01b-914c" primary="false" name="Caster"/>
         <categoryLink targetId="05a6-7fa9-ae44-a7a3" id="13b7-91c9-f418-b2f6" primary="false" name="Starscourge"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="8b0b-caab-ec63-9fa3" primary="false" name="Demon"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="fd2e-515c-3664-eb68" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="210"/>
@@ -989,10 +990,10 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
     <selectionEntry type="unit" import="true" name="Greater Starscourge" hidden="false" id="d47f-4d5e-5e88-e8c3" sortIndex="16">
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="8200-2510-af56-c51c" primary="true" name="Beast"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="133e-2c6f-96cc-cb99" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="c6b2-77d5-1f6e-28df" primary="false" name="Caster"/>
         <categoryLink targetId="05a6-7fa9-ae44-a7a3" id="8de6-cd01-b55b-fc1e" primary="false" name="Starscourge"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="5bc7-dc08-081b-8b33" primary="false" name="Demon"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="6e72-b09a-ad84-5028" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="380"/>
@@ -1043,9 +1044,9 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="575b-1c4d-8e84-dd09" primary="false" name="Beast"/>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="c6bb-b2b5-d234-483f" primary="true" name="Champion"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="7a08-4b23-7baa-6850" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="5419-f41c-bb31-73bd" primary="false" name="Caster"/>
         <categoryLink targetId="05a6-7fa9-ae44-a7a3" id="b127-b0b2-1692-17c2" primary="false" name="Starscourge"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="f9eb-f462-c29a-bbef" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bd47-f167-1943-e306" includeChildSelections="false"/>
@@ -1288,9 +1289,9 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="5434-d315-6866-9d8e" primary="true" name="Infantry"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="7efb-c387-fc1e-5c19" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="f096-1ab7-65d8-17c3" primary="false" name="Demon"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="e3cb-cb17-2b6f-f2c8" primary="false" name="Infernal"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="eff8-41ee-5330-b277" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="76f5-cde0-c9c5-47b3" includeChildSelections="false"/>
@@ -1384,21 +1385,21 @@ You may reroll 1&apos;s on the hit roll for melee attacks</characteristic>
     <selectionEntry type="upgrade" import="true" name="Zorthar Hier to the Abyss" hidden="false" id="e873-3979-972a-14c6">
       <categoryLinks>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="1fe2-c150-db06-67d8" primary="true" name="Champion"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="707a-aa91-4e47-91f9" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="ad7d-78a6-46bf-f568" primary="false" name="Demon"/>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="d3b5-3b84-7622-d502" primary="false" name="Beast"/>
         <categoryLink targetId="fa11-5829-87e0-34eb" id="ad00-9e4e-51c6-c628" primary="false" name="Shadow"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="9c9d-5b93-30f2-0b5b" primary="false" name="Caster"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="1092-0fbf-e0f4-087f" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Trorranith Prince of Flame" hidden="false" id="8e16-5849-5d10-e5e4">
       <categoryLinks>
         <categoryLink targetId="1c5c-47db-ab07-ba35" id="7c9b-35c6-8a01-bace" primary="false" name="Beast"/>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="e99e-10d4-1447-beb0" primary="true" name="Champion"/>
-        <categoryLink targetId="92d7-3555-3aad-3720" id="e1e8-a83b-82cd-55cb" primary="false" name="Faction: Infernal Legion"/>
         <categoryLink targetId="bfe6-c722-8fc8-42a6" id="7620-52b3-4177-4e42" primary="false" name="Caster"/>
         <categoryLink targetId="2ce8-5b51-a752-3da7" id="adfe-35cb-091e-0536" primary="false" name="Infernal"/>
         <categoryLink targetId="d9cb-a2e2-9220-8bbc" id="91a4-f7a1-faf2-7aca" primary="false" name="Demon"/>
+        <categoryLink targetId="8bb4-d4a7-4470-3ae4" id="bc0f-9d3f-f6d9-789b" primary="false" name="Faction: Legio Demonica"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c306-ee12-471f-da43" includeChildSelections="false"/>

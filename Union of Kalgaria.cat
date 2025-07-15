@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Faction: Union of Kalgaria" id="43bd-1437-ac4a-bdf4" hidden="false"/>
+    <categoryEntry name="Human" id="f4d1-cd2f-a7c8-26d4" hidden="false"/>
+    <categoryEntry name="Noble" id="52dd-ff5f-e841-3172" hidden="false"/>
+    <categoryEntry name="Dorathi" id="4343-4fc7-5166-62e3" hidden="false"/>
+    <categoryEntry name="Tesanic" id="ae73-2e42-16c8-bacf" hidden="false"/>
+    <categoryEntry name="Kalgarian" id="d4c2-c78a-3c94-9182" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Kalgarian Blastblade" hidden="false" id="4a72-c876-5098-a2d1">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="df0e-a59d-7c5d-b5e5" primary="true" name="Infantry"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="e925-5837-0733-dbd6" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="9968-c64a-1600-beb5" primary="false" name="Human"/>
+        <categoryLink targetId="d4c2-c78a-3c94-9182" id="108f-d08b-49dc-e3d8" primary="false" name="Kalgarian"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Kalgarian Blastblade" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="5e2c-cf31-fc0e-ef5e">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blastblade - Burst" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="cacb-fbb1-d80e-3bfc">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">10</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">D6+1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Lance]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blastblade (Ranged)" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="bf67-681a-0d75-5581">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">3</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">2+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">7</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">D3</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Pistol] [Assault]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Flash in the Dark" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="8869-611b-2b59-c265">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">This unit has Stealth and Lone Operative as long as it has not attacked this round. It starts the battle with these abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blastblade - Slaughter" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="7986-7f83-fbcd-9e0d">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">9</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Lance] [Extra Attacks 1]</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="100"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spirit of the Unions" hidden="false" id="4f47-bf23-2639-25d2" sortIndex="0">
+      <categoryLinks>
+        <categoryLink targetId="6c8d-d092-b350-6ff3" id="8374-4025-c0b4-a94f" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dorathi Tactics" hidden="false" id="58fd-86db-bc84-fd97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ec78-f925-7d0c-5d75-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ec78-f925-7d0c-5d75-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kalgarian Might" hidden="false" id="83b8-e5e1-3b3f-0a1c" page="">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="6945-b18e-63d4-adbd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6945-b18e-63d4-adbd-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tesanic Agility" hidden="false" id="0d08-ae1c-0fd8-91d3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="47eb-7ba5-3c1b-e615-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="47eb-7ba5-3c1b-e615-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e043-33b9-95cc-6005-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e043-33b9-95cc-6005-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Spirit of the Unions" hidden="false" id="2446-8e9c-986b-9eb4" type="selectionEntry" targetId="4f47-bf23-2639-25d2" sortIndex="0" defaultAmount="1"/>
+    <entryLink import="true" name="Kalgarian Blastblade" hidden="false" id="c2b1-c0dd-3f7f-89b6" type="selectionEntry" targetId="4a72-c876-5098-a2d1"/>
+  </entryLinks>
+</catalogue>

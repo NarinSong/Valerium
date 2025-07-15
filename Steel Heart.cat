@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Nari">
+<catalogue library="false" id="121a-1f5e-b1e6-957e" name="Steel Heart" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="1" revision="21" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Nari">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Steel Warriors" hidden="false" id="b5b0-d8db-9ed6-a6d6">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="e534-75cc-41f6-d9a8" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="6117-12d1-e1ed-42e0" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="b26f-0c38-d063-0f3e" primary="false" name="Steel Battleguard"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="9a32-cca6-8db8-9177" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="0a40-3689-72ae-4a25" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
@@ -120,9 +120,9 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="e1b9-26b3-7825-1276" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="7ef8-c769-f1ed-85a9" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="983a-bf5a-4ce5-331f" primary="false" name="Disciples of the Forge"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="7bf0-9d1d-caa0-803b" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="0b48-ca63-7231-c635" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Forgekin Slayers" hidden="false" id="8a71-2dd2-0905-1931">
@@ -172,9 +172,9 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="732f-ff62-6b6a-c0e7" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="3f5b-8b1a-79a0-206a" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="d0db-55c5-34e0-e88d" primary="false" name="Disciples of the Forge"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="40e3-2d70-ec09-6b92" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="5e74-604c-6a54-ea0c" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Bloodsteel Beserkers" hidden="false" id="9dc8-950b-23d5-81f3">
@@ -240,9 +240,9 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="43ea-9fd2-d44f-b54b" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="9a66-5a24-ed3f-a319" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="cd7e-037c-07a6-105a" primary="false" name="Steel Battleguard"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="ab4f-fefe-7539-324b" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="1385-dfec-f680-dc50" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <profiles>
         <profile name="Blastbarrel Artillery Rig" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="032b-848e-a211-10c5">
@@ -298,10 +298,10 @@
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="75"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="8404-eae4-1176-6c6b" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="b4f4-4d32-5ca3-034e" primary="true" name="Infantry"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="0bf9-89bb-f6ca-c11d" primary="false" name="Steel Battleguard"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="f35d-24d6-ad3f-7f48" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="ef5b-e3ca-aa17-a0e9" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <profiles>
         <profile name="Rocketsmith" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="2b5a-59aa-e3e9-8f6a">
@@ -353,9 +353,9 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="dd2e-3648-8983-9ba5" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="227a-57a7-54e4-ad54" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="925e-cba0-b461-1494" primary="false" name="Steel Battleguard"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="fb8e-049d-6c8b-d58c" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="8f3c-9dfb-f260-d39e" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Heavy Weapons Operators" hidden="false" id="3aea-ccf1-b571-cb98">
@@ -409,9 +409,9 @@
     <selectionEntry type="unit" import="true" name="Steel Meditech" hidden="false" id="b801-1eea-cbee-24e2">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="5c2d-a74b-7ed4-1465" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="789d-2b53-d095-be11" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="a0db-d3e7-d866-06f4" primary="false" name="Steel Battleguard"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="ee0f-f0d2-1bcf-a5a3" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="bac5-aa33-b73e-9b77" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
@@ -464,9 +464,9 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="ff12-8349-2818-0ae4" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="60e0-03fc-6598-8338" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="8d27-b554-9979-fa29" primary="false" name="Steel Battleguard"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="d180-81b4-82fa-42e9" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="e34c-6afd-e8ff-a4ed" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Selection" id="139a-281f-3a98-30ec" hidden="false">
@@ -558,10 +558,10 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="94f2-d52b-c054-9271" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="6452-6299-86fa-00cf" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="170f-1ca9-39c5-05dc" primary="false" name="Disciples of the Forge"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="bbaa-f36c-b827-5258" primary="false" name="Steel Battleguard"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="430f-faeb-b491-895e" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="a099-ba22-06d9-1843" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Unit Composition" id="54f1-558f-f9bb-235f" hidden="false" defaultSelectionEntryId="8b8d-6a64-da12-4175">
@@ -685,8 +685,8 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="3e49-7b29-6ea3-375f" primary="true" name="Vehicle"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="f052-fa4b-c99c-468c" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="8f61-5861-c77c-bca9" id="3a47-5264-7466-919d" primary="false" name="Minekin"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="ce46-a97b-5c9d-edfc" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f9f3-c2b7-039c-38c7" includeChildSelections="false"/>
@@ -778,9 +778,9 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="4b0f-b2e5-3ef7-bb59" primary="false" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="31fb-db52-e873-0bd3" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="8f61-5861-c77c-bca9" id="877d-3f18-80f3-2aa9" primary="false" name="Minekin"/>
         <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="ae40-d901-79f8-3fc6" primary="true" name="Vehicle"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="088e-3e39-7de1-8d1f" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <profiles>
         <profile name="D-AT" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="9246-2658-8d83-b361">
@@ -830,8 +830,8 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="6122-c6bc-3341-07a2" primary="true" name="Vehicle"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="602b-0155-5d59-493e" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="8f61-5861-c77c-bca9" id="c2ef-2120-4867-cd6d" primary="false" name="Minekin"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="7c0f-225f-2f84-83e2" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <profiles>
         <profile name="D-TRC" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="cef5-b5e7-6034-5710">
@@ -882,7 +882,7 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="b471-2008-6e03-3d10" primary="true" name="Vehicle"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="7811-cc88-f2e2-6f97" primary="false" name="Faction: Steel Heart"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="3f75-bd23-ad19-c694" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Deepcore Vehicle Gun" id="ace3-fc9a-3681-68d0" hidden="false" type="profile" targetId="579e-f229-dbcd-d45d"/>
@@ -980,7 +980,7 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="c191-0a37-b4b5-b9d1" primary="true" name="Vehicle"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="e5da-9597-b717-f520" primary="false" name="Faction: Steel Heart"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="f3f8-445f-1c32-b18f" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Selection" id="aef7-2cd9-7c32-9507" hidden="false" defaultSelectionEntryId="c020-a956-cb2c-47e1">
@@ -1100,9 +1100,9 @@
     <selectionEntry type="unit" import="true" name="Lord Nazeim" hidden="false" id="5e3d-0f11-4a59-d233">
       <categoryLinks>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="1704-7f4a-9b4d-86d9" primary="true" name="Champion"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="c1d7-1dae-fb2d-cf3b" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="ffa3-b853-ddd8-bed2" primary="false" name="Disciples of the Forge"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="6975-07a1-25d8-2e4f" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="84e8-7100-7bce-7ae1" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <profiles>
         <profile name="Lord Nazeim" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="1255-b318-4377-b60b">
@@ -1209,10 +1209,10 @@
     <selectionEntry type="unit" import="true" name="D.H Engineering Corps" hidden="false" id="d970-bbd2-310e-4281">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="1957-7346-b125-692e" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="c0e3-8118-df6c-e76c" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="0ed0-ba52-fb81-4913" primary="false" name="Steel Battleguard"/>
         <categoryLink targetId="8f61-5861-c77c-bca9" id="135a-9940-d6d7-bc46" primary="false" name="Minekin"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="5a7b-2aee-7ec5-b0a1" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="b7c1-ba2e-a138-c85a" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
@@ -1381,9 +1381,9 @@ the barricade has 6 AR and 3 HP</characteristic>
     <selectionEntry type="unit" import="true" name="Steel Assault" hidden="false" id="e3d2-4eb7-91c2-b334">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="fe8a-92a2-2385-30d4" primary="true" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="ffe4-2411-9ba2-ad86" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="4501-a2b4-8e44-d81f" id="fa83-831c-1fe5-adfd" primary="false" name="Steel Battleguard"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="de24-bd82-df29-4922" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="fb50-6403-8714-343f" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
@@ -1508,9 +1508,9 @@ the barricade has 6 AR and 3 HP</characteristic>
       <categoryLinks>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="04c0-e4bf-ecd1-966d" primary="true" name="Champion"/>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="0f53-1d0c-7a4b-399d" primary="false" name="Infantry"/>
-        <categoryLink targetId="b6a7-11da-522a-6836" id="ce2b-bf40-e697-306c" primary="false" name="Faction: Steel Heart"/>
         <categoryLink targetId="ed0b-e183-e1d9-6a07" id="a848-e817-96f7-2655" primary="false" name="Disciples of the Forge"/>
         <categoryLink targetId="7c7c-e945-35f7-e463" id="e874-0d25-6bea-d5f5" primary="false" name="Dwarf"/>
+        <categoryLink targetId="355f-f4ac-a384-8f6b" id="3108-d0ca-6d51-2b81" primary="false" name="Faction: Steel Heart"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6ebf-9ae9-1e3e-e36e" includeChildSelections="false"/>
@@ -1575,6 +1575,7 @@ the barricade has 6 AR and 3 HP</characteristic>
     <categoryEntry name="Minekin" id="8f61-5861-c77c-bca9" hidden="false"/>
     <categoryEntry name="Disciples of the Forge" id="ed0b-e183-e1d9-6a07" hidden="false"/>
     <categoryEntry name="Dwarf" id="7c7c-e945-35f7-e463" hidden="false"/>
+    <categoryEntry name="Faction: Steel Heart" id="355f-f4ac-a384-8f6b" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Blastbarrel Squad" hidden="false" id="a5d9-1966-8cb0-0fa6" type="selectionEntry" targetId="6e7f-fa0e-4e4e-d9ca" sortIndex="4"/>

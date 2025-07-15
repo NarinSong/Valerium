@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-e084-dc47-5661-ffcf" name="Valerium" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Infantry" id="9d75-3e1c-4fee-6132" hidden="false"/>
     <categoryEntry name="Cavalry" id="fd19-c051-4156-06c0" hidden="false"/>
     <categoryEntry name="Vehicle" id="2b48-9f4d-3fc4-acb0" hidden="false"/>
     <categoryEntry name="Beast" id="1c5c-47db-ab07-ba35" hidden="false"/>
     <categoryEntry name="Champion" id="0e9f-f19d-fdfa-621a" hidden="false"/>
-    <categoryEntry name="Faction: Steel Heart" id="b6a7-11da-522a-6836" hidden="false"/>
-    <categoryEntry name="Faction: Infernal Legion" id="92d7-3555-3aad-3720" hidden="false"/>
     <categoryEntry name="Configuration" id="6c8d-d092-b350-6ff3" hidden="false"/>
   </categoryEntries>
   <forceEntries>
