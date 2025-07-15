@@ -64,28 +64,56 @@
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="100"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Spirit of the Unions" hidden="false" id="4f47-bf23-2639-25d2" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Spirit of the Union" hidden="false" id="4f47-bf23-2639-25d2" sortIndex="0">
       <categoryLinks>
         <categoryLink targetId="6c8d-d092-b350-6ff3" id="8374-4025-c0b4-a94f" primary="true" name="Configuration"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Spirit of the Union" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="ad94-ad89-6d03-d87e">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Dorathi Tactics" hidden="false" id="58fd-86db-bc84-fd97">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ec78-f925-7d0c-5d75-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ec78-f925-7d0c-5d75-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec78-f925-7d0c-5d75-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec78-f925-7d0c-5d75-max" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="Dorathi Tactics" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="d595-8da6-6d77-a417">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kalgarian Might" hidden="false" id="83b8-e5e1-3b3f-0a1c" page="">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="6945-b18e-63d4-adbd-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6945-b18e-63d4-adbd-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6945-b18e-63d4-adbd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6945-b18e-63d4-adbd-max" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="Kalgarian Might" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="97ae-6697-4595-9f88">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Tesanic Agility" hidden="false" id="0d08-ae1c-0fd8-91d3">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="47eb-7ba5-3c1b-e615-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="47eb-7ba5-3c1b-e615-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47eb-7ba5-3c1b-e615-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47eb-7ba5-3c1b-e615-max" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="Tesanic Agility" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="7c30-cf56-0fc6-b8ec">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <constraints>
