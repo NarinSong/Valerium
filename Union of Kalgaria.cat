@@ -63,6 +63,9 @@
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="100"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="bee3-d012-f237-b2c1" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Spirit of the Union" hidden="false" id="4f47-bf23-2639-25d2" sortIndex="0">
       <categoryLinks>
@@ -120,6 +123,144 @@
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e043-33b9-95cc-6005-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e043-33b9-95cc-6005-max" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="General Tsu&apos;yin of the Divine Winds" hidden="false" id="7617-74de-64fc-30fb">
+      <categoryLinks>
+        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="dd5c-8d89-63d1-0d85" primary="true" name="Champion"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="e815-6880-17e1-0526" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="46f0-e37f-55d0-cc48" primary="false" name="Human"/>
+        <categoryLink targetId="4343-4fc7-5166-62e3" id="e2a8-4114-5484-9268" primary="false" name="Dorathi"/>
+        <categoryLink targetId="fd19-c051-4156-06c0" id="d4df-1d1f-9eab-0193" primary="false" name="Cavalry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="General Tsu&apos;yin" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="992d-0384-1b7a-0ec3">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+        <profile name="Way of the Fast" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="72b0-0464-ef34-afce">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+        <profile name="Tactical Genius" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="8137-2aa1-82e4-ea20">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+          </characteristics>
+        </profile>
+        <profile name="Divine Wind" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="647e-a477-16ce-e44f">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bf59-a2ae-2085-33c8" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kalgarian Honorguard" hidden="false" id="2b7a-05de-629a-f31b">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="1a78-0adc-c6ce-3e73" primary="true" name="Infantry"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="4670-3319-9e1a-e768" primary="false" name="Human"/>
+        <categoryLink targetId="52dd-ff5f-e841-3172" id="3f77-05cd-71c7-8510" primary="false" name="Noble"/>
+        <categoryLink targetId="d4c2-c78a-3c94-9182" id="186a-0478-b23a-b4e1" primary="false" name="Kalgarian"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="6881-c1d7-3eba-9d38" primary="false" name="Faction: Union of Kalgaria"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Composition" id="2eb8-99f8-b797-7bff" hidden="false" defaultSelectionEntryId="c6cf-c5c8-05ad-6ddb">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="3 Honorguard" hidden="false" id="c6cf-c5c8-05ad-6ddb" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="fe94-dfdd-cdd8-6868"/>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="4 Honorguard and Captain" hidden="false" id="be87-1ddc-1688-9fb1" sortIndex="3">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="39ed-ba01-1750-e1c7"/>
+                <selectionEntry type="upgrade" import="true" name="Honorguard Captian" hidden="false" id="d368-20e6-ab55-0919"/>
+              </selectionEntries>
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c471-14ed-1318-475f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="5 Honorguard" hidden="false" id="635a-70d0-0019-9a37" sortIndex="2">
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="d320-fe9a-ec4a-2ea2"/>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6da1-06be-224b-6415" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="5" field="6da1-06be-224b-6415" scope="force" affects="entries">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="9ef3-df21-f4c0-7984" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grand Captain Vestrix" hidden="false" id="9ef3-df21-f4c0-7984">
+      <categoryLinks>
+        <categoryLink targetId="0e9f-f19d-fdfa-621a" id="57f0-6c32-0a7e-89cd" primary="true" name="Champion"/>
+        <categoryLink targetId="52dd-ff5f-e841-3172" id="c65d-0dda-6e61-65d1" primary="false" name="Noble"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="5ba0-41cf-7194-fe4e" primary="false" name="Human"/>
+        <categoryLink targetId="d4c2-c78a-3c94-9182" id="f884-4f94-0ffe-2e03" primary="false" name="Kalgarian"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Grand Captain Vestrix" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="50ac-05e1-06df-2e7e">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+        <profile name="Honorable Blade" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="bcf4-a75f-093b-3f8d">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">Any attached Honorguard receive +1 to hit with melee attacks, +2 Armor, +1 Control, +1 Organization, and an Invulnerable (5+). If this model is destroyed before the bodyguard unit they will lose all of these bonuses.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Terminus" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="5562-4124-7b00-bc12">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+          </characteristics>
+        </profile>
+        <profile name="For Kalgaria" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="b62a-957d-4566-3217">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a"/>
+          </characteristics>
+        </profile>
+        <profile name="Honorguard Leader" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="5a33-d141-79c6-b460">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">If Grand Captain Vestrix is your Champion you may have up to 5 Honorguard units in your army. You may attach Grand Captain Vestrix to a unit of Kalgarian Honorguard as long as it does not already have a Captain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
