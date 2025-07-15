@@ -266,5 +266,8 @@
   <entryLinks>
     <entryLink import="true" name="Spirit of the Unions" hidden="false" id="2446-8e9c-986b-9eb4" type="selectionEntry" targetId="4f47-bf23-2639-25d2" sortIndex="0" defaultAmount="1"/>
     <entryLink import="true" name="Kalgarian Blastblade" hidden="false" id="c2b1-c0dd-3f7f-89b6" type="selectionEntry" targetId="4a72-c876-5098-a2d1"/>
+    <entryLink import="true" name="Kalgarian Honorguard" hidden="false" id="4edb-1ecd-9e8d-4c2f" type="selectionEntry" targetId="2b7a-05de-629a-f31b"/>
+    <entryLink import="true" name="Grand Captain Vestrix" hidden="false" id="f289-ec70-6500-cd30" type="selectionEntry" targetId="9ef3-df21-f4c0-7984"/>
+    <entryLink import="true" name="General Tsu&apos;yin of the Divine Winds" hidden="false" id="4d01-f473-9492-3f95" type="selectionEntry" targetId="7617-74de-64fc-30fb"/>
   </entryLinks>
 </catalogue>
