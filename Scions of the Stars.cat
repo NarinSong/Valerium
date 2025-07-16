@@ -586,7 +586,7 @@
               <modifiers>
                 <modifier type="increment" value="1" field="4063-bcf9-f604-85d2" affects="self.entries.recursive.profiles.Melee Weapons" scope="root-entry"/>
                 <modifier type="increment" value="1" field="4984-c247-cad3-da1d" affects="self.entries.recursive.profiles.Melee Weapons" scope="root-entry"/>
-                <modifier type="increment" value="1" field="defe-bb4d-98fd-c9a1" affects="self.entries.recursive.profiles.Melee Weapons" scope="root-entry"/>
+                <modifier type="increment" value="1" field="defe-bb4d-98fd-c9a1" affects="self.entries.recursive.profiles.Melee Weapons" scope="root-entry" position="-1"/>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
