@@ -32,7 +32,7 @@
             <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
             <characteristic name="AP" typeId="4984-c247-cad3-da1d">10</characteristic>
             <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">D6+1</characteristic>
-            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Lance]</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Lance 3]</characteristic>
           </characteristics>
         </profile>
         <profile name="Blastblade (Ranged)" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="bf67-681a-0d75-5581">
@@ -47,7 +47,7 @@
         </profile>
         <profile name="Flash in the Dark" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="8869-611b-2b59-c265">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298">This unit has Stealth and Lone Operative as long as it has not attacked this round. It starts the battle with these abilities.</characteristic>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">This unit starts the battle with Lone Operative and Stealth. Upon using a ranged attack or a melee attack this unit loses those abilities until the start of your next turn. If this unit destroys an enemy unit in melee it regains these abilities.</characteristic>
           </characteristics>
         </profile>
         <profile name="Blastblade - Slaughter" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="7986-7f83-fbcd-9e0d">
@@ -56,7 +56,7 @@
             <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
             <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
             <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
-            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Lance] [Extra Attacks 1]</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Lance 2] [Extra Attacks 1]</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -124,7 +124,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e043-33b9-95cc-6005-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="General Tsu&apos;yin of the Divine Winds" hidden="false" id="7617-74de-64fc-30fb">
+    <selectionEntry type="unit" import="true" name="General Tsu&apos;yin of the Divine Winds" hidden="false" id="7617-74de-64fc-30fb">
       <categoryLinks>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="dd5c-8d89-63d1-0d85" primary="true" name="Champion"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="e815-6880-17e1-0526" primary="false" name="Faction: Union of Kalgaria"/>
@@ -142,7 +142,7 @@
             <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
           </characteristics>
         </profile>
-        <profile name="Way of the Fast" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="72b0-0464-ef34-afce">
+        <profile name="The Northern Wind" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="72b0-0464-ef34-afce">
           <characteristics>
             <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
             <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
@@ -179,13 +179,28 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="3 Honorguard" hidden="false" id="c6cf-c5c8-05ad-6ddb" sortIndex="1">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="fe94-dfdd-cdd8-6868"/>
+                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="fe94-dfdd-cdd8-6868">
+                  <constraints>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0824-ed74-dba8-d597-min" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0824-ed74-dba8-d597-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="4 Honorguard and Captain" hidden="false" id="be87-1ddc-1688-9fb1" sortIndex="3">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="39ed-ba01-1750-e1c7"/>
-                <selectionEntry type="upgrade" import="true" name="Honorguard Captian" hidden="false" id="d368-20e6-ab55-0919"/>
+                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="39ed-ba01-1750-e1c7">
+                  <constraints>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="bca2-3d7b-affd-d2e5-min" includeChildSelections="false"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="bca2-3d7b-affd-d2e5-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Honorguard Captian" hidden="false" id="d368-20e6-ab55-0919">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11b9-e4f6-1887-cdac-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11b9-e4f6-1887-cdac-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
@@ -199,7 +214,12 @@
                 <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
               </costs>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="d320-fe9a-ec4a-2ea2"/>
+                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="d320-fe9a-ec4a-2ea2">
+                  <constraints>
+                    <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="8748-1725-f7ca-ed53-min" includeChildSelections="false"/>
+                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="8748-1725-f7ca-ed53-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntry>
           </selectionEntries>
@@ -267,6 +287,34 @@
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="73a4-f568-44b2-4219" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Missionary Battalion" hidden="false" id="8628-5b85-7dcc-6b93">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="ed75-0511-8713-de4e" primary="true" name="Infantry"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="7fbf-a406-5493-2e3a" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="3902-3170-7a9e-0820" primary="false" name="Human"/>
+        <categoryLink targetId="4343-4fc7-5166-62e3" id="6a64-047e-d9e8-68a5" primary="false" name="Dorathi"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="286a-b7bd-e811-d17d" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Missionary Sanctus" hidden="false" id="166e-84f1-a73f-d234" sortIndex="0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5e2-8f67-1fa0-90fb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Missionary" hidden="false" id="cafb-ae22-e4fe-2352">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="da89-9830-97e8-bd31" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tesanic Rough Rider" hidden="false" id="8bd5-054a-5704-4afc">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="0ebd-aad4-a2ba-d30c" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>

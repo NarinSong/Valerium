@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c621-a6be-6626-d89d" name="Scions of the Stars" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="3" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c621-a6be-6626-d89d" name="Scions of the Stars" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="8" revision="4" authorName="Nari" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Renallia, of the First Light" hidden="false" id="ec34-d43e-637d-6632" sortIndex="100">
       <categoryLinks>
@@ -259,10 +259,10 @@
       <profiles>
         <profile name="Tyrant&apos;s Bane" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="4036-5ce6-620c-4092">
           <characteristics>
-            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
-            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
-            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
-            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">1</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">15</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">3D4</characteristic>
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
           </characteristics>
         </profile>
@@ -280,6 +280,9 @@
         <infoLink name="Purgation of Faith - Cleanse" id="a031-ad03-f6ce-5f82" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
         <infoLink name="Purgation of Faith - Smite" id="9e38-0a33-7d57-8b8b" hidden="false" type="profile" targetId="8775-1750-f909-0978"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Divine Enhancements" hidden="false" id="1c97-b9aa-a075-79bd" type="selectionEntryGroup" targetId="dba2-b9c0-35ac-0a8f"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scion of Judgement" hidden="false" id="689e-028a-d8c8-089c" sortIndex="4">
       <categoryLinks>
@@ -296,10 +299,10 @@
       <profiles>
         <profile name="Fires of Judgement" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="0fd0-e5b7-673b-9b06">
           <characteristics>
-            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
-            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
-            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
-            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">6</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">9</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">D3</characteristic>
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
           </characteristics>
         </profile>
@@ -317,6 +320,9 @@
         <infoLink name="Purgation of Faith - Cleanse" id="6e08-fa5c-7b0e-3a03" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
         <infoLink name="Purgation of Faith - Smite" id="a01a-7fd1-6820-3b87" hidden="false" type="profile" targetId="8775-1750-f909-0978"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Divine Enhancements" hidden="false" id="6092-f1cc-3e46-1081" type="selectionEntryGroup" targetId="dba2-b9c0-35ac-0a8f"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scion of Restoration" hidden="false" id="0eb4-a42b-2f4d-115b" sortIndex="4">
       <categoryLinks>
@@ -333,10 +339,10 @@
       <profiles>
         <profile name="Grace&apos;s Hand" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="cefc-8daf-b3bb-9c0b">
           <characteristics>
-            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
-            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
-            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
-            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">10</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">3</characteristic>
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
           </characteristics>
         </profile>
@@ -350,6 +356,9 @@
         <infoLink name="Purgation of Faith - Cleanse" id="78b1-c8ed-65d4-a5e5" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
         <infoLink name="Purgation of Faith - Smite" id="a569-3e37-618f-5636" hidden="false" type="profile" targetId="8775-1750-f909-0978"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Divine Enhancements" hidden="false" id="4a4d-86a1-7ddb-714a" type="selectionEntryGroup" targetId="dba2-b9c0-35ac-0a8f"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scion of Conquest" hidden="false" id="848c-35f3-2b49-2619" sortIndex="4">
       <categoryLinks>
@@ -366,10 +375,10 @@
       <profiles>
         <profile name="Lightbringer" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="8c89-2ee2-3cd5-d7c4">
           <characteristics>
-            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
-            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
-            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
-            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">12</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">5</characteristic>
             <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
           </characteristics>
         </profile>
@@ -387,6 +396,9 @@
         <infoLink name="Purgation of Faith - Cleanse" id="240f-90ad-7f00-4557" hidden="false" type="profile" targetId="1728-bd49-e2c6-c89e"/>
         <infoLink name="Purgation of Faith - Smite" id="6b2a-7649-fa6b-dfb9" hidden="false" type="profile" targetId="8775-1750-f909-0978"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Divine Enhancements" hidden="false" id="5605-9e83-d6ed-4518" type="selectionEntryGroup" targetId="dba2-b9c0-35ac-0a8f"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Herald of the Stars" hidden="false" id="dc07-7a24-96ce-3f6d" sortIndex="3">
       <categoryLinks>
@@ -499,14 +511,96 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Perfected Warhost" hidden="false" id="9616-d3db-5112-ce4a" sortIndex="0">
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aspect of Life" hidden="false" id="db14-167a-027a-b91b" sortIndex="0">
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="30"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cosmo Arrow" hidden="false" id="ba19-b2e2-8ebd-d5df" sortIndex="0">
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Divine Enhancements" hidden="false" id="0a04-e5e2-c21d-5b1e" sortIndex="0">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Divine Enhancements" id="dba2-b9c0-35ac-0a8f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Aspect of Life" hidden="false" id="0036-e550-7f78-6b66">
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="984d-2a53-9aac-5324" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Aspect of Life" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="bdb3-b2c3-8f95-5309">
+                  <characteristics>
+                    <characteristic name="Description" typeId="94fb-5af3-adea-b298">Increase this unit&apos;s Hit Points by 3 and their Armor by 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="increment" value="3" field="3bd8-164f-92b5-6b50" affects="self.entries.recursive.profiles.Unit" scope="root-entry"/>
+                <modifier type="increment" value="1" field="0983-b6e2-8552-397d" affects="self.entries.recursive.profiles.Unit" scope="root-entry"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cosmo Arrow" hidden="false" id="88e2-9fd5-615d-238e" sortIndex="1">
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="20"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9b98-76f9-635e-312b" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Cosmo Arrow" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="66f7-d7c3-ed1d-c5fd">
+                  <characteristics>
+                    <characteristic name="R" typeId="865a-2a77-c897-85fd">12</characteristic>
+                    <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                    <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">2+</characteristic>
+                    <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">20</characteristic>
+                    <characteristic name="D" typeId="7e81-d394-055d-8486">D6+1</characteristic>
+                    <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[One Time]</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Perfected Warhost" hidden="false" id="9efa-8808-852f-3f9d">
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bc8a-3a4d-e80b-76c3" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Increase the Attacks, AP, and Damage of this unit&apos;s melee weapons by 1" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="f15e-ab10-7aa6-89f8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="increment" value="1" field="4063-bcf9-f604-85d2" affects="self.entries.recursive.profiles.Melee Weapons" scope="root-entry"/>
+                <modifier type="increment" value="1" field="4984-c247-cad3-da1d" affects="self.entries.recursive.profiles.Melee Weapons" scope="root-entry"/>
+                <modifier type="increment" value="1" field="defe-bb4d-98fd-c9a1" affects="self.entries.recursive.profiles.Melee Weapons" scope="root-entry"/>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Renallia of the First Light" hidden="false" id="70f6-6bc0-68a2-c183" type="selectionEntry" targetId="ec34-d43e-637d-6632" sortIndex="99"/>
+    <entryLink import="true" name="Renallia, of the First Light" hidden="false" id="70f6-6bc0-68a2-c183" type="selectionEntry" targetId="ec34-d43e-637d-6632" sortIndex="99"/>
     <entryLink import="true" name="Starhost Magi" hidden="false" id="ab77-cc0e-7099-0d92" type="selectionEntry" targetId="eb60-6f88-a5d7-661c" sortIndex="1"/>
-    <entryLink import="true" name="Starhost Protector" hidden="false" id="031f-8292-e081-33b8" type="selectionEntry" targetId="3b36-e55b-a71e-66b7" sortIndex="2"/>
+    <entryLink import="true" name="Starhost Protectors" hidden="false" id="031f-8292-e081-33b8" type="selectionEntry" targetId="3b36-e55b-a71e-66b7" sortIndex="2"/>
     <entryLink import="true" name="Starhost Conquerors" hidden="false" id="07ed-1c5b-c313-4650" type="selectionEntry" targetId="c3c0-5799-2573-9a2e" sortIndex="3"/>
     <entryLink import="true" name="Empyrean Guardian" hidden="false" id="f27f-30cf-d021-6ff2" type="selectionEntry" targetId="29b1-35d2-f8b5-b218" sortIndex="1"/>
-    <entryLink import="true" name="Herald of Stars" hidden="false" id="2356-9178-87bf-2bd2" type="selectionEntry" targetId="dc07-7a24-96ce-3f6d" sortIndex="4"/>
+    <entryLink import="true" name="Herald of the Stars" hidden="false" id="2356-9178-87bf-2bd2" type="selectionEntry" targetId="dc07-7a24-96ce-3f6d" sortIndex="4"/>
     <entryLink import="true" name="Scion of Conquest" hidden="false" id="b799-4f19-94e8-9c50" type="selectionEntry" targetId="848c-35f3-2b49-2619" sortIndex="6"/>
     <entryLink import="true" name="Scion of Judgement" hidden="false" id="3aaf-731c-d97d-9f7e" type="selectionEntry" targetId="689e-028a-d8c8-089c" sortIndex="7"/>
     <entryLink import="true" name="Scion of Restoration" hidden="false" id="702c-88de-406a-77f3" type="selectionEntry" targetId="0eb4-a42b-2f4d-115b" sortIndex="5"/>
