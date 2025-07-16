@@ -567,6 +567,11 @@
                     <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[One Time]</characteristic>
                   </characteristics>
                 </profile>
+                <profile name="Cosmo Arrow" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="be50-2032-2c55-7e1c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="94fb-5af3-adea-b298">Add Cosmo Arrow to this unit&apos;s weapons</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Perfected Warhost" hidden="false" id="9efa-8808-852f-3f9d">
@@ -577,9 +582,9 @@
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bc8a-3a4d-e80b-76c3" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Increase the Attacks, AP, and Damage of this unit&apos;s melee weapons by 1" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="f15e-ab10-7aa6-89f8">
+                <profile name="Perfected Warhost" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="f15e-ab10-7aa6-89f8">
                   <characteristics>
-                    <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+                    <characteristic name="Description" typeId="94fb-5af3-adea-b298">Increase the Attacks, AP, and Damage of this unit&apos;s melee weapons by 1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
