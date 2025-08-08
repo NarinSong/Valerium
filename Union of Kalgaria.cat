@@ -67,7 +67,7 @@
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="bee3-d012-f237-b2c1" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Spirit of the Union" hidden="false" id="4f47-bf23-2639-25d2" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Spirit of the Union" hidden="false" id="4f47-bf23-2639-25d2" sortIndex="-1">
       <categoryLinks>
         <categoryLink targetId="6c8d-d092-b350-6ff3" id="8374-4025-c0b4-a94f" primary="true" name="Configuration"/>
       </categoryLinks>
@@ -203,49 +203,76 @@ This spirit may only be used once per turn and only one objective can be held by
         <selectionEntryGroup name="Unit Composition" id="2eb8-99f8-b797-7bff" hidden="false" defaultSelectionEntryId="c6cf-c5c8-05ad-6ddb">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="3 Honorguard" hidden="false" id="c6cf-c5c8-05ad-6ddb" sortIndex="1">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="fe94-dfdd-cdd8-6868">
+              <entryLinks>
+                <entryLink import="true" name="Honorguard" hidden="false" id="6fd3-fe05-6270-69d5" type="selectionEntry" targetId="3b91-31d7-3298-67ac">
                   <constraints>
-                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0824-ed74-dba8-d597-min" includeChildSelections="false"/>
-                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0824-ed74-dba8-d597-max" includeChildSelections="false"/>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="ecf7-13ad-73ed-f682-min" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ecf7-13ad-73ed-f682-max" includeChildSelections="false"/>
                   </constraints>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="4 Honorguard and Captain" hidden="false" id="be87-1ddc-1688-9fb1" sortIndex="3">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="39ed-ba01-1750-e1c7">
-                  <constraints>
-                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="bca2-3d7b-affd-d2e5-min" includeChildSelections="false"/>
-                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="bca2-3d7b-affd-d2e5-max" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Honorguard Captian" hidden="false" id="d368-20e6-ab55-0919">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11b9-e4f6-1887-cdac-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11b9-e4f6-1887-cdac-max" includeChildSelections="false"/>
                   </constraints>
+                  <profiles>
+                    <profile name="Honorguard Captian" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="8c47-53e6-65a1-9c93">
+                      <characteristics>
+                        <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                        <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                        <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+                        <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+                        <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Mastercrafted Honorblade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="6edb-cc3e-23a3-172d">
+                      <characteristics>
+                        <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
+                        <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+                        <characteristic name="AP" typeId="4984-c247-cad3-da1d">8</characteristic>
+                        <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Deadly Blow]</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Withstand" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="e64e-d060-7490-ac95">
+                      <characteristics>
+                        <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">You may use this special action at the start of melee combat if you do all models in this unit have Invulnerable (5+) until the end of turn</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
               </costs>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c471-14ed-1318-475f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c471-14ed-1318-475f" includeChildSelections="true"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Honorguard" hidden="false" id="14b1-22dd-a307-b05d" type="selectionEntry" targetId="3b91-31d7-3298-67ac">
+                  <constraints>
+                    <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="0b71-a245-a78a-0614-min" includeChildSelections="false"/>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0b71-a245-a78a-0614-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="5 Honorguard" hidden="false" id="635a-70d0-0019-9a37" sortIndex="2">
               <costs>
                 <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
               </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Honorguard" hidden="false" id="d320-fe9a-ec4a-2ea2">
+              <entryLinks>
+                <entryLink import="true" name="Honorguard" hidden="false" id="dbf7-cc2d-de73-02fa" type="selectionEntry" targetId="3b91-31d7-3298-67ac">
                   <constraints>
-                    <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="8748-1725-f7ca-ed53-min" includeChildSelections="false"/>
-                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="8748-1725-f7ca-ed53-max" includeChildSelections="false"/>
+                    <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="3082-7e63-b062-0cfb-min" includeChildSelections="false"/>
+                    <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="3082-7e63-b062-0cfb-max" includeChildSelections="false"/>
                   </constraints>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -267,6 +294,13 @@ This spirit may only be used once per turn and only one objective can be held by
           </conditions>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Fight til the Last" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="4c9e-fbc1-643e-6de9">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">If an Honorguard model is destroyed in melee combat and has not attacked this combat roll a D6 on a 3+ they may make their melee attacks before being removed from play.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Grand Captain Vestrix" hidden="false" id="9ef3-df21-f4c0-7984" sortIndex="0">
       <categoryLinks>
@@ -529,6 +563,28 @@ This spirit may only be used once per turn and only one objective can be held by
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="0764-5365-3200-ef49" primary="false" name="Human"/>
         <categoryLink targetId="4343-4fc7-5166-62e3" id="95cf-f786-3c13-a0fa" primary="false" name="Dorathi"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Honorguard" hidden="false" id="3b91-31d7-3298-67ac" sortIndex="0">
+      <profiles>
+        <profile name="Honorblade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="8391-e626-343a-6d6d">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">7</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Deadly Blow]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Honorguard" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="b722-7605-bd4b-72d1">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
