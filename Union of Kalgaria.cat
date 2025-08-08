@@ -214,7 +214,7 @@ This spirit may only be used once per turn and only one objective can be held by
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="4 Honorguard and Captain" hidden="false" id="be87-1ddc-1688-9fb1" sortIndex="3">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Honorguard Captian" hidden="false" id="d368-20e6-ab55-0919">
+                <selectionEntry type="model" import="true" name="Honorguard Captian" hidden="false" id="d368-20e6-ab55-0919">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11b9-e4f6-1887-cdac-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11b9-e4f6-1887-cdac-max" includeChildSelections="false"/>
@@ -247,7 +247,7 @@ This spirit may only be used once per turn and only one objective can be held by
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c471-14ed-1318-475f" includeChildSelections="true"/>
@@ -263,7 +263,7 @@ This spirit may only be used once per turn and only one objective can be held by
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="5 Honorguard" hidden="false" id="635a-70d0-0019-9a37" sortIndex="2">
               <costs>
-                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="70"/>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Honorguard" hidden="false" id="dbf7-cc2d-de73-02fa" type="selectionEntry" targetId="3b91-31d7-3298-67ac">
@@ -285,7 +285,7 @@ This spirit may only be used once per turn and only one objective can be held by
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6da1-06be-224b-6415" includeChildSelections="false"/>
       </constraints>
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="105"/>
       </costs>
       <modifiers>
         <modifier type="set" value="5" field="6da1-06be-224b-6415">
@@ -453,8 +453,8 @@ This spirit may only be used once per turn and only one objective can be held by
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tesanic Rough Rider" hidden="false" id="b9aa-fc03-5052-3a9f">
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fedf-15b2-e99d-d7dd-min" includeChildSelections="false"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="fedf-15b2-e99d-d7dd-max" includeChildSelections="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fedf-15b2-e99d-d7dd-min-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="fedf-15b2-e99d-d7dd-min-max" includeChildSelections="false"/>
           </constraints>
           <profiles>
             <profile name="Tesanic Rough Rider" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="b3e1-1874-184d-a4f1">
@@ -548,21 +548,27 @@ This spirit may only be used once per turn and only one objective can be held by
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="90"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Dorathi Flamespitter" hidden="false" id="b9d3-6f96-4e67-8808">
+    <selectionEntry type="unit" import="true" name="Dorathi Flamespitter" hidden="false" id="b9d3-6f96-4e67-8808">
       <categoryLinks>
         <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="00dc-9200-4dc5-9f38" primary="true" name="Vehicle"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="6266-4abd-0f77-eb7c" primary="false" name="Faction: Union of Kalgaria"/>
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="09fc-4d55-32dc-ff22" primary="false" name="Human"/>
         <categoryLink targetId="4343-4fc7-5166-62e3" id="d708-d709-2cc9-d31e" primary="false" name="Dorathi"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Dorathi Thunder Warriors" hidden="false" id="6478-31ab-1cd0-17a3">
+    <selectionEntry type="unit" import="true" name="Dorathi Thunder Warriors" hidden="false" id="6478-31ab-1cd0-17a3">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="c432-57aa-a79d-ebbe" primary="true" name="Infantry"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="2ba2-58e0-312e-04f3" primary="false" name="Faction: Union of Kalgaria"/>
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="0764-5365-3200-ef49" primary="false" name="Human"/>
         <categoryLink targetId="4343-4fc7-5166-62e3" id="95cf-f786-3c13-a0fa" primary="false" name="Dorathi"/>
       </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="170"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Honorguard" hidden="false" id="3b91-31d7-3298-67ac" sortIndex="0">
       <profiles>
@@ -586,6 +592,103 @@ This spirit may only be used once per turn and only one objective can be held by
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Organized Serfs" hidden="false" id="627e-00c9-16e9-666f">
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="70"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Serf" hidden="false" id="0bb7-810e-ea99-bb3a">
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="f283-f99d-fe56-d557-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="f283-f99d-fe56-d557-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Serf" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="ffae-64ae-243f-f676">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">2</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">1</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">4+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sling" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="fc86-d908-5601-b4ba">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">4</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">2</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Farming Implements" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="72ff-b04e-8174-622f">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">1</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">3</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Allegiance" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="0e3b-7d0c-1e2d-d167">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">This unit may be either Kalgarian, Tesanic, or Dorathi</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="a13c-6ec1-4ffb-b4e5" primary="false" name="Infantry"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="0a15-12df-b657-ee54" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="9d69-f384-eeac-fdac" primary="false" name="Human"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Allegiance" id="291b-2a02-4d2c-572f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Kalgarian" hidden="false" id="4079-09f7-31ce-2dc3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a056-ca3b-6c26-e2ee" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tesanic" hidden="false" id="3c00-d5aa-a094-4fb5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="362f-236c-f4ca-bd98" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dorathi" hidden="false" id="b395-531b-d671-6fa2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5229-49a6-e5dc-f6ed" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a690-877c-fd91-f198-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a690-877c-fd91-f198-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="d4c2-c78a-3c94-9182" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="4079-09f7-31ce-2dc3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="ae73-2e42-16c8-bacf" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="ae73-2e42-16c8-bacf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="4343-4fc7-5166-62e3" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="b395-531b-d671-6fa2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Spirit of the Union" hidden="false" id="2446-8e9c-986b-9eb4" type="selectionEntry" targetId="4f47-bf23-2639-25d2" sortIndex="0" defaultAmount="1"/>
@@ -593,5 +696,11 @@ This spirit may only be used once per turn and only one objective can be held by
     <entryLink import="true" name="Kalgarian Honorguard" hidden="false" id="4edb-1ecd-9e8d-4c2f" type="selectionEntry" targetId="2b7a-05de-629a-f31b"/>
     <entryLink import="true" name="Grand Captain Vestrix" hidden="false" id="f289-ec70-6500-cd30" type="selectionEntry" targetId="9ef3-df21-f4c0-7984"/>
     <entryLink import="true" name="General Tsu&apos;yin of the Divine Winds" hidden="false" id="4d01-f473-9492-3f95" type="selectionEntry" targetId="7617-74de-64fc-30fb"/>
+    <entryLink import="true" name="Tesanic Rough Rider" hidden="false" id="3ef6-af71-89a0-1f65" type="selectionEntry" targetId="8bd5-054a-5704-4afc"/>
+    <entryLink import="true" name="Organized Serfs" hidden="false" id="e715-c496-17da-970c" type="selectionEntry" targetId="627e-00c9-16e9-666f"/>
+    <entryLink import="true" name="Kalgarian Missionary Battalion" hidden="false" id="494c-d218-0409-55b8" type="selectionEntry" targetId="8628-5b85-7dcc-6b93"/>
+    <entryLink import="true" name="Dorathi Fire Cart" hidden="false" id="5137-1ff0-f6a5-c833" type="selectionEntry" targetId="5742-afed-0f84-146c"/>
+    <entryLink import="true" name="Dorathi Flamespitter" hidden="false" id="1fef-1a5b-ee65-1914" type="selectionEntry" targetId="b9d3-6f96-4e67-8808"/>
+    <entryLink import="true" name="Dorathi Thunder Warriors" hidden="false" id="fa57-965c-1b5b-1c5a" type="selectionEntry" targetId="6478-31ab-1cd0-17a3"/>
   </entryLinks>
 </catalogue>
