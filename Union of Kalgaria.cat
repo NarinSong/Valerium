@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Faction: Union of Kalgaria" id="43bd-1437-ac4a-bdf4" hidden="false"/>
     <categoryEntry name="Human" id="f4d1-cd2f-a7c8-26d4" hidden="false"/>
@@ -61,7 +61,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="100"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="75"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="bee3-d012-f237-b2c1" includeChildSelections="false"/>
@@ -74,7 +74,11 @@
       <profiles>
         <profile name="Spirit of the Union" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="ad94-ad89-6d03-d87e">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">During the start of your turn you get spirits depending on the battle size
+Skirmish - 1
+Battle - 2
+Onslaught - 4
+You may spend these points on any of the abilities listed under spirit of the union. Only one spirit can be applied to each unit per turn and cannot be used on a disorganized unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -87,12 +91,14 @@
           <profiles>
             <profile name="Dorathi Tactics" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="d595-8da6-6d77-a417">
               <characteristics>
-                <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">You may use this spirit on a non Dorathi unit if an allied Dorathi unit is within 3 hex, in line of sight and not disorganized.
+Grant all models in the target unit +1 Control, +1 to Organization checks or give all ranged weapons in the unit [Agile].
+Last until end of turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Kalgarian Might" hidden="false" id="83b8-e5e1-3b3f-0a1c" page="">
+        <selectionEntry type="upgrade" import="true" name="Kalgarian Might" hidden="false" id="83b8-e5e1-3b3f-0a1c">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6945-b18e-63d4-adbd-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6945-b18e-63d4-adbd-max" includeChildSelections="false"/>
@@ -100,7 +106,9 @@
           <profiles>
             <profile name="Kalgarian Might" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="97ae-6697-4595-9f88">
               <characteristics>
-                <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">You may use this spirit on a non Kalgarian unit if an allied Kalgarian unit is within 3 hex, in line of sight and not disorganized.
+Grant the target unit +1 AP on all weapons or +1 damage on all weapons.
+Last until end of turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -113,7 +121,24 @@
           <profiles>
             <profile name="Tesanic Agility" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="7c30-cf56-0fc6-b8ec">
               <characteristics>
-                <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">You may use this spirit on a non Tesanic unit if an allied Tesanic unit is within 3 hex, in line of sight and not disorganized.
+Give all models in the target unit +2 movement or give all weapons equip by models in the unit [Assault] and grant them the ability to advance and charge.
+Last until end of turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Unified Front" hidden="false" id="d239-ae75-987d-7140">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4204-832e-28fa-0918-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4204-832e-28fa-0918-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Unified Front" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="b38b-4566-9728-7782">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">You may select any Union of Kalgaria Unit as long as at least one of each of the other two state&apos;s units are within 3 tiles and within line of sight of the target unit and the target unit must be within range of an objective you control. (ex. if you select a Dorathi unit both a Tesanic and a Kalgarian unit need to be within range of the unit)
+All models in the target unit gain +2 armor this round and the objective will remain under your control, even if the target unit leaves range of it, until your opponent gains control of it.
+This spirit may only be used once per turn and only one objective can be held by this spirit at a time.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -124,7 +149,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e043-33b9-95cc-6005-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="General Tsu&apos;yin of the Divine Winds" hidden="false" id="7617-74de-64fc-30fb">
+    <selectionEntry type="unit" import="true" name="General Tsu&apos;yin of the Divine Winds" hidden="false" id="7617-74de-64fc-30fb" sortIndex="0">
       <categoryLinks>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="dd5c-8d89-63d1-0d85" primary="true" name="Champion"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="e815-6880-17e1-0526" primary="false" name="Faction: Union of Kalgaria"/>
@@ -243,7 +268,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Grand Captain Vestrix" hidden="false" id="9ef3-df21-f4c0-7984">
+    <selectionEntry type="unit" import="true" name="Grand Captain Vestrix" hidden="false" id="9ef3-df21-f4c0-7984" sortIndex="0">
       <categoryLinks>
         <categoryLink targetId="0e9f-f19d-fdfa-621a" id="57f0-6c32-0a7e-89cd" primary="true" name="Champion"/>
         <categoryLink targetId="52dd-ff5f-e841-3172" id="c65d-0dda-6e61-65d1" primary="false" name="Noble"/>
@@ -289,37 +314,225 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="73a4-f568-44b2-4219" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Missionary Battalion" hidden="false" id="8628-5b85-7dcc-6b93">
+    <selectionEntry type="unit" import="true" name="Kalgarian Missionary Battalion" hidden="false" id="8628-5b85-7dcc-6b93">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="ed75-0511-8713-de4e" primary="true" name="Infantry"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="7fbf-a406-5493-2e3a" primary="false" name="Faction: Union of Kalgaria"/>
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="3902-3170-7a9e-0820" primary="false" name="Human"/>
-        <categoryLink targetId="4343-4fc7-5166-62e3" id="6a64-047e-d9e8-68a5" primary="false" name="Dorathi"/>
+        <categoryLink targetId="d4c2-c78a-3c94-9182" id="255b-29af-655f-8592" primary="false" name="Kalgarian"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="286a-b7bd-e811-d17d" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Missionary Sanctus" hidden="false" id="166e-84f1-a73f-d234" sortIndex="0">
+        <selectionEntry type="model" import="true" name="Apostle" hidden="false" id="166e-84f1-a73f-d234" sortIndex="0">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5e2-8f67-1fa0-90fb" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="Apostle" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="7511-22b0-8497-d813">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Channel Divinity" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="1055-5fb0-8af2-206e">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">7</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">D6</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Piercing]</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Relic Blade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="1bf3-66ba-495d-a3a9">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Holdfast in Faith" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="ea5d-b5d8-cf76-6d22">
+              <characteristics>
+                <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">While this unit is on a objective you may use this ability, All models in this unit gain +2 Control and +1 Organization until you leave the objective. If the objective is under your control while this ability is active you may reroll hit rolls against enemy units on the same objective as this unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Missionary" hidden="false" id="cafb-ae22-e4fe-2352">
+        <selectionEntry type="model" import="true" name="Missionary" hidden="false" id="cafb-ae22-e4fe-2352">
           <constraints>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="da89-9830-97e8-bd31" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="Missionary" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="779d-3d80-51b9-42a0">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">3</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">1</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Close Combat Weapon" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="9c60-2515-2d7b-bad9">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">1</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">2</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Channel Divinity" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="935f-b5e2-9735-e0e5">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">5+</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">7</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">D6</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Piercing]</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
+      <profiles>
+        <profile name="Condemn the Faithless" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="17e7-afc3-e2fd-ca54">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">After this unit has made their ranged attacks choose one enemy unit hit by Channel Divinity that unit must take an organization check with -1 to the result of a model was destroyed due to one of these attacks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="50"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tesanic Rough Rider" hidden="false" id="8bd5-054a-5704-4afc">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="0ebd-aad4-a2ba-d30c" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tesanic Rough Rider" hidden="false" id="b9aa-fc03-5052-3a9f">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fedf-15b2-e99d-d7dd-min" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="fedf-15b2-e99d-d7dd-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Tesanic Rough Rider" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="b3e1-1874-184d-a4f1">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">6</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Rider Arc Lance" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="97c4-e00f-f0dd-6678">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">5</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti-Vehicle 4+] [Lance 2]</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Rider Arc Lance (ranged)" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="3086-0d3c-16c0-0e5b">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">6</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">10</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">D3+1</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Blast]</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Flanking Maneuver" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="74e1-e80e-9a37-dc80">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">While in melee combat if the enemy unit this unit is in melee combat has no open spaces around them that unit loses 2 armor until it is no longer surrounded</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="fd19-c051-4156-06c0" id="6e09-1497-50ac-7e8c" primary="true" name="Cavalry"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="deb0-7270-e7fd-08b6" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="858b-81ab-516d-c8f5" primary="false" name="Human"/>
+        <categoryLink targetId="ae73-2e42-16c8-bacf" id="d696-e141-180a-1ae1" primary="false" name="Tesanic"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="95"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dorathi Fire Cart" hidden="false" id="5742-afed-0f84-146c">
+      <categoryLinks>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="3563-f735-f316-2e5f" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="f28c-1940-a1d2-4a43" primary="true" name="Vehicle"/>
+        <categoryLink targetId="4343-4fc7-5166-62e3" id="f9ff-a16f-98ed-c57e" primary="false" name="Dorathi"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Rain of Fire" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="14fb-1168-56a1-a34d">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">After this unit makes its ranged attacks units hit by its attacks must take an organization test</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Firespinner Array" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="0fbf-18d2-84c8-adcd">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">16</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">2D6</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">6</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Concentration 1] [Blast]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fire Cart" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="b8e5-f4ac-aae4-5508">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+        <profile name="Crew Melee Weapons" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="ba5a-8901-11d4-8179">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">5</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="90"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dorathi Flamespitter" hidden="false" id="b9d3-6f96-4e67-8808">
+      <categoryLinks>
+        <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="00dc-9200-4dc5-9f38" primary="true" name="Vehicle"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="6266-4abd-0f77-eb7c" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="09fc-4d55-32dc-ff22" primary="false" name="Human"/>
+        <categoryLink targetId="4343-4fc7-5166-62e3" id="d708-d709-2cc9-d31e" primary="false" name="Dorathi"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dorathi Thunder Warriors" hidden="false" id="6478-31ab-1cd0-17a3">
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="c432-57aa-a79d-ebbe" primary="true" name="Infantry"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="2ba2-58e0-312e-04f3" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="0764-5365-3200-ef49" primary="false" name="Human"/>
+        <categoryLink targetId="4343-4fc7-5166-62e3" id="95cf-f786-3c13-a0fa" primary="false" name="Dorathi"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Spirit of the Unions" hidden="false" id="2446-8e9c-986b-9eb4" type="selectionEntry" targetId="4f47-bf23-2639-25d2" sortIndex="0" defaultAmount="1"/>
+    <entryLink import="true" name="Spirit of the Union" hidden="false" id="2446-8e9c-986b-9eb4" type="selectionEntry" targetId="4f47-bf23-2639-25d2" sortIndex="0" defaultAmount="1"/>
     <entryLink import="true" name="Kalgarian Blastblade" hidden="false" id="c2b1-c0dd-3f7f-89b6" type="selectionEntry" targetId="4a72-c876-5098-a2d1"/>
     <entryLink import="true" name="Kalgarian Honorguard" hidden="false" id="4edb-1ecd-9e8d-4c2f" type="selectionEntry" targetId="2b7a-05de-629a-f31b"/>
     <entryLink import="true" name="Grand Captain Vestrix" hidden="false" id="f289-ec70-6500-cd30" type="selectionEntry" targetId="9ef3-df21-f4c0-7984"/>
