@@ -558,6 +558,9 @@ This spirit may only be used once per turn and only one objective can be held by
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4102-8be0-dc62-d73b" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dorathi Thunder Warriors" hidden="false" id="6478-31ab-1cd0-17a3">
       <categoryLinks>
@@ -569,6 +572,9 @@ This spirit may only be used once per turn and only one objective can be held by
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="170"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="8cd8-f255-2fe4-c5b3" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Honorguard" hidden="false" id="3b91-31d7-3298-67ac" sortIndex="0">
       <profiles>
@@ -642,7 +648,7 @@ This spirit may only be used once per turn and only one objective can be held by
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink targetId="9d75-3e1c-4fee-6132" id="a13c-6ec1-4ffb-b4e5" primary="false" name="Infantry"/>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="a13c-6ec1-4ffb-b4e5" primary="true" name="Infantry"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="0a15-12df-b657-ee54" primary="false" name="Faction: Union of Kalgaria"/>
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="9d69-f384-eeac-fdac" primary="false" name="Human"/>
       </categoryLinks>
@@ -679,7 +685,7 @@ This spirit may only be used once per turn and only one objective can be held by
         </modifier>
         <modifier type="add" value="ae73-2e42-16c8-bacf" field="category">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="ae73-2e42-16c8-bacf" shared="true" includeChildSelections="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="3c00-d5aa-a094-4fb5" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="add" value="4343-4fc7-5166-62e3" field="category">
@@ -688,6 +694,9 @@ This spirit may only be used once per turn and only one objective can be held by
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="5" field="selections" scope="force" shared="true" id="f749-5cfb-cfda-5f70" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
