@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Faction: Union of Kalgaria" id="43bd-1437-ac4a-bdf4" hidden="false"/>
     <categoryEntry name="Human" id="f4d1-cd2f-a7c8-26d4" hidden="false"/>
@@ -621,13 +621,13 @@ This spirit may only be used once per turn and only one objective can be held by
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dorathi Flamespitter" hidden="false" id="b9d3-6f96-4e67-8808">
       <categoryLinks>
-        <categoryLink targetId="2b48-9f4d-3fc4-acb0" id="00dc-9200-4dc5-9f38" primary="true" name="Vehicle"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="6266-4abd-0f77-eb7c" primary="false" name="Faction: Union of Kalgaria"/>
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="09fc-4d55-32dc-ff22" primary="false" name="Human"/>
         <categoryLink targetId="4343-4fc7-5166-62e3" id="d708-d709-2cc9-d31e" primary="false" name="Dorathi"/>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="2ba6-c3cd-aafe-02ea" primary="true" name="Infantry"/>
       </categoryLinks>
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="60"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4102-8be0-dc62-d73b" includeChildSelections="false"/>
@@ -664,8 +664,7 @@ This spirit may only be used once per turn and only one objective can be held by
         <profile name="Crouching Tiger" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="a8ce-e91b-ca36-b47c">
           <characteristics>
             <characteristic name="Description" typeId="94fb-5af3-adea-b298">This model starts the battle with Lone Operative and Stealth.
-Upon making an attack this model loses Lone Operative and Stealth but its attack has +3 Armor Piercing
-</characteristic>
+Upon making an attack this model loses Lone Operative and Stealth but its attack has +3 Armor Piercing</characteristic>
           </characteristics>
         </profile>
         <profile name="Awaiting Prey" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="1d0a-0e7a-f8df-89b3">
@@ -758,7 +757,7 @@ Upon making an attack this model loses Lone Operative and Stealth but its attack
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Organized Serfs" hidden="false" id="627e-00c9-16e9-666f">
       <costs>
-        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="70"/>
+        <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="65"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Serf" hidden="false" id="0bb7-810e-ea99-bb3a">
@@ -856,10 +855,86 @@ Upon making an attack this model loses Lone Operative and Stealth but its attack
         <constraint type="max" value="5" field="selections" scope="force" shared="true" id="f749-5cfb-cfda-5f70" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kalgarian Templars" hidden="false" id="bfdc-969b-b456-26d3">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="dad7-c95d-6056-99fd" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kalgarian Priest" hidden="false" id="2cd3-afcc-151f-39be">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="bb5d-fcd5-1993-7030" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Faithful Restoration" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="b026-c2d9-8158-69f2">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of your turn you may bring restore 3 HP to an allied unit within melee range of this model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Channel Divinity" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="bc24-b842-8490-03ad">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">2+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">11</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">D6</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Piercing]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blessed Holy Blade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="d935-9a22-840f-d3b3">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">7</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kalgarian Priest" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="4057-d639-3500-af4b">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">6</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Divine Mantra" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="0469-29f8-cf77-f5ee">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Add +1 to the hit roll of any allied Missionaries or Apostles in a 3 hex radius around this model until the end of turn
+Once per battle.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lone Operative*" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="fb27-7879-9274-3133">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">If this unit is adjacent to an allied unit this unit may only be targeted by ranged attacks within 4 hex</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kalgarian Inquisitors" hidden="false" id="bf9f-3b7b-2372-a294">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="231e-e153-785f-6e32" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tesanic Artificer" hidden="false" id="f0bd-2102-7c06-cdfe">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9121-3893-e17a-2f97" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tesanic Sharpshooter" hidden="false" id="1556-4ba0-211e-261b">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="55ea-6b05-ac9d-d767" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tesanic Rangers" hidden="false" id="e71a-d1d2-4e68-1f86">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b2ab-9621-556e-321d" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Spirit of the Union" hidden="false" id="2446-8e9c-986b-9eb4" type="selectionEntry" targetId="4f47-bf23-2639-25d2" sortIndex="0" defaultAmount="1"/>
-    <entryLink import="true" name="Kalgarian Blastblade" hidden="false" id="c2b1-c0dd-3f7f-89b6" type="selectionEntry" targetId="4a72-c876-5098-a2d1"/>
+    <entryLink import="true" name="Dorathi Blastblade" hidden="false" id="c2b1-c0dd-3f7f-89b6" type="selectionEntry" targetId="4a72-c876-5098-a2d1"/>
     <entryLink import="true" name="Kalgarian Honorguard" hidden="false" id="4edb-1ecd-9e8d-4c2f" type="selectionEntry" targetId="2b7a-05de-629a-f31b"/>
     <entryLink import="true" name="Grand Captain Vestrix" hidden="false" id="f289-ec70-6500-cd30" type="selectionEntry" targetId="9ef3-df21-f4c0-7984"/>
     <entryLink import="true" name="General Tsu&apos;yin of the Divine Winds" hidden="false" id="4d01-f473-9492-3f95" type="selectionEntry" targetId="7617-74de-64fc-30fb"/>
