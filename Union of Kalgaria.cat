@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Faction: Union of Kalgaria" id="43bd-1437-ac4a-bdf4" hidden="false"/>
     <categoryEntry name="Human" id="f4d1-cd2f-a7c8-26d4" hidden="false"/>
@@ -9,12 +9,12 @@
     <categoryEntry name="Kalgarian" id="d4c2-c78a-3c94-9182" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Kalgarian Blastblade" hidden="false" id="4a72-c876-5098-a2d1">
+    <selectionEntry type="unit" import="true" name="Dorathi Blastblade" hidden="false" id="4a72-c876-5098-a2d1">
       <categoryLinks>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="df0e-a59d-7c5d-b5e5" primary="true" name="Infantry"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="e925-5837-0733-dbd6" primary="false" name="Faction: Union of Kalgaria"/>
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="9968-c64a-1600-beb5" primary="false" name="Human"/>
-        <categoryLink targetId="d4c2-c78a-3c94-9182" id="108f-d08b-49dc-e3d8" primary="false" name="Kalgarian"/>
+        <categoryLink targetId="4343-4fc7-5166-62e3" id="b1fb-d341-3950-f469" primary="false" name="Dorathi"/>
       </categoryLinks>
       <profiles>
         <profile name="Kalgarian Blastblade" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="5e2c-cf31-fc0e-ef5e">
@@ -122,7 +122,7 @@ Last until end of turn.</characteristic>
             <profile name="Tesanic Agility" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="7c30-cf56-0fc6-b8ec">
               <characteristics>
                 <characteristic name="Description" typeId="94fb-5af3-adea-b298">You may use this spirit on a non Tesanic unit if an allied Tesanic unit is within 3 hex, in line of sight and not disorganized.
-Give all models in the target unit +2 movement or give all weapons equip by models in the unit [Assault] and grant them the ability to advance and charge.
+Give all weapons equip by models in the unit [Assault] and grant them the ability to advance and charge.
 Last until end of turn.</characteristic>
               </characteristics>
             </profile>
@@ -136,7 +136,7 @@ Last until end of turn.</characteristic>
           <profiles>
             <profile name="Unified Front" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="b38b-4566-9728-7782">
               <characteristics>
-                <characteristic name="Description" typeId="94fb-5af3-adea-b298">You may select any Union of Kalgaria Unit as long as at least one of each of the other two state&apos;s units are within 3 tiles and within line of sight of the target unit and the target unit must be within range of an objective you control. (ex. if you select a Dorathi unit both a Tesanic and a Kalgarian unit need to be within range of the unit)
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">You may select any Union of Kalgaria Unit as long as at one of each of the other two state&apos;s units are within 3 tiles and within line of sight of the target unit and the target unit must be within range of an objective you control. (ex. if you select a Dorathi unit both a Tesanic and a Kalgarian unit need to be within range of the unit)
 All models in the target unit gain +2 armor this round and the objective will remain under your control, even if the target unit leaves range of it, until your opponent gains control of it.
 This spirit may only be used once per turn and only one objective can be held by this spirit at a time.</characteristic>
               </characteristics>
@@ -362,6 +362,7 @@ This spirit may only be used once per turn and only one objective can be held by
         <selectionEntry type="model" import="true" name="Apostle" hidden="false" id="166e-84f1-a73f-d234" sortIndex="0">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5e2-8f67-1fa0-90fb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bc8-0529-8be4-d387" includeChildSelections="false"/>
           </constraints>
           <profiles>
             <profile name="Apostle" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="7511-22b0-8497-d813">
@@ -402,6 +403,7 @@ This spirit may only be used once per turn and only one objective can be held by
         <selectionEntry type="model" import="true" name="Missionary" hidden="false" id="cafb-ae22-e4fe-2352">
           <constraints>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="da89-9830-97e8-bd31" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="3b0e-c336-f828-2197" includeChildSelections="false"/>
           </constraints>
           <profiles>
             <profile name="Missionary" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="779d-3d80-51b9-42a0">
@@ -450,49 +452,6 @@ This spirit may only be used once per turn and only one objective can be held by
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="0ebd-aad4-a2ba-d30c" includeChildSelections="false"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Tesanic Rough Rider" hidden="false" id="b9aa-fc03-5052-3a9f">
-          <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fedf-15b2-e99d-d7dd-min-min" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="fedf-15b2-e99d-d7dd-min-max" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Tesanic Rough Rider" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="b3e1-1874-184d-a4f1">
-              <characteristics>
-                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">6</characteristic>
-                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
-                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
-                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
-                <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Rider Arc Lance" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="97c4-e00f-f0dd-6678">
-              <characteristics>
-                <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
-                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
-                <characteristic name="AP" typeId="4984-c247-cad3-da1d">5</characteristic>
-                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
-                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti-Vehicle 4+] [Lance 2]</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Rider Arc Lance (ranged)" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="3086-0d3c-16c0-0e5b">
-              <characteristics>
-                <characteristic name="R" typeId="865a-2a77-c897-85fd">6</characteristic>
-                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
-                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
-                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">10</characteristic>
-                <characteristic name="D" typeId="7e81-d394-055d-8486">D3+1</characteristic>
-                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Blast]</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Flanking Maneuver" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="74e1-e80e-9a37-dc80">
-              <characteristics>
-                <characteristic name="Description" typeId="94fb-5af3-adea-b298">While in melee combat if the enemy unit this unit is in melee combat has no open spaces around them that unit loses 2 armor until it is no longer surrounded</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="fd19-c051-4156-06c0" id="6e09-1497-50ac-7e8c" primary="true" name="Cavalry"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="deb0-7270-e7fd-08b6" primary="false" name="Faction: Union of Kalgaria"/>
@@ -502,6 +461,115 @@ This spirit may only be used once per turn and only one objective can be held by
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="95"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Composition" id="64c1-7264-f060-deb5" hidden="false" defaultSelectionEntryId="30db-6926-39d4-461f">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="3 Rough Riders" hidden="false" id="30db-6926-39d4-461f" sortIndex="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9fc-112d-a3f6-d755" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Tesanic Rough Rider" hidden="false" id="2cc4-1197-1957-bb6f">
+                  <constraints>
+                    <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3e19-30a4-7abe-a5d0" includeChildSelections="false"/>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e4a9-54cb-1fe9-0850" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Tesanic Rough Rider" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="7790-a97c-02f1-32c2">
+                      <characteristics>
+                        <characteristic name="M" typeId="c31f-6a6c-001e-0b26">6</characteristic>
+                        <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                        <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                        <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                        <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Rider Arc Lance" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="a2dc-88bb-738e-50a7">
+                      <characteristics>
+                        <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                        <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                        <characteristic name="AP" typeId="4984-c247-cad3-da1d">5</characteristic>
+                        <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti-Vehicle 4+] [Lance 2]</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Rider Arc Lance (ranged)" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="b6b6-0813-d9e3-e3a4">
+                      <characteristics>
+                        <characteristic name="R" typeId="865a-2a77-c897-85fd">6</characteristic>
+                        <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                        <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+                        <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">7</characteristic>
+                        <characteristic name="D" typeId="7e81-d394-055d-8486">D3+1</characteristic>
+                        <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Blast]</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Flanking Maneuver" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="5125-5056-6394-284c">
+                      <characteristics>
+                        <characteristic name="Description" typeId="94fb-5af3-adea-b298">While in melee combat if the enemy unit this unit is in melee combat has no open spaces around them that unit loses 2 armor until it is no longer surrounded</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 Rough Riders" hidden="false" id="a6ef-6129-b028-d25c" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdfa-d424-8f60-9290" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Tesanic Rough Rider" hidden="false" id="9dcd-f99b-9340-5732">
+                  <constraints>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="910a-3814-6d95-13ee" includeChildSelections="false"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="2296-ea1b-fb0b-d02b" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Tesanic Rough Rider" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="035b-0d24-8868-5f17">
+                      <characteristics>
+                        <characteristic name="M" typeId="c31f-6a6c-001e-0b26">6</characteristic>
+                        <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                        <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                        <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                        <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Rider Arc Lance" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="91a3-3e45-62de-8e86">
+                      <characteristics>
+                        <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                        <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                        <characteristic name="AP" typeId="4984-c247-cad3-da1d">5</characteristic>
+                        <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                        <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti-Vehicle 4+] [Lance 2]</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Rider Arc Lance (ranged)" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="efd7-4b1b-d6d4-1dc7">
+                      <characteristics>
+                        <characteristic name="R" typeId="865a-2a77-c897-85fd">6</characteristic>
+                        <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                        <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+                        <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">7</characteristic>
+                        <characteristic name="D" typeId="7e81-d394-055d-8486">D3+1</characteristic>
+                        <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Blast]</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Flanking Maneuver" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="ff45-e629-aff8-aec8">
+                      <characteristics>
+                        <characteristic name="Description" typeId="94fb-5af3-adea-b298">While in melee combat if the enemy unit this unit is in melee combat has no open spaces around them that unit loses 2 armor until it is no longer surrounded</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="95"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3e3-3561-10c7-016a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3e3-3561-10c7-016a-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dorathi Fire Cart" hidden="false" id="5742-afed-0f84-146c">
       <categoryLinks>
@@ -520,18 +588,18 @@ This spirit may only be used once per turn and only one objective can be held by
             <characteristic name="R" typeId="865a-2a77-c897-85fd">16</characteristic>
             <characteristic name="A" typeId="f431-6fc1-7fb3-f314">2D6</characteristic>
             <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
-            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">6</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">5</characteristic>
             <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
             <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Concentration 1] [Blast]</characteristic>
           </characteristics>
         </profile>
         <profile name="Fire Cart" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="b8e5-f4ac-aae4-5508">
           <characteristics>
-            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
-            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
-            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
-            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
-            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
           </characteristics>
         </profile>
         <profile name="Crew Melee Weapons" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="ba5a-8901-11d4-8179">
@@ -547,6 +615,9 @@ This spirit may only be used once per turn and only one objective can be held by
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="90"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="f765-525c-5289-5e92" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dorathi Flamespitter" hidden="false" id="b9d3-6f96-4e67-8808">
       <categoryLinks>
@@ -561,6 +632,48 @@ This spirit may only be used once per turn and only one objective can be held by
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4102-8be0-dc62-d73b" includeChildSelections="false"/>
       </constraints>
+      <profiles>
+        <profile name="Flamespitter Maw" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="5a29-27dd-09b0-6fb1">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">1</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dorathi Flamespitter" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="3b5c-0f39-e1e8-a06f">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">4</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">2D6</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">-</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">4</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">1</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Torrent]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Flamespitter" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="ab5c-43d8-b859-d224">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">2</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">4</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Crouching Tiger" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="a8ce-e91b-ca36-b47c">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">This model starts the battle with Lone Operative and Stealth.
+Upon making an attack this model loses Lone Operative and Stealth but its attack has +3 Armor Piercing
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Awaiting Prey" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="1d0a-0e7a-f8df-89b3">
+          <characteristics>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">This model gains Lone Operative and Stealth until its next attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dorathi Thunder Warriors" hidden="false" id="6478-31ab-1cd0-17a3">
       <categoryLinks>
@@ -575,6 +688,51 @@ This spirit may only be used once per turn and only one objective can be held by
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="8cd8-f255-2fe4-c5b3" includeChildSelections="false"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Thunder Warrior" hidden="false" id="75ea-7624-a48d-4bde">
+          <profiles>
+            <profile name="Thunder Warrior" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="5fc0-e99b-a542-9aa7">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Storm Blade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="ca16-48de-2f27-d9f5">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">7</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Windpiercer" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="f2d1-5919-01f0-58ac">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">2</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">8</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">D4</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Deadly Blow] [Agile]</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b5ce-5487-19ce-234c-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="b5ce-5487-19ce-234c-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Twice Striken" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="c4e9-1743-16d5-6cce">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">This unit may fall back and attempt to make a charge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Honorguard" hidden="false" id="3b91-31d7-3298-67ac" sortIndex="0">
       <profiles>
