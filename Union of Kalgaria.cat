@@ -878,11 +878,11 @@ Upon making an attack this model loses Lone Operative and Stealth but its attack
           <profiles>
             <profile name="Knight Templar" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="9bc5-cf12-645f-d272">
               <characteristics>
-                <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
-                <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
-                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
-                <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
-                <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">8</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
               </characteristics>
             </profile>
             <profile name="Temple Blade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="f8a6-6266-8250-41aa">
