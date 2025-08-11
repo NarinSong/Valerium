@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Faction: Union of Kalgaria" id="43bd-1437-ac4a-bdf4" hidden="false"/>
     <categoryEntry name="Human" id="f4d1-cd2f-a7c8-26d4" hidden="false"/>
@@ -869,6 +869,49 @@ Upon making an attack this model loses Lone Operative and Stealth but its attack
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="8faa-88a6-dde4-ad7b" primary="false" name="Faction: Union of Kalgaria"/>
         <categoryLink targetId="9d75-3e1c-4fee-6132" id="066f-8cee-7ee7-8e81" primary="true" name="Infantry"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Knight Templar" hidden="false" id="4fe5-f987-da36-3083">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4e9e-d33c-79e0-484c-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4e9e-d33c-79e0-484c-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Knight Templar" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="9bc5-cf12-645f-d272">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+              </characteristics>
+            </profile>
+            <profile name="Temple Blade" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="f8a6-6266-8250-41aa">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">10</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">3</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Extra Attacks 1] [Deadly Blow]</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Divine Smite" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="2c83-4a04-179e-b8c3">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the beginning of melee combat you may use this ability and grant all attacks +D3 damage and [Piercing]
+Once per battle</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Shield of Faith" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="15a2-da4b-3094-88be">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the beginning of melee combat you may use this ability and grant all models in this unit +4 armor until the end of turn
+Once per battle</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Invulnerable (5+)" id="338c-77da-9f44-106b" hidden="false" type="profile" targetId="d0ca-f05c-a92c-4974"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kalgarian Priest" hidden="false" id="2cd3-afcc-151f-39be">
       <constraints>
@@ -910,7 +953,7 @@ Upon making an attack this model loses Lone Operative and Stealth but its attack
         </profile>
         <profile name="Divine Mantra" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="0469-29f8-cf77-f5ee">
           <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Add +1 to the hit roll of any allied Missionaries or Apostles in a 3 hex radius around this model until the end of turn
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Add +1 to the hit roll of any allied Missionaries, Apostles, and Inquisitors in a 3 hex radius around this model until the end of turn
 Once per battle.</characteristic>
           </characteristics>
         </profile>
@@ -944,6 +987,49 @@ Once per battle.</characteristic>
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="0c3f-96e0-4557-e64f" primary="false" name="Human"/>
         <categoryLink targetId="d4c2-c78a-3c94-9182" id="0915-f3ea-3384-85c0" primary="false" name="Kalgarian"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Inquisitor" hidden="false" id="8a07-aad7-1751-f57f">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e71d-d126-786b-7494-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e71d-d126-786b-7494-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Inquisitor" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="a553-45fd-2fbc-d914">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+              </characteristics>
+            </profile>
+            <profile name="Inquisitoral Brands" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="a8dc-5277-d2f2-6dc2">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">1</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">5</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Channel Divinity" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="58ba-24da-10e2-0408">
+              <characteristics>
+                <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+                <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+                <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">4+</characteristic>
+                <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">7</characteristic>
+                <characteristic name="D" typeId="7e81-d394-055d-8486">D6</characteristic>
+                <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Piercing]</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Purge the faithless" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="6702-eb68-2042-0aae">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">After making ranged attacks choose one target hit by Channel Divinity that unit is branded until the end of the battle allied units receive +1 to hit rolls when attacking branded units.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tesanic Artificer" hidden="false" id="f0bd-2102-7c06-cdfe">
       <constraints>
@@ -958,6 +1044,17 @@ Once per battle.</characteristic>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="e8ac-d3bf-87c7-5949" primary="false" name="Faction: Union of Kalgaria"/>
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="35af-6d02-050f-6fd3" primary="false" name="Human"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Tesanic Artificer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="2da6-1e72-989c-43b2">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tesanic Sharpshooter" hidden="false" id="1556-4ba0-211e-261b">
       <constraints>
@@ -972,6 +1069,17 @@ Once per battle.</characteristic>
         <categoryLink targetId="ae73-2e42-16c8-bacf" id="d8cb-39dd-0c37-1938" primary="false" name="Tesanic"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="1936-f273-ffe4-9e80" primary="false" name="Faction: Union of Kalgaria"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Tesanic Sharpshooter" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="dadf-f1e4-b34f-f2d2">
+          <characteristics>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tesanic Rangers" hidden="false" id="e71a-d1d2-4e68-1f86">
       <constraints>
@@ -986,6 +1094,14 @@ Once per battle.</characteristic>
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="6d95-6593-ad43-86f9" primary="false" name="Human"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="8dc8-f3c4-c461-f719" primary="false" name="Faction: Union of Kalgaria"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ranger" hidden="false" id="0cd5-eff7-5635-983e">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1287-6114-6b15-4f3d-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="1287-6114-6b15-4f3d-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
