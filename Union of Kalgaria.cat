@@ -862,6 +862,13 @@ Upon making an attack this model loses Lone Operative and Stealth but its attack
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="210"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="d4c2-c78a-3c94-9182" id="705e-df03-043b-b2d6" primary="false" name="Kalgarian"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="047b-41af-5675-ad61" primary="false" name="Human"/>
+        <categoryLink targetId="52dd-ff5f-e841-3172" id="74e1-c924-8430-ba6b" primary="false" name="Noble"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="8faa-88a6-dde4-ad7b" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="066f-8cee-7ee7-8e81" primary="true" name="Infantry"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kalgarian Priest" hidden="false" id="2cd3-afcc-151f-39be">
       <constraints>
@@ -916,6 +923,13 @@ Once per battle.</characteristic>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="105"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="82b3-a43b-7c39-fbeb" primary="true" name="Infantry"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="0cb3-80cf-e9b8-44a6" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="37e4-e148-19c7-d5e0" primary="false" name="Human"/>
+        <categoryLink targetId="52dd-ff5f-e841-3172" id="9fbb-d14d-7e13-49fc" primary="false" name="Noble"/>
+        <categoryLink targetId="d4c2-c78a-3c94-9182" id="b2f2-5467-4a3e-9d70" primary="false" name="Kalgarian"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kalgarian Inquisitors" hidden="false" id="bf9f-3b7b-2372-a294">
       <constraints>
@@ -924,6 +938,12 @@ Once per battle.</characteristic>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="95"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="91f3-8da6-19e2-0257" primary="true" name="Infantry"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="3d8c-bbd2-d758-060c" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="0c3f-96e0-4557-e64f" primary="false" name="Human"/>
+        <categoryLink targetId="d4c2-c78a-3c94-9182" id="0915-f3ea-3384-85c0" primary="false" name="Kalgarian"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tesanic Artificer" hidden="false" id="f0bd-2102-7c06-cdfe">
       <constraints>
@@ -932,6 +952,12 @@ Once per battle.</characteristic>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="d82a-b654-cf58-bbbd" primary="true" name="Infantry"/>
+        <categoryLink targetId="ae73-2e42-16c8-bacf" id="3282-5714-fc36-b4a4" primary="false" name="Tesanic"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="e8ac-d3bf-87c7-5949" primary="false" name="Faction: Union of Kalgaria"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="35af-6d02-050f-6fd3" primary="false" name="Human"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tesanic Sharpshooter" hidden="false" id="1556-4ba0-211e-261b">
       <constraints>
@@ -940,6 +966,12 @@ Once per battle.</characteristic>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="80"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="9d75-3e1c-4fee-6132" id="725f-0ef9-2314-6e81" primary="true" name="Infantry"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="e514-7645-b5f2-712a" primary="false" name="Human"/>
+        <categoryLink targetId="ae73-2e42-16c8-bacf" id="d8cb-39dd-0c37-1938" primary="false" name="Tesanic"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="1936-f273-ffe4-9e80" primary="false" name="Faction: Union of Kalgaria"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tesanic Rangers" hidden="false" id="e71a-d1d2-4e68-1f86">
       <constraints>
@@ -948,6 +980,12 @@ Once per battle.</characteristic>
       <costs>
         <cost name="Cost" typeId="3c11-724f-f23d-e3d4" value="85"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="fd19-c051-4156-06c0" id="3766-c157-7936-bdf1" primary="true" name="Cavalry"/>
+        <categoryLink targetId="ae73-2e42-16c8-bacf" id="4d8c-31cf-70fe-b9ef" primary="false" name="Tesanic"/>
+        <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="6d95-6593-ad43-86f9" primary="false" name="Human"/>
+        <categoryLink targetId="43bd-1437-ac4a-bdf4" id="8dc8-f3c4-c461-f719" primary="false" name="Faction: Union of Kalgaria"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
