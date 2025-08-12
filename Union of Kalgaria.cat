@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Faction: Union of Kalgaria" id="43bd-1437-ac4a-bdf4" hidden="false"/>
     <categoryEntry name="Human" id="f4d1-cd2f-a7c8-26d4" hidden="false"/>
@@ -1043,15 +1043,45 @@ Once per battle.</characteristic>
         <categoryLink targetId="ae73-2e42-16c8-bacf" id="3282-5714-fc36-b4a4" primary="false" name="Tesanic"/>
         <categoryLink targetId="43bd-1437-ac4a-bdf4" id="e8ac-d3bf-87c7-5949" primary="false" name="Faction: Union of Kalgaria"/>
         <categoryLink targetId="f4d1-cd2f-a7c8-26d4" id="35af-6d02-050f-6fd3" primary="false" name="Human"/>
+        <categoryLink targetId="52dd-ff5f-e841-3172" id="b152-bdcd-8d6a-34c3" primary="false" name="Noble"/>
       </categoryLinks>
       <profiles>
         <profile name="Tesanic Artificer" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="2da6-1e72-989c-43b2">
           <characteristics>
-            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
-            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
-            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
-            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
-            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">4</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">5</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Overcharge" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="33ee-000b-5421-5750">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At the start of your turn you may target one friendly Tesanic unit and improve all Arc-Weapons equip by that unit damage and armor penetration by 1 until the end of turn</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Arc Maul" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="bed6-ab61-ac70-95c4">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">3+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">3</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti-Vehicle 3+]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Galvanic Rifle" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="3852-81fb-3a6a-c602">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">8</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">2</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">6</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">3</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Anti-Infantry 3+]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lone Operative*" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="c5f0-908c-e799-58b1">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">If this unit is adjacent to an allied Tesanic unit this unit may only be targeted by ranged attacks within 4 hex</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1072,14 +1102,46 @@ Once per battle.</characteristic>
       <profiles>
         <profile name="Tesanic Sharpshooter" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="dadf-f1e4-b34f-f2d2">
           <characteristics>
-            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
-            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
-            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
-            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
-            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">4</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">3</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">2</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Arc-Rifle" typeId="dd9c-6a24-9cae-aef3" typeName="Ranged Weapons" hidden="false" id="54ae-c091-2eff-e097">
+          <characteristics>
+            <characteristic name="R" typeId="865a-2a77-c897-85fd">12</characteristic>
+            <characteristic name="A" typeId="f431-6fc1-7fb3-f314">1</characteristic>
+            <characteristic name="HS" typeId="b584-5d4f-6ac8-2d1a">3+</characteristic>
+            <characteristic name="AP" typeId="c45e-165d-8dbe-ca74">12</characteristic>
+            <characteristic name="D" typeId="7e81-d394-055d-8486">D3+3</characteristic>
+            <characteristic name="Keywords" typeId="b8ff-b26c-bcb9-a650">[Deadly Blow] [Piercing] [Precision] [Heavy]</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Close Combat Weapon" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="0595-a4c0-842d-5e54">
+          <characteristics>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">2</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">4</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Shroud Piercer" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="abb7-692d-11ce-bc2e">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">All attacks made by this unit ignore the Lone Operative Ability</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Headhunter" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="0c75-76b0-2a5d-feb9">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">If this unit kills an opponent&apos;s Champion this unit&apos;s Arc-Rifle gains +1 attack until the end of battle</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Lone Operative" id="32f9-2bf5-de04-4826" hidden="false" type="profile" targetId="768c-8046-72b1-0a90"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tesanic Rangers" hidden="false" id="e71a-d1d2-4e68-1f86">
       <constraints>
@@ -1100,6 +1162,36 @@ Once per battle.</characteristic>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1287-6114-6b15-4f3d-min" includeChildSelections="false"/>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="1287-6114-6b15-4f3d-max" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="Ranger" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="c4f2-63eb-858a-95ab">
+              <characteristics>
+                <characteristic name="M" typeId="c31f-6a6c-001e-0b26">6</characteristic>
+                <characteristic name="Ar" typeId="0983-b6e2-8552-397d">4</characteristic>
+                <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">2</characteristic>
+                <characteristic name="C" typeId="cead-e6cb-357f-f63d">1</characteristic>
+                <characteristic name="O" typeId="dc65-6857-527b-f20d">4+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Arc-Saber" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="b9a9-0ba4-ef5f-235c">
+              <characteristics>
+                <characteristic name="A" typeId="4063-bcf9-f604-85d2">3</characteristic>
+                <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">4+</characteristic>
+                <characteristic name="AP" typeId="4984-c247-cad3-da1d">6</characteristic>
+                <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">1</characteristic>
+                <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Anti-Vehicle 4+]</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Flanking Maneuver" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="a2d4-a013-0f54-c0d3">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">While in melee combat if the enemy unit this unit is in melee combat has no open spaces around them that unit loses 2 armor until it is no longer surrounded</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Frontiersman" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="1dec-46af-bafb-1b80">
+              <characteristics>
+                <characteristic name="Description" typeId="94fb-5af3-adea-b298">Any advance or charge rolls made by this unit have +1 to them</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
