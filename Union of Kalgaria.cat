@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Faction: Union of Kalgaria" id="43bd-1437-ac4a-bdf4" hidden="false"/>
     <categoryEntry name="Human" id="f4d1-cd2f-a7c8-26d4" hidden="false"/>
@@ -160,36 +160,44 @@ This spirit may only be used once per turn and only one objective can be held by
       <profiles>
         <profile name="General Tsu&apos;yin" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="992d-0384-1b7a-0ec3">
           <characteristics>
-            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
-            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
-            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
-            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
-            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">6</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">9</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">8</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">4</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">2+</characteristic>
           </characteristics>
         </profile>
         <profile name="The Northern Wind" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="72b0-0464-ef34-afce">
           <characteristics>
-            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
-            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
-            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
-            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
-            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">4</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">9</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">D4+1</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="Tactical Genius" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="8137-2aa1-82e4-ea20">
+        <profile name="Rank in File" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="8137-2aa1-82e4-ea20">
           <characteristics>
-            <characteristic name="Description" typeId="94fb-5af3-adea-b298"/>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">At end of your organization phase you may reorganize a disorganized unit. You may use this ability up to two times per battle</characteristic>
           </characteristics>
         </profile>
         <profile name="Divine Wind" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="647e-a477-16ce-e44f">
           <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a"/>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Force an enemy within 5 tiles to take an organization test if they fail they take 1 damage</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scatter the Winds" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="c5df-31ab-094b-1ad6">
+          <characteristics>
+            <characteristic name="Description" typeId="94fb-5af3-adea-b298">Enemy units have -1 to the result of any organization checks</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bf59-a2ae-2085-33c8" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Invulnerable (4+)" id="831f-a0c3-7d64-2d88" hidden="false" type="profile" targetId="a1a0-8b24-4db4-9048"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kalgarian Honorguard" hidden="false" id="2b7a-05de-629a-f31b">
       <categoryLinks>
@@ -312,11 +320,11 @@ This spirit may only be used once per turn and only one objective can be held by
       <profiles>
         <profile name="Grand Captain Vestrix" typeId="ffb9-78b8-157e-4da5" typeName="Unit" hidden="false" id="50ac-05e1-06df-2e7e">
           <characteristics>
-            <characteristic name="M" typeId="c31f-6a6c-001e-0b26"/>
-            <characteristic name="Ar" typeId="0983-b6e2-8552-397d"/>
-            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50"/>
-            <characteristic name="C" typeId="cead-e6cb-357f-f63d"/>
-            <characteristic name="O" typeId="dc65-6857-527b-f20d"/>
+            <characteristic name="M" typeId="c31f-6a6c-001e-0b26">3</characteristic>
+            <characteristic name="Ar" typeId="0983-b6e2-8552-397d">10</characteristic>
+            <characteristic name="HP" typeId="3bd8-164f-92b5-6b50">6</characteristic>
+            <characteristic name="C" typeId="cead-e6cb-357f-f63d">3</characteristic>
+            <characteristic name="O" typeId="dc65-6857-527b-f20d">3</characteristic>
           </characteristics>
         </profile>
         <profile name="Honorable Blade" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="bcf4-a75f-093b-3f8d">
@@ -326,16 +334,16 @@ This spirit may only be used once per turn and only one objective can be held by
         </profile>
         <profile name="Terminus" typeId="7aa1-9f77-8d80-eb55" typeName="Melee Weapons" hidden="false" id="5562-4124-7b00-bc12">
           <characteristics>
-            <characteristic name="A" typeId="4063-bcf9-f604-85d2"/>
-            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e"/>
-            <characteristic name="AP" typeId="4984-c247-cad3-da1d"/>
-            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1"/>
-            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6"/>
+            <characteristic name="A" typeId="4063-bcf9-f604-85d2">5</characteristic>
+            <characteristic name="HS" typeId="627a-f612-d0b5-ae5e">2+</characteristic>
+            <characteristic name="AP" typeId="4984-c247-cad3-da1d">10</characteristic>
+            <characteristic name="D" typeId="defe-bb4d-98fd-c9a1">2</characteristic>
+            <characteristic name="Keywords" typeId="96b5-f9ad-73d0-3ce6">[Deadly Blow]</characteristic>
           </characteristics>
         </profile>
         <profile name="For Kalgaria" typeId="0d5e-6fb2-1b60-5227" typeName="Special Actions" hidden="false" id="b62a-957d-4566-3217">
           <characteristics>
-            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a"/>
+            <characteristic name="Discription" typeId="4fd5-f0f2-cf32-b68a">Once per battle, until the end of turn increase the attacks of all attached models by 1 and the armor penetration of those attacks by 2.</characteristic>
           </characteristics>
         </profile>
         <profile name="Honorguard Leader" typeId="741c-f3c5-ef1b-428b" typeName="Abilities" hidden="false" id="5a33-d141-79c6-b460">
@@ -347,6 +355,9 @@ This spirit may only be used once per turn and only one objective can be held by
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="73a4-f568-44b2-4219" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Invulnerable (4+)" id="4f6c-210e-5269-c85e" hidden="false" type="profile" targetId="a1a0-8b24-4db4-9048"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kalgarian Missionary Battalion" hidden="false" id="8628-5b85-7dcc-6b93">
       <categoryLinks>
