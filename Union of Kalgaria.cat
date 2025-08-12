@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3dd3-e5e8-00d8-6496" name="Union of Kalgaria" gameSystemId="sys-e084-dc47-5661-ffcf" gameSystemRevision="12" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Faction: Union of Kalgaria" id="43bd-1437-ac4a-bdf4" hidden="false"/>
     <categoryEntry name="Human" id="f4d1-cd2f-a7c8-26d4" hidden="false"/>
@@ -1198,21 +1198,21 @@ Once per battle.</characteristic>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Spirit of the Union" hidden="false" id="2446-8e9c-986b-9eb4" type="selectionEntry" targetId="4f47-bf23-2639-25d2" sortIndex="0" defaultAmount="1"/>
-    <entryLink import="true" name="Dorathi Blastblade" hidden="false" id="c2b1-c0dd-3f7f-89b6" type="selectionEntry" targetId="4a72-c876-5098-a2d1"/>
-    <entryLink import="true" name="Kalgarian Honorguard" hidden="false" id="4edb-1ecd-9e8d-4c2f" type="selectionEntry" targetId="2b7a-05de-629a-f31b"/>
-    <entryLink import="true" name="Grand Captain Vestrix" hidden="false" id="f289-ec70-6500-cd30" type="selectionEntry" targetId="9ef3-df21-f4c0-7984"/>
-    <entryLink import="true" name="General Tsu&apos;yin of the Divine Winds" hidden="false" id="4d01-f473-9492-3f95" type="selectionEntry" targetId="7617-74de-64fc-30fb"/>
+    <entryLink import="true" name="Dorathi Blastblade" hidden="false" id="c2b1-c0dd-3f7f-89b6" type="selectionEntry" targetId="4a72-c876-5098-a2d1" sortIndex="1"/>
+    <entryLink import="true" name="Kalgarian Honorguard" hidden="false" id="4edb-1ecd-9e8d-4c2f" type="selectionEntry" targetId="2b7a-05de-629a-f31b" sortIndex="5"/>
+    <entryLink import="true" name="Grand Captain Vestrix" hidden="false" id="f289-ec70-6500-cd30" type="selectionEntry" targetId="9ef3-df21-f4c0-7984" sortIndex="0"/>
+    <entryLink import="true" name="General Tsu&apos;yin of the Divine Winds" hidden="false" id="4d01-f473-9492-3f95" type="selectionEntry" targetId="7617-74de-64fc-30fb" sortIndex="0"/>
     <entryLink import="true" name="Tesanic Rough Rider" hidden="false" id="3ef6-af71-89a0-1f65" type="selectionEntry" targetId="8bd5-054a-5704-4afc"/>
-    <entryLink import="true" name="Organized Serfs" hidden="false" id="e715-c496-17da-970c" type="selectionEntry" targetId="627e-00c9-16e9-666f"/>
-    <entryLink import="true" name="Kalgarian Missionary Battalion" hidden="false" id="494c-d218-0409-55b8" type="selectionEntry" targetId="8628-5b85-7dcc-6b93"/>
-    <entryLink import="true" name="Dorathi Fire Cart" hidden="false" id="5137-1ff0-f6a5-c833" type="selectionEntry" targetId="5742-afed-0f84-146c"/>
-    <entryLink import="true" name="Dorathi Flamespitter" hidden="false" id="1fef-1a5b-ee65-1914" type="selectionEntry" targetId="b9d3-6f96-4e67-8808"/>
-    <entryLink import="true" name="Dorathi Thunder Warriors" hidden="false" id="fa57-965c-1b5b-1c5a" type="selectionEntry" targetId="6478-31ab-1cd0-17a3"/>
-    <entryLink import="true" name="Kalgarian Inquisitors" hidden="false" id="5126-c5ec-5c2b-93dc" type="selectionEntry" targetId="bf9f-3b7b-2372-a294"/>
-    <entryLink import="true" name="Kalgarian Priest" hidden="false" id="5907-e990-bfa5-a9cd" type="selectionEntry" targetId="2cd3-afcc-151f-39be"/>
-    <entryLink import="true" name="Kalgarian Templars" hidden="false" id="0f75-eca6-c9ea-ae3b" type="selectionEntry" targetId="bfdc-969b-b456-26d3"/>
-    <entryLink import="true" name="Tesanic Artificer" hidden="false" id="c113-b0cc-5ee0-9e0a" type="selectionEntry" targetId="f0bd-2102-7c06-cdfe"/>
+    <entryLink import="true" name="Organized Serfs" hidden="false" id="e715-c496-17da-970c" type="selectionEntry" targetId="627e-00c9-16e9-666f" sortIndex="0"/>
+    <entryLink import="true" name="Kalgarian Missionary Battalion" hidden="false" id="494c-d218-0409-55b8" type="selectionEntry" targetId="8628-5b85-7dcc-6b93" sortIndex="2"/>
+    <entryLink import="true" name="Dorathi Fire Cart" hidden="false" id="5137-1ff0-f6a5-c833" type="selectionEntry" targetId="5742-afed-0f84-146c" sortIndex="1"/>
+    <entryLink import="true" name="Dorathi Flamespitter" hidden="false" id="1fef-1a5b-ee65-1914" type="selectionEntry" targetId="b9d3-6f96-4e67-8808" sortIndex="1"/>
+    <entryLink import="true" name="Dorathi Thunder Warriors" hidden="false" id="fa57-965c-1b5b-1c5a" type="selectionEntry" targetId="6478-31ab-1cd0-17a3" sortIndex="1"/>
+    <entryLink import="true" name="Kalgarian Inquisitors" hidden="false" id="5126-c5ec-5c2b-93dc" type="selectionEntry" targetId="bf9f-3b7b-2372-a294" sortIndex="3"/>
+    <entryLink import="true" name="Kalgarian Priest" hidden="false" id="5907-e990-bfa5-a9cd" type="selectionEntry" targetId="2cd3-afcc-151f-39be" sortIndex="4"/>
+    <entryLink import="true" name="Kalgarian Templars" hidden="false" id="0f75-eca6-c9ea-ae3b" type="selectionEntry" targetId="bfdc-969b-b456-26d3" sortIndex="5"/>
+    <entryLink import="true" name="Tesanic Artificer" hidden="false" id="c113-b0cc-5ee0-9e0a" type="selectionEntry" targetId="f0bd-2102-7c06-cdfe" sortIndex="5"/>
     <entryLink import="true" name="Tesanic Rangers" hidden="false" id="9bd2-14c1-45be-e50c" type="selectionEntry" targetId="e71a-d1d2-4e68-1f86"/>
-    <entryLink import="true" name="Tesanic Sharpshooter" hidden="false" id="9577-b8e1-9081-21e7" type="selectionEntry" targetId="1556-4ba0-211e-261b"/>
+    <entryLink import="true" name="Tesanic Sharpshooter" hidden="false" id="9577-b8e1-9081-21e7" type="selectionEntry" targetId="1556-4ba0-211e-261b" sortIndex="5"/>
   </entryLinks>
 </catalogue>
